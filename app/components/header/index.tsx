@@ -4,9 +4,9 @@ import Contact from "../contact";
 const Header = () => {
   return (
     <div className="header text-[#eee] flex justify-between items-center absolute top-0 left-0 p-6 py-9 w-full">
-      <div className="logo flex items-center gap-3">
-        <a>
-          Anthony Animba <span className="text-[80%]">™</span>{" "}
+      <div className="logo relative flex items-center gap-3">
+        <a className="relative">
+          Anthony Animba <span className="text-[80%] absolute top-0 right-[-12px]">™</span>{" "}
         </a>
       </div>
       <div className="txt pr-12">
