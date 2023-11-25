@@ -6,7 +6,7 @@ import Socials from "../socials";
 const Hero = () => {
   return (
     <div className="hero h-[100vh] flex items-center ml-auto mr-[20%] w-fit">
-      <div className="inner pt-4">
+      <div className="inner pt-2">
         <h1>
           <span className="rise">Digital Designer</span>
           <br />
