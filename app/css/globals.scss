@@ -24,16 +24,38 @@
 body {
   color: #1a1a1a;
   height: 200vh;
-  background-color: #eee;
+  background-color: #f5f5f5;
 }
 
 button {
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
+.cursor {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #999999a1;
+  border-radius: 100%;
+  pointer-events: none;
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 99999;
+
+  @media (pointer: coarse) {
+    display: none;
+  }
+}
+
 .logo {
-  font-weight: 250;
+  font-weight: 300;
   letter-spacing: -0.2px;
 }

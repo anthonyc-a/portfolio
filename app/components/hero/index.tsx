@@ -20,11 +20,11 @@ const Hero = () => {
         <div className="relative mt-4 z-20">
           <p className="relative z-10 text-white  w-fit whitespace-nowrap">
             <span className="rise">
-              Lorem ipsum, dolor sit amet consectetur adipisicing.
+              Lorem ipsum, dolor sit amet consectetur adipisicing
             </span>
             <br />
             <span className="rise">
-              voluptas totam explicabo blanditiis rem debitis.
+              voluptas totam explicabo blanditiis rem debitis
             </span>
             <br />
             <span className="rise">laborum possimus enim.</span>

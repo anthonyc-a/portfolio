@@ -2,9 +2,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import Button from "./components/button";
-import Socials from "./components/socials";
-import Location from "./components/location";
 import Hero from "./components/hero";
 
 const Home = () => {
@@ -19,8 +16,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-full bg-[#1a1a1a] text-[#eee]">
-      <Hero/>
+    <div className="w-full  ">
+      <div className="w-full bg-[#1a1a1a] text-[#f5f5f5]">
+        <Hero />
+      </div>
+      <div className="about h-[100vh] p-6">
+        <div className="txt">about me</div>
+      </div>
     </div>
   );
 };
