@@ -11,6 +11,7 @@
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
   font-family: "BrittiSansVariable", sans-serif;
+  cursor: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +30,7 @@ body {
 
 button {
   font-size: 0.66rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 }
 

@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Hero from "./components/hero";
+import Image from "next/image";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -20,19 +21,27 @@ const Home = () => {
       <div className="w-full bg-[#1a1a1a] text-[#f5f5f5]">
         <Hero />
       </div>
-      <div className="h-[100vh] p-6 pt-16">
+      <div id="about" className=" p-6 pt-16">
         <div className="grid gap-8 grid-rows-12 grid-cols-4">
           <div className="txt">about me</div>
-          <h2 className="w-[200%]">
+          <h2 className="w-[175%]">
             I am passionate about everything that has to do with Digital Design
             and Art Direction. I enjoy working with agencies and enthusiastic
             people who want to solve problems through beautiful designs and
             experiences.
           </h2>
           <div></div>
-          <div className="w-40 h-40 rounded-full bg-gray-300 mx-auto"></div>
+          <div className="w-40 h-40 rounded-full bg-gray-300 mx-auto overflow-hidden">
+            <Image
+              src="/me.jpg"
+              alt=""
+              width={1372}
+              height={1507}
+              className="w-full h-full object-cover scale-[1.25] translate-y-2 saturate-[1.1]"
+            />
+          </div>
         </div>
-        <div className="grid mt-20 gap-x-12 grid-rows-1 grid-cols-4">
+        <div className="grid relative mt-20 gap-x-12 grid-rows-1 grid-cols-4">
           <div>
             <h4>Mobile and Web Design</h4>
             <p>
@@ -60,7 +69,15 @@ const Home = () => {
               designs and experiences.
             </p>
           </div>
-          more
+          <button className="absolute bottom-0 right-0">more</button>
+        </div>
+      </div>
+
+      <div id="work" className="p-6 pt-16">
+        <div className="grid gap-8 grid-rows-12 grid-cols-4">
+          <div className="txt">experience</div>
+          <div className=" bg-gray-200">hi</div>
+          <div className=" bg-gray-200">hi</div>
         </div>
       </div>
     </div>
