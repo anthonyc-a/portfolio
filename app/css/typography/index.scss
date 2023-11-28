@@ -7,7 +7,7 @@
 h1 {
   font-size: 3vw;
   font-weight: 230;
-  line-height: 0.95;
+  line-height: 1;
 
   @media (min-width: 768px) {
     font-size: 2.65vw;
@@ -80,7 +80,7 @@ p {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   padding: 4px 8px;
-  border: 1px solid #bbb;
+  border: 1px solid #999;
   border-radius: 40px;
 
   @media (min-width: 1280px) {

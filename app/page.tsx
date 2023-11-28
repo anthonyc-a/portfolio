@@ -86,7 +86,7 @@ const Home = () => {
 
           <button
             onClick={setLocation}
-            className="absolute flex items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#1a1a1a] rounded-full"
+            className="absolute flex items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
           >
             explore my work
             <Image
