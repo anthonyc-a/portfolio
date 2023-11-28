@@ -54,7 +54,7 @@ const Home = () => {
         <div className="grid relative mt-24 gap-x-12 grid-rows-1 grid-cols-4">
           <div className="pr-6">
             <Image src="/dev.svg" alt="" width={52} height={52} />
-            <h4 className="mb-6 mt-6 font-[350]">Full-Stack Development</h4>
+            <h4 className="mb-5 mt-6 font-[350]">Full-Stack Development</h4>
             <p>
               By using my expertise as a digital designer, I make sure that a
               visual identity can be used to its full extent throughout all
@@ -64,7 +64,7 @@ const Home = () => {
           </div>
           <div className="pr-6">
             <Image src="/design.svg" alt="" width={80} height={80} />
-            <h4 className="mb-6 mt-6 font-[350]">Mobile and Web Design</h4>
+            <h4 className="mb-5 mt-6 font-[350]">Mobile and Web Design</h4>
             <p>
               I always strive to create memorable experiences that are
               aesthetically appealing, functional and distinctive. Whether
@@ -75,7 +75,7 @@ const Home = () => {
 
           <div className="pr-6">
             <Image src="/art.svg" alt="" width={20} height={20} />
-            <h4 className="mb-6 mt-6 font-[350]">Art Direction</h4>
+            <h4 className="mb-5 mt-6 font-[350]">Art Direction</h4>
             <p>
               With my extensive experience in creating everything digital,
               I&apos;m able to establish a strong foundation in the choice of

@@ -64,7 +64,7 @@ const Project = () => {
             />
             <div className="w-[50%]">
               <h4 className="leading-[1.35] font-[350] text-[105%]">{project.title}</h4>
-              <h4 className="text-gray-500 font-[250] text-[90%] ">
+              <h4 className="text-gray-500 tracking-wide font-[250] text-[90%] ">
                 {project.description}
               </h4>
               <div className="tags flex items-center gap-1 mt-2.5">
