@@ -111,7 +111,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="archive" className="p-6 mt-16">
+      <div id="archive" className="p-6 mt-12">
         <div className="grid gap-4 grid-rows-12 grid-cols-4 mt-8">
           <div className="txt">
             <span>
