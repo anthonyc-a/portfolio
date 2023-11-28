@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Hero from "./components/hero";
 import Image from "next/image";
+import Project from "./components/project";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -18,7 +19,7 @@ const Home = () => {
 
   return (
     <div className="w-full  ">
-      <div className="w-full bg-[#1a1a1a] text-[#f5f5f5]">
+      <div className="w-full bg-[#1a1a1a] text-[#f8f8f8]">
         <Hero />
       </div>
       <div id="about" className=" p-6 pt-16">
@@ -43,41 +44,44 @@ const Home = () => {
         </div>
         <div className="grid relative mt-20 gap-x-12 grid-rows-1 grid-cols-4">
           <div>
-            <h4>Mobile and Web Design</h4>
+            <h4 className="mb-4">Mobile and Web Design</h4>
             <p>
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction. I enjoy working with agencies and
-              enthusiastic people who want to solve problems through beautiful
-              designs and experiences.
+              I always strive to create memorable experiences that are
+              aesthetically appealing, functional and distinctive. Whether
+              it&apos;s inspiring marketing websites, convincing e-commerce
+              sites or apps that are truly beneficial to users.
             </p>
           </div>
           <div>
-            <h4>Art Direction</h4>
+            <h4 className="mb-4">Art Direction</h4>
             <p>
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction. I enjoy working with agencies and
-              enthusiastic people who want to solve problems through beautiful
-              designs and experiences.
+              With my extensive experience in creating everything digital,
+              I&apos;m able to establish a strong foundation in the choice of
+              typography, color and photography to ensure that users perceive
+              the brand and presence in a consistent way.
             </p>
           </div>
           <div>
-            <h4>Development</h4>
+            <h4 className="mb-4">Development</h4>
             <p>
-              I am passionate about everything that has to do with Digital
-              Design and Art Direction. I enjoy working with agencies and
-              enthusiastic people who want to solve problems through beautiful
-              designs and experiences.
+              By using my expertise as a digital designer, I make sure that a
+              visual identity can be used to its full extent throughout all
+              touchpoints in an accessible and user-friendly way. Not just
+              timeless, but usable in todays digital world.
             </p>
           </div>
           <button className="absolute bottom-0 right-0">more</button>
         </div>
       </div>
 
-      <div id="work" className="p-6 pt-16">
-        <div className="grid gap-8 grid-rows-12 grid-cols-4">
+      <div id="work" className="p-6 mt-20">
+        <div className="grid gap-4 grid-rows-12 grid-cols-4">
           <div className="txt">experience</div>
-          <div className=" bg-gray-200">hi</div>
-          <div className=" bg-gray-200">hi</div>
+          <Project />
+          <div></div>
+          <Project />
+          <div></div>
+          <Project />
         </div>
       </div>
     </div>
