@@ -19,7 +19,7 @@ const Footer = () => {
       </h1>
       <div className="w-full txt text-[80%] flex items-center text-white justify-between mt-28">
         <div>
-          <h5>Design & Dev:</h5>
+          <h5>Design & Development:</h5>
           Anthony Animba
         </div>
         <div>
