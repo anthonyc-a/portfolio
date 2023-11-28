@@ -3,6 +3,7 @@ import "./css/globals.scss";
 import "./css/webfonts/britti-sans-variable.css";
 import Header from "./components/header";
 import Cursor from "./components/cursor";
+import Footer from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Anthony Animba | Digital Designer and Full-Stack Developer",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Cursor />
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

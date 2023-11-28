@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import Hero from "./components/hero";
 import Image from "next/image";
 import Project from "./components/project";
+import Archive from "./components/archive";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -19,7 +20,7 @@ const Home = () => {
 
   return (
     <div className="w-full  ">
-      <div className="w-full bg-[#1a1a1a] text-[#f8f8f8]">
+      <div className="w-full bg-[#1a1a1a] rounded-md text-[#f8f8f8]">
         <Hero />
       </div>
       <div id="about" className=" p-6 pt-16">
@@ -70,18 +71,23 @@ const Home = () => {
               timeless, but usable in todays digital world.
             </p>
           </div>
-          <button className="absolute bottom-0 right-0">more</button>
+          <button className="absolute bottom-0 right-0 p-2 pb-1.5 px-6 border border-[#999] rounded-full">
+            view my work
+          </button>
         </div>
       </div>
 
       <div id="work" className="p-6 mt-20">
         <div className="grid gap-4 grid-rows-12 grid-cols-4">
-          <div className="txt">experience</div>
+          <h2 className="txt">experience</h2>
           <Project />
-          <div></div>
-          <Project />
-          <div></div>
-          <Project />
+        </div>
+      </div>
+
+      <div id="archive" className="p-6 mt-16">
+        <div className="grid gap-4 grid-rows-12 grid-cols-4">
+          <h2 className="txt">archive</h2>
+          <Archive />
         </div>
       </div>
     </div>
