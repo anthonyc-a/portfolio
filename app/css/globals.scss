@@ -15,14 +15,14 @@
 }
 
 body {
-  color: #000;
+  color: #1a1a1a;
   height: 200vh;
   background-color: #f8f8f8;
 }
 
 button {
-  font-size: 0.65rem;
-  font-weight: 300;
+  font-size: 0.7rem;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -84,4 +84,38 @@ footer {
 .logo {
   font-weight: 300;
   letter-spacing: -0.2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 120%;
+    height: 100%;
+    background-color: #1a1a1a;
+    animation: rise 1s 0s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    z-index: 10;
+  }
+}
+
+.load-delay {
+  animation-delay: 0.5s;
+}
+
+.appear {
+  opacity: 0;
+  animation: appear 1.35s 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.delay {
+  animation-delay: 2s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

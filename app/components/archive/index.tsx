@@ -4,15 +4,15 @@ import Image from "next/image";
 
 const Archive = () => {
   const data = [
-    { name: "SUI Wine Imports - Freelance", img: "/double.png" },
-    { name: "The Dean Dsouza Mindset - Freelance", img: "/me.jpg" },
-    { name: "Epoch A - E-Commerce", img: "/double.png" },
-    { name: "R Architecture - Concept", img: "/r-architecture.jpg" },
-    { name: "Blok Studios - Personal Project", img: "/blok-studios.jpg" },
-    { name: "Genesis - Freelance", img: "/genesis.jpg" },
-    { name: "Chroma - Personal Project", img: "/chroma.jpg" },
-    { name: "Space - Concept", img: "/space.jpg" },
-    { name: "Studio PB - Concept", img: "/studio-pb.jpg" },
+    { name: "SUI Wine Imports - Wine Imports Catalogue", img: "/double.png" },
+    { name: "The Dean Dsouza Mindset - Mental Health Blog", img: "/me.jpg" },
+    { name: "Epoch A - E-Commerce Jewellery Website", img: "/double.png" },
+    { name: "R Architecture - Architecture Portfolio", img: "/r-architecture.jpg" },
+    { name: "Blok Studios - Modular Housing Project", img: "/blok-studios.jpg" },
+    { name: "Genesis - Web3 Marketplace & Community", img: "/genesis.jpg" },
+    { name: "Chroma - Brand Builder Project", img: "/chroma.jpg" },
+    { name: "Space - Design Concept", img: "/space.jpg" },
+    { name: "Studio PB - Design Studio Website", img: "/studio-pb.jpg" },
   ];
 
   const [cursorActive, setCursorActive] = useState(false);
@@ -28,9 +28,9 @@ const Archive = () => {
   };
 
   return (
-    <>
+    <div className="rounded-md w-full col-span-3">
       <ImageCursor cursorActive={cursorActive} currentItem={currentItem} />
-      <div className="flex flex-col border-b w-full border-[#999] col-span-3 items-center justify-between">
+      <div className="flex flex-col border-b w-full border-[#999]   items-center justify-between">
         {data.map((item: any, index) => (
           <div
             key={index}
@@ -42,15 +42,15 @@ const Archive = () => {
               setCursorActive(false);
             }}
             onClick={() => handleItemClick(item)}
-            className={`p-2 border-t w-full border-[#999] ${
+            className={`py-3 hover:px-3 transition-all ease-in-out border-t w-full border-[#999] ${
               expandedItem === item.name ? "bg-gray-200 md:bg-transparent" : ""
             }`}
           >
-            <h4 className="">{item.name}</h4>
+            <h4 className="text-[90%]">{item.name}</h4>
             {expandedItem === item.name && (
               <Image
-                width={200}
-                height={200}
+                width={600}
+                height={600}
                 src={item.img}
                 alt={item.name}
                 className="w-full md:hidden"
@@ -59,7 +59,7 @@ const Archive = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

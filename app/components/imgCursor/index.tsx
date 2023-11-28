@@ -45,8 +45,8 @@ const ImageCursor: React.FC<Props> = ({
         className={cursorActive ? "active" : "opacity-0"}
         src={currentItem}
         alt="img"
-        width={160}
-        height={160}
+        width={320}
+        height={320}
       />
     </div>
   );

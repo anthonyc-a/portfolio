@@ -12,9 +12,9 @@ const Header = () => {
         </Link>
       </div>
       <div className="txt pr-12">
-        <span className="rise">Designer / Developer</span>
+        <span className="rise load-delay">Designer / Developer</span>
         <br />
-        <span className="rise">Portfolio / 2023 — 2024</span>
+        <span className="rise load-delay">Portfolio / 2023 — 2024</span>
       </div>
       <div></div>
       <Contact />

@@ -17,7 +17,7 @@ const Hero = () => {
 
           <span className="rise">based in London.</span>
         </h1>
-        <div className="relative mt-4 z-20">
+        <div className="relative mt-5 z-20">
           <p className="relative z-10 text-white  w-fit whitespace-nowrap">
             <span className="rise">
               Lorem ipsum, dolor sit amet consectetur adipisicing

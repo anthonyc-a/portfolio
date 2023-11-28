@@ -3,16 +3,16 @@ import React from "react";
 const Socials = () => {
   return (
     <div>
-      <ul className="flex items-center gap-8">
+      <ul className="flex txt items-center gap-8">
         <li>
-          <button className="rise">LinkedIn</button>
+          <a className="rise">LinkedIn</a>
         </li>
         <li>
-          <button className="rise">Instagram</button>
+          <a className="rise">Instagram</a>
         </li>
 
         <li>
-          <button className="rise">GitHub</button>
+          <a className="rise">GitHub</a>
         </li>
       </ul>
     </div>
