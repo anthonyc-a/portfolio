@@ -104,7 +104,7 @@ const Home = () => {
         <div className="grid gap-4 grid-rows-12 grid-cols-4">
           <div className="txt">
             <span className="">
-              experience
+              projects
             </span>
           </div>
           <Project />
