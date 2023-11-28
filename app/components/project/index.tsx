@@ -73,7 +73,7 @@ const Project = () => {
                 ))}
               </div>
             </div>
-            <button className="hover:underline text-[130%] font-[100]">+</button>
+            <button className="hover:underline text-[130%] opacity-60 font-[100]">+</button>
           </div>
 
           {expandedProjectIndex === index && (
