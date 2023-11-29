@@ -191,9 +191,9 @@ const Home = () => {
                   />
                 </div>
 
-                <div className="ml-16 relative w-fit h-full txt bg-white p-5 rounded-[4px]">
+                <div className="ml-10 relative w-fit h-full txt bg-white p-5 rounded-[4px]">
                   <div className="absolute bottom-4 right-4">
-                    <div className="w-3.5 h-3.5 bg-gray-700">
+                    <div className="w-3.5 h-3.5 bg-[#555]">
 
                     </div>
                   </div>
