@@ -2,16 +2,15 @@ import React from "react";
 
 const Socials = () => {
   return (
-    <div>
-      <ul className="flex txt items-center gap-8">
-        <li>
+    <div className="relative">
+      <ul className="flex relative txt items-center gap-8">
+        <li className="link-anim">
           <a className="rise">LinkedIn</a>
         </li>
-        <li>
+        <li className="link-anim">
           <a className="rise">Instagram</a>
         </li>
-
-        <li>
+        <li className="link-anim">
           <a className="rise">GitHub</a>
         </li>
       </ul>

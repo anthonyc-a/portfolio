@@ -43,7 +43,7 @@ const Hero = () => {
 
       <div className="bottom absolute bottom-0 left-0 w-full p-6 flex justify-between items-center">
         <Socials />
-        <span className="txt rise">© 2024</span>
+        <span className="txt rise">© 2023</span>
       </div>
     </div>
   );

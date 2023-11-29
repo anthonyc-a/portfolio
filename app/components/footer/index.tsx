@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Socials from "../socials";
 
 const Footer = () => {
   return (
@@ -24,18 +25,21 @@ const Footer = () => {
         </div>
         <div>
           <h5> more:</h5>
-          <div className="flex gap-1.5 items-center">download cv
-          <Image src="/download.svg" alt="" width={13} height={13} />
+          <div className="flex gap-1.5 items-center">
+            download cv
+            <Image
+              src="/download.svg"
+              alt=""
+              width={13}
+              height={13}
+              className="opacity-60"
+            />
           </div>
         </div>
         <div>
           <h5>socials:</h5>
 
-          <ul className="flex items-center gap-6">
-            <li>linkedin</li>
-            <li>instagram</li>
-            <li>github</li>
-          </ul>
+          <Socials />
         </div>
         <div>
           <h5>works from:</h5>

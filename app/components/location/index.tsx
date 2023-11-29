@@ -3,7 +3,7 @@ import React from "react";
 const Location = () => {
   return (
     <button className="absolute bottom-[27px] txt">
-      <span className="rise">12.0464° S, 77.0428° W</span>
+      <span className="rise">51.4769° N, 0.0005° W</span>
     </button>
   );
 };

@@ -30,7 +30,7 @@ const projects = [
     title: "Archvizual",
     description: "Visualisation Studio",
     year: 2021,
-    tags: ["UI/UX", "Web Design", "Full-Stack"],
+    tags: ["UI/UX", "Web Design", "Full-Stack", "CMS"],
   },
 ];
 
@@ -52,36 +52,50 @@ const Project = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="project bg-white rounded-md py-6  p-8"
+          className="project bg-white rounded-[4px] py-10  p-8"
           onClick={() => handleProjectClick(index)}
         >
           <div className="flex items-center justify-between gap-8">
             <Image
               src={project.imageSrc}
               alt={project.altText}
-              width={project.width}
-              height={project.height}
+              width={200}
+              height={200}
             />
-            <div className="w-[50%]">
-              <h4 className="leading-[1.35] font-[350] text-[100%]">{project.title}</h4>
-              <h4 className="text-gray-500 tracking-wide font-[250] text-[90%] ">
+            <div className="w-[55%]">
+              <h4 className="leading-[1.3]  text-[105%]">{project.title}</h4>
+              <h4 className="text-gray-600 tracking-wide font-[250] text-[90%] ">
                 {project.description}
               </h4>
-              <div className="tags flex items-center gap-1 mt-2.5">
+              <div className="tags flex items-center gap-1 mt-3">
                 {project.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="tag">{tag}</span>
+                  <span key={tagIndex} className="tag">
+                    {tag}
+                  </span>
                 ))}
               </div>
             </div>
-            <button className="expand text-[130%] opacity-60 font-[100]">
-              {expandedProjectIndex === index ? "-" : "+"}
-            </button>
+            <div className="w-20 txt flex justify-end">
+              <a className=" text-[90%] link-anim">
+                {expandedProjectIndex === index ? "close" : "learn more"}
+              </a>
+            </div>
           </div>
 
           {expandedProjectIndex === index && (
             <div className="mt-4 w-full flex justify-between">
               <a href="/">teh website</a>
-              <p>This is the expanded text for the project.</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Delectus repellendus corporis est soluta, atque quam voluptatum
+                at laboriosam quasi repudiandae, ipsum tenetur voluptatibus.
+                Aspernatur laborum nihil magni quos dolores, qui natus veniam
+                dolorem veritatis hic culpa et consequatur repudiandae cumque?
+                Nemo ullam repellat assumenda asperiores optio odio quisquam
+                enim ex nulla totam, at voluptate aspernatur perferendis,
+                distinctio id placeat modi rerum minus sunt alias amet
+                laboriosam? Provident sequi repudiandae consectetur?
+              </p>
             </div>
           )}
         </div>

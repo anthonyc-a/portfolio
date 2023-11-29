@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @import "./typography/index.scss";
+@import "./animations/index.scss";
+
+* {
+  cursor: none !important;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -11,7 +16,6 @@
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
   font-family: "BrittiSansVariable", sans-serif;
-  cursor: none !important;
 }
 
 body {
