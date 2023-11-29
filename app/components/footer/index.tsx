@@ -81,7 +81,7 @@ const Footer = () => {
             2021—2023
           </div>
 
-          <a href="#" className="tag">back to top</a>
+          <a href="/" className="tag">back to top</a>
         </div>
       </AnimationWrapper>
     </footer>

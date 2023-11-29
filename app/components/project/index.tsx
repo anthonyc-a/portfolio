@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import AnimationWrapper from "../animWrapper";
+import { IoIosLink } from "react-icons/io";
 
 const projects = [
   {
@@ -65,7 +66,7 @@ const Project = () => {
                 height={200}
               />
               <div className="w-[45%]">
-                <h4 className="leading-[1.85]   text-[100%]">
+                <h4 className="leading-[1.8]   text-[100%]">
                   {project.title}
                 </h4>
                 <h4 className="text-gray-500 tracking-wide font-[200] text-[90%] ">
@@ -80,7 +81,7 @@ const Project = () => {
                 </div>
               </div>
               <div className="w-20 txt flex items-center gap-1.5 justify-end">
-                <a className=" text-[100%] link-anim whitespace-nowrap">
+                <a className=" text-[95%] link-anim pb-0.5 whitespace-nowrap">
                   {expandedProjectIndex === index ? "close" : "Learn more"}
                 </a>
                 <Image
@@ -92,14 +93,14 @@ const Project = () => {
                     expandedProjectIndex === index
                       ? "rotate-[-45deg]"
                       : "rotate-[135deg]"
-                  } transition `}
+                  } transition -translate-y-0.5 `}
                 />
               </div>
             </div>
 
             {expandedProjectIndex === index && (
               <div className="mt-4 relative w-[65%] flex flex-col ml-auto ">
-                <h4 className="mb-1">Brief</h4>
+                <h4 className="mb-1 txt">Brief</h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
@@ -107,7 +108,7 @@ const Project = () => {
                   voluptatibus.
                 </p>
                 <br />
-                <h4 className="mb-1">Process</h4>
+                <h4 className="mb-1 txt">Process</h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
@@ -117,7 +118,7 @@ const Project = () => {
                   repudiandae cumque?
                 </p>
                 <br />
-                <h4 className="mb-1">Outcome</h4>
+                <h4 className="mb-1 txt">Outcome</h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
@@ -127,20 +128,25 @@ const Project = () => {
                   repudiandae cumque?
                 </p>
                 <div className="flex mt-12 txt  items-center justify-between w-full">
-                  <span>Visit website: </span>
 
                   <a
-                    href="/"
-                    className="txt  link-anim flex items-center gap-1.5 w-fit  "
+                    href="https://double-agency.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="txt tag flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-all  "
                   >
+                    <div>
+                    <IoIosLink size={10} />
+
+                    </div>
+                    <div>
+                    <span>
                     double-agency.com
-                    <Image
-                      src="/followArrow.svg"
-                      alt=""
-                      width={7}
-                      height={7}
-                      className="inline-block ml-0.5"
-                    />
+                    </span>
+                    </div>
+                  
+                  
+                  
                   </a>
                 </div>
               </div>

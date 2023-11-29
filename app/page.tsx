@@ -136,7 +136,7 @@ const Home = () => {
               <AnimationWrapper>
                 <div className="relative rounded-[4px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
-                    <span>Ko Lanta, Thailand</span>
+                    <span>Koh Lanta, Thailand</span>
 
                     <span className="tag">Jul 2023</span>
                   </div>
@@ -191,15 +191,19 @@ const Home = () => {
                     <ul className="relative mt-auto block h-fit text-[100%]">
                       <li>Blok Studios® / Modular housing project</li>
                       <li>3D Visualisation</li>
-                      <li>Research phase — 001 - 01</li>
-                      <li>2023</li>
+                      <li>Research phase — 01</li>
+                      <li className="tag ml-auto w-fit">2023</li>
                       <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
-                      <li className="mt-8 relative link-anim text-[100%]">
+                      <li className="mt-4 lowercase">
+                        blok studios® is a modular housing solution that started as sixth form project (5+ years ago). The goal is
+                        to create modular, accessible housing for all.
+                      </li>
+                      <li className="mt-8 relative link-anim pb-0.5 text-[95%]">
                         <a
                           href="https://www.instagram.com/blokstudios"
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center gap-1"
+                          className="flex items-center gap-1 font-[350]"
                         >
                           Learn more
                           <Image
@@ -220,11 +224,8 @@ const Home = () => {
 
         <div id="archive" className="p-6 mt-16">
           <div className="grid gap-4 grid-rows-12 grid-cols-4 mt-8">
-            <div className="txt">
-              <span className="flex gap-3">
-                <span className="text-[80%]">{">"}</span> archive{" "}
-                <span className="text-[80%]">{"<"}</span>
-              </span>
+          <div className="txt">
+              <AccentHeaderOne text="archive" />
             </div>
             <Archive />
           </div>

@@ -18,6 +18,16 @@
   font-family: "BrittiSansVariable", sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #f8f8f8;
+  background: #1a1a1a;
+}
+
+::selection {
+  color: #f8f8f8;
+  background: #1a1a1a;
+}
+
 body {
   color: #1a1a1a;
   height: 200vh;
@@ -55,6 +65,7 @@ footer {
   width: 25px;
   height: 25px;
   background-color: #999999a1;
+  backdrop-filter: blur(2px);
   border-radius: 100%;
   pointer-events: none;
   transform-origin: center;
