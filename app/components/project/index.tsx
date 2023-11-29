@@ -78,7 +78,7 @@ const Project = () => {
                 </div>
               </div>
               <div className="w-20 txt flex justify-end">
-                <a className=" text-[95%] link-anim">
+                <a className=" text-[100%] link-anim">
                   {expandedProjectIndex === index ? "close" : "Learn more"}
                 </a>
               </div>

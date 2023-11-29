@@ -50,7 +50,7 @@ const Archive = () => {
       link: "https://example.com",
     },
     {
-      name: "Trove — Digital Art Marketplace",
+      name: "Agora — Digital Art Marketplace",
       img: "/studio-pb.jpg",
       link: "",
     },

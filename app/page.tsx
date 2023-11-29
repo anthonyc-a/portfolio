@@ -202,13 +202,13 @@ const Home = () => {
                     <li>3D Visualisation</li>
                     <li>Research phase — 01</li>
                     <li>2023</li>
-                    <li className="mt-6 relative link-anim text-[95%]">
+                    <li className="mt-6 relative link-anim text-[100%]">
                       <a
                         href="https://www.instagram.com/blokstudios"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        More  BLok Studios
+                        More Blok Studios
                       </a>
                     </li>
                   </ul>
