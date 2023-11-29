@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImageCursor from "../imgCursor";
 import Image from "next/image";
-import { CiLink } from "react-icons/ci";
+import { IoIosLink } from "react-icons/io";
 import { useInView } from "react-intersection-observer";
 
 const Archive = () => {
@@ -95,7 +95,7 @@ const Archive = () => {
               expandedItem === item.name ? "bg-gray-200 md:bg-transparent" : ""
             }`}
           >
-            {item.link && <CiLink />}
+            {item.link && <IoIosLink size={14} />}
             <h4 className="text-[90%]">{item.name}</h4>
             {expandedItem === item.name && (
               <Image
