@@ -132,7 +132,7 @@ const Home = () => {
 
       <div id="research" className="p-6 mt-8">
         <div className="txt mb-12">
-          <span className="flex gap-3">
+          <span className="flex gap-3 font-[300]">
             <span className="text-[80%]">{">"}</span> research{" "}
             <span className="text-[80%]">{"<"}</span>
           </span>
