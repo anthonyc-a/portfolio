@@ -33,10 +33,10 @@ const Footer = () => {
       ref={inViewRef}
     >
       <AnimationWrapper>
-        <span className="txt p-3 px-4 mx-auto border block w-fit mb-8 text-[#999] border-[#999] rounded-full">
+        <span className="txt p-3 px-4 mx-auto border block w-fit mb-8 text-[#fff] border-[#999] rounded-full">
           available for work
         </span>
-        <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[400] text-[112px]">
+        <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[450] text-[112px]">
           Let&apos;s Talk{" "}
           <div className="roll">
             <Image
