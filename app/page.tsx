@@ -41,7 +41,7 @@ const Home = () => {
             digital experiences.
           </h2>
           <div></div>
-          <div className="w-40 xl:w-48 h-40 xl:h-48 rounded-full bg-gray-300 mx-auto overflow-hidden">
+          <div className="w-40 lg:w-48 h-40 lg:h-48 rounded-full bg-gray-300  overflow-hidden">
             <Image
               src="/me.jpg"
               alt=""
@@ -51,9 +51,8 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="grid relative mt-24 gap-x-12 grid-rows-1 grid-cols-4">
+        <div className="grid relative mt-12 gap-x-12 grid-rows-1 grid-cols-4">
           <div className="pr-6">
-            <Image src="/dev.svg" alt="" width={52} height={52} />
             <h4 className="mb-5 mt-6 font-[350]">Full-Stack Development</h4>
             <p>
               By using my expertise as a digital designer, I make sure that a
@@ -63,7 +62,6 @@ const Home = () => {
             </p>
           </div>
           <div className="pr-6">
-            <Image src="/design.svg" alt="" width={80} height={80} />
             <h4 className="mb-5 mt-6 font-[350]">Mobile and Web Design</h4>
             <p>
               I always strive to create memorable experiences that are
@@ -74,7 +72,6 @@ const Home = () => {
           </div>
 
           <div className="pr-6">
-            <Image src="/art.svg" alt="" width={20} height={20} />
             <h4 className="mb-5 mt-6 font-[350]">Art Direction</h4>
             <p>
               With my extensive experience in creating everything digital,
@@ -100,7 +97,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="work" className="p-6 mt-28">
+      <div id="work" className="p-6 pt-20">
         <div className="grid gap-4 grid-rows-12 grid-cols-4">
           <div className="txt">
             <span className="">
@@ -108,6 +105,28 @@ const Home = () => {
             </span>
           </div>
           <Project />
+        </div>
+      </div>
+
+      <div id="research" className="p-6 mt-12">
+        <div className="txt mb-8">research</div>
+        <div className="grid gap-8 grid-rows-1 grid-cols-4 h-80">
+       
+          <div className="col-span-1 flex gap-4">
+            <img src="https://www.aarkyv.studio/bali.png" alt="" className="w-[100%] h-full object-cover" />
+            
+          </div>
+          <div className="col-span-3 flex gap-8">
+            <img src="https://www.aarkyv.studio/bali.png" alt="" className="w-[100%]  h-full object-cover" />
+            <div className="txt w-[40%] flex h-full">
+              <ul className="mt-auto block h-fit">
+                <li>Blok Studios - Modular housing project</li>
+                <li>3D Visualisation</li>
+                <li>2023</li>
+                <li className="mt-8">learn more</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 

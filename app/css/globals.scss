@@ -104,11 +104,11 @@ footer {
 
 .appear {
   opacity: 0;
-  animation: appear 1.35s 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: appear 1.35s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .delay {
-  animation-delay: 2s;
+  animation-delay: 1.8s;
 }
 
 @keyframes appear {
@@ -118,4 +118,8 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+.project:hover .expand {
+  opacity: 1;
 }

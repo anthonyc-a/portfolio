@@ -52,7 +52,7 @@ const Project = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className=" bg-white rounded-md py-6  p-8"
+          className="project bg-white rounded-md py-6  p-8"
           onClick={() => handleProjectClick(index)}
         >
           <div className="flex items-center justify-between gap-8">
@@ -63,7 +63,7 @@ const Project = () => {
               height={project.height}
             />
             <div className="w-[50%]">
-              <h4 className="leading-[1.35] font-[350] text-[105%]">{project.title}</h4>
+              <h4 className="leading-[1.35] font-[350] text-[100%]">{project.title}</h4>
               <h4 className="text-gray-500 tracking-wide font-[250] text-[90%] ">
                 {project.description}
               </h4>
@@ -73,7 +73,9 @@ const Project = () => {
                 ))}
               </div>
             </div>
-            <button className="hover:underline text-[130%] opacity-60 font-[100]">+</button>
+            <button className="expand text-[130%] opacity-60 font-[100]">
+              {expandedProjectIndex === index ? "-" : "+"}
+            </button>
           </div>
 
           {expandedProjectIndex === index && (

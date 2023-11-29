@@ -8,7 +8,6 @@ const Archive = () => {
     { name: "The Dean Dsouza Mindset — Mental Health Blog", img: "/me.jpg" },
     { name: "Epoch A — E-Commerce Jewellery Website", img: "/double.png" },
     { name: "R Architecture — Architecture Portfolio", img: "/r-architecture.jpg" },
-    { name: "Blok Studios — Modular Housing Project", img: "/blok-studios.jpg" },
     { name: "Genesis — Web3 Marketplace & Community", img: "/genesis.jpg" },
     { name: "Chroma — Brand Builder Project", img: "/chroma.jpg" },
     { name: "Space — Design Concept", img: "/space.jpg" },

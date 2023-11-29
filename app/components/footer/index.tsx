@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         <div>
           <h5>works from:</h5>
-          2021-2023
+          2021—2023
         </div>
 
         <a href="#">back to top</a>
