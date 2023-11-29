@@ -22,6 +22,7 @@ const Footer = () => {
       gsap.to(el, {
         rotation: 180, // Rotate the element by 180 degrees
         duration: 0.5,
+        delay: 0.5,
       });
     }
   }, [inView]);

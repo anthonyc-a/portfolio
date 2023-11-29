@@ -21,7 +21,7 @@ const projects = [
     title: "Verve TV — 2022",
     description: "Streaming Service",
     year: 2022,
-    tags: ["Consultancy","Full-Stack",  "APIs", "UI/UX"],
+    tags: ["Consultancy", "Full-Stack", "APIs", "UI/UX"],
   },
   {
     imageSrc: "/archvizual.png",
@@ -99,32 +99,50 @@ const Project = () => {
 
             {expandedProjectIndex === index && (
               <div className="mt-4 relative w-[65%] flex flex-col ml-auto ">
-                <a
-                  href="/"
-                  className="txt  ml-auto link-anim flex items-center gap-1.5 w-fit  mb-6"
-                >
-                  double-agency.com
-                  <Image
-                    src="/followArrow.svg"
-                    alt=""
-                    width={7}
-                    height={7}
-                    className="inline-block ml-0.5"
-                  />
-                </a>
-                <h4 className="mb-2">The Brief</h4>
+                <h4 className="mb-1">Brief</h4>
+                <p className="w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Delectus repellendus corporis est soluta, atque quam
+                  voluptatum at laboriosam quasi repudiandae, ipsum tenetur
+                  voluptatibus.
+                </p>
+                <br />
+                <h4 className="mb-1">Process</h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
                   voluptatum at laboriosam quasi repudiandae, ipsum tenetur
                   voluptatibus. Aspernatur laborum nihil magni quos dolores, qui
                   natus veniam dolorem veritatis hic culpa et consequatur
-                  repudiandae cumque? Nemo ullam repellat assumenda asperiores
-                  optio odio quisquam enim ex nulla totam, at voluptate
-                  aspernatur perferendis, distinctio id placeat modi rerum minus
-                  sunt alias amet laboriosam? Provident sequi repudiandae
-                  consectetur?
+                  repudiandae cumque?
                 </p>
+                <br />
+                <h4 className="mb-1">Outcome</h4>
+                <p className="w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Delectus repellendus corporis est soluta, atque quam
+                  voluptatum at laboriosam quasi repudiandae, ipsum tenetur
+                  voluptatibus. Aspernatur laborum nihil magni quos dolores, qui
+                  natus veniam dolorem veritatis hic culpa et consequatur
+                  repudiandae cumque?
+                </p>
+                <div className="flex mt-12 txt  items-center justify-between w-full">
+                  <span>Visit website: </span>
+
+                  <a
+                    href="/"
+                    className="txt  link-anim flex items-center gap-1.5 w-fit  "
+                  >
+                    double-agency.com
+                    <Image
+                      src="/followArrow.svg"
+                      alt=""
+                      width={7}
+                      height={7}
+                      className="inline-block ml-0.5"
+                    />
+                  </a>
+                </div>
               </div>
             )}
           </AnimationWrapper>
