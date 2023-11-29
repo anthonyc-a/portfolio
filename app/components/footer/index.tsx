@@ -52,7 +52,7 @@ const Footer = () => {
       </AnimationWrapper>
 
       <AnimationWrapper>
-        <div className="w-full txt text-[80%] flex items-center text-white justify-between mt-28">
+        <div className="w-full container mx-auto txt text-[80%] flex items-center text-white justify-between mt-24">
           <div>
             <h5>Design & Development:</h5>
             Anthony Animba
@@ -80,7 +80,7 @@ const Footer = () => {
             2021—2023
           </div>
 
-          <a href="#">back to top</a>
+          <a href="#" className="tag">back to top</a>
         </div>
       </AnimationWrapper>
     </footer>

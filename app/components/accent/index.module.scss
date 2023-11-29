@@ -1,0 +1,53 @@
+.header {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    z-index: -1;
+    color: #000;
+  
+    &Inner {
+      position: relative;
+      width: fit-content;
+      padding: 0 20px;
+      font-size: 0.6rem;
+      letter-spacing: 0.5px;
+  
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "> ";
+        transform: translateY(-1px);
+        animation: blink 2s linear infinite;
+
+        &:nth-child(2) {
+          animation-delay: 0.5s;
+        }
+      }
+  
+      &::after {
+        right: 0;
+        content: " <";
+        position: absolute;
+        top: 0;
+        transform: translateY(-1px);
+        animation: blink 2s linear infinite;
+
+        &:nth-child(2) {
+          animation-delay: 0.5s;
+        }
+      }
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      content: "";
+    }
+    to {
+      content: inherit;
+    }
+  }

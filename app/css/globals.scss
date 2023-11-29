@@ -108,11 +108,11 @@ footer {
 
 .appear {
   opacity: 0;
-  animation: appear 1.35s 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: appear 1.35s 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .delay {
-  animation-delay: 1.8s;
+  animation-delay: 1.7s;
 }
 
 @keyframes appear {

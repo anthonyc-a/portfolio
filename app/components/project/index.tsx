@@ -8,7 +8,7 @@ const projects = [
     altText: "Double",
     width: 180,
     height: 180,
-    title: "Double",
+    title: "Double — 2023",
     description: "Marketing Agency",
     year: 2023,
     tags: ["UI/UX", "Web Design", "Front-End", "Consultancy"],
@@ -18,20 +18,20 @@ const projects = [
     altText: "Double",
     width: 180,
     height: 180,
-    title: "Verve TV",
+    title: "Verve TV — 2022",
     description: "Streaming Service",
     year: 2022,
-    tags: ["UI/UX", "Full-Stack", "APIs", "Consultancy"],
+    tags: ["Consultancy","Full-Stack",  "APIs", "UI/UX"],
   },
   {
     imageSrc: "/archvizual.png",
     altText: "Double",
     width: 180,
     height: 180,
-    title: "Archvizual",
+    title: "Archvizual — 2021",
     description: "Visualisation Studio",
     year: 2021,
-    tags: ["UI/UX", "Web Design", "Full-Stack", "CMS"],
+    tags: ["Web Design", "UI/UX", "Full-Stack", "CMS"],
   },
 ];
 
@@ -53,7 +53,7 @@ const Project = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="project bg-white rounded-[4px] py-10  p-8"
+          className="project bg-white rounded-[4px] py-8  p-8"
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
@@ -64,12 +64,14 @@ const Project = () => {
                 width={200}
                 height={200}
               />
-              <div className="w-[55%]">
-                <h4 className="leading-[1.3]   text-[100%]">{project.title}</h4>
-                <h4 className="text-gray-500 tracking-wide font-[250] text-[90%] ">
+              <div className="w-[45%]">
+                <h4 className="leading-[1.85]   text-[100%]">
+                  {project.title}
+                </h4>
+                <h4 className="text-gray-500 tracking-wide font-[200] text-[90%] ">
                   {project.description}
                 </h4>
-                <div className="tags flex items-center gap-1 mt-3">
+                <div className="tags flex items-center gap-1 mt-2.5">
                   {project.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="tag">
                       {tag}
@@ -77,16 +79,40 @@ const Project = () => {
                   ))}
                 </div>
               </div>
-              <div className="w-20 txt flex justify-end">
-                <a className=" text-[100%] link-anim">
+              <div className="w-20 txt flex items-center gap-1.5 justify-end">
+                <a className=" text-[100%] link-anim whitespace-nowrap">
                   {expandedProjectIndex === index ? "close" : "Learn more"}
                 </a>
+                <Image
+                  src="/followArrow.svg"
+                  alt=""
+                  width={7}
+                  height={7}
+                  className={`${
+                    expandedProjectIndex === index
+                      ? "rotate-[-45deg]"
+                      : "rotate-[135deg]"
+                  } transition `}
+                />
               </div>
             </div>
 
             {expandedProjectIndex === index && (
-              <div className="mt-4 relative w-[70%] flex flex-col ml-auto ">
-                <a href="/" className="txt link-anim w-fit  mb-6">double-agency.com</a>
+              <div className="mt-4 relative w-[65%] flex flex-col ml-auto ">
+                <a
+                  href="/"
+                  className="txt  ml-auto link-anim flex items-center gap-1.5 w-fit  mb-6"
+                >
+                  double-agency.com
+                  <Image
+                    src="/followArrow.svg"
+                    alt=""
+                    width={7}
+                    height={7}
+                    className="inline-block ml-0.5"
+                  />
+                </a>
+                <h4 className="mb-2">The Brief</h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
