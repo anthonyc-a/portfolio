@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ImageCursor from "../imgCursor";
 import Image from "next/image";
 import { CiLink } from "react-icons/ci";
+import { useInView } from "react-intersection-observer";
 
 const Archive = () => {
   const data = [
@@ -44,14 +45,14 @@ const Archive = () => {
       link: "",
     },
     {
-      name: "Studio PB — Design Studio Website",
-      img: "/studio-pb.jpg",
-      link: "",
-    },
-    {
       name: "Genesis — Web3 Marketplace & Community",
       img: "/genesis.jpg",
       link: "https://example.com",
+    },
+    {
+      name: "Trove — Digital Art Marketplace",
+      img: "/studio-pb.jpg",
+      link: "",
     },
   ];
 
@@ -67,13 +68,18 @@ const Archive = () => {
     }
   };
 
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false, // Only trigger animation once
+    threshold: 0.35, // Percentage of element visibility required to trigger animation
+  });
+
   return (
-    <div className="rounded-md w-full col-span-3">
+    <div className="rounded-md relative w-full col-span-3">
       <ImageCursor cursorActive={cursorActive} currentItem={currentItem} />
-      <div className="flex flex-col border-b w-full border-[#999]  items-center justify-between">
+      <div ref={inViewRef} className="flex relative flex-col  w-full    items-center justify-between">
         {data.map((item: any, index) => (
           <a
-            href={item.link}
+            href={item.link ? item.link : null}
             key={index}
             target="_blank"
             rel="noreferrer"
@@ -85,7 +91,7 @@ const Archive = () => {
               setCursorActive(false);
             }}
             onClick={() => handleItemClick(item)}
-            className={`py-[14px] hover:px-3 flex gap-2 items-center transition-all ease-in-out border-t w-full border-[#999] ${
+            className={`py-[14px] hover:px-3 relative flex gap-2 items-center transition-all ease-in-out w-full  ${
               expandedItem === item.name ? "bg-gray-200 md:bg-transparent" : ""
             }`}
           >
@@ -100,6 +106,10 @@ const Archive = () => {
                 className="w-full md:hidden"
               />
             )}
+            <div
+              className="divide"
+              style={{ width: inView ? "100%" : 0 }}
+            ></div>
           </a>
         ))}
       </div>

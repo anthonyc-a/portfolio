@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import AnimationWrapper from "../animWrapper";
 
 const projects = [
   {
@@ -55,49 +56,52 @@ const Project = () => {
           className="project bg-white rounded-[4px] py-10  p-8"
           onClick={() => handleProjectClick(index)}
         >
-          <div className="flex items-center justify-between gap-8">
-            <Image
-              src={project.imageSrc}
-              alt={project.altText}
-              width={200}
-              height={200}
-            />
-            <div className="w-[55%]">
-              <h4 className="leading-[1.3]  text-[105%]">{project.title}</h4>
-              <h4 className="text-gray-600 tracking-wide font-[250] text-[90%] ">
-                {project.description}
-              </h4>
-              <div className="tags flex items-center gap-1 mt-3">
-                {project.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="tag">
-                    {tag}
-                  </span>
-                ))}
+          <AnimationWrapper>
+            <div className="flex items-center justify-between gap-8">
+              <Image
+                src={project.imageSrc}
+                alt={project.altText}
+                width={200}
+                height={200}
+              />
+              <div className="w-[55%]">
+                <h4 className="leading-[1.3]  text-[105%]">{project.title}</h4>
+                <h4 className="text-gray-500 tracking-wide font-[250] text-[90%] ">
+                  {project.description}
+                </h4>
+                <div className="tags flex items-center gap-1 mt-3">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span key={tagIndex} className="tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="w-20 txt flex justify-end">
+                <a className=" text-[95%] link-anim">
+                  {expandedProjectIndex === index ? "close" : "Learn more"}
+                </a>
               </div>
             </div>
-            <div className="w-20 txt flex justify-end">
-              <a className=" text-[90%] link-anim">
-                {expandedProjectIndex === index ? "close" : "learn more"}
-              </a>
-            </div>
-          </div>
 
-          {expandedProjectIndex === index && (
-            <div className="mt-4 w-full flex justify-between">
-              <a href="/">teh website</a>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Delectus repellendus corporis est soluta, atque quam voluptatum
-                at laboriosam quasi repudiandae, ipsum tenetur voluptatibus.
-                Aspernatur laborum nihil magni quos dolores, qui natus veniam
-                dolorem veritatis hic culpa et consequatur repudiandae cumque?
-                Nemo ullam repellat assumenda asperiores optio odio quisquam
-                enim ex nulla totam, at voluptate aspernatur perferendis,
-                distinctio id placeat modi rerum minus sunt alias amet
-                laboriosam? Provident sequi repudiandae consectetur?
-              </p>
-            </div>
-          )}
+            {expandedProjectIndex === index && (
+              <div className="mt-4 relative w-[70%] flex flex-col ml-auto ">
+                <a href="/" className="txt link-anim w-fit  mb-6">double-agency.com</a>
+                <p className="w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Delectus repellendus corporis est soluta, atque quam
+                  voluptatum at laboriosam quasi repudiandae, ipsum tenetur
+                  voluptatibus. Aspernatur laborum nihil magni quos dolores, qui
+                  natus veniam dolorem veritatis hic culpa et consequatur
+                  repudiandae cumque? Nemo ullam repellat assumenda asperiores
+                  optio odio quisquam enim ex nulla totam, at voluptate
+                  aspernatur perferendis, distinctio id placeat modi rerum minus
+                  sunt alias amet laboriosam? Provident sequi repudiandae
+                  consectetur?
+                </p>
+              </div>
+            )}
+          </AnimationWrapper>
         </div>
       ))}
     </div>

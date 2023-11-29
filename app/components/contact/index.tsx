@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <button
       onClick={setLocation}
-      className="appear p-3 flex delay items-center gap-3 pb-2.5 px-8 w-fit bg-[#272727] rounded-full"
+      className="appear p-3 flex delay items-center gap-3 pb-2.5 z-10 px-8 w-fit bg-[#272727] rounded-full"
     >
       Let&apos;s talk
     </button>

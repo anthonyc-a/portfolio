@@ -1,53 +1,88 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Socials from "../socials";
+import AnimationWrapper from "../animWrapper";
+import { useInView } from "react-intersection-observer";
+import gsap from "gsap";
 
 const Footer = () => {
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false, // Only trigger animation once
+    threshold: 0.7, // Percentage of element visibility required to trigger animation
+  });
+
+  const imgRef = useRef<any>(null);
+
+  useEffect(() => {
+    const el = imgRef.current;
+
+    if (inView) {
+      gsap.to(el, {
+        rotation: 180, // Rotate the element by 180 degrees
+        duration: 0.5,
+      });
+    }
+  }, [inView]);
+
   return (
-    <footer className="w-full bg-[#1a1a1a] mt-24 p-6 pt-24 pb-8" id="contact">
-      <span className="txt p-3 px-4 mx-auto border block w-fit mb-8 text-[#999] border-[#999] rounded-full">
-        available for work
-      </span>
-      <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[400] text-[112px]">
-        Let&apos;s Talk{" "}
-        <Image
-          src="/smiley.svg"
-          alt=""
-          width={40}
-          height={40}
-          className="ml-6"
-        />
-      </h1>
-      <div className="w-full txt text-[80%] flex items-center text-white justify-between mt-28">
-        <div>
-          <h5>Design & Development:</h5>
-          Anthony Animba
-        </div>
-        <div>
-          <h5> more:</h5>
-          <div className="flex gap-1.5 items-center">
-            download cv
+    <footer
+      className="w-full bg-[#1a1a1a] mt-20 p-6 pt-24 pb-8"
+      id="contact"
+      ref={inViewRef}
+    >
+      <AnimationWrapper>
+        <span className="txt p-3 px-4 mx-auto border block w-fit mb-8 text-[#999] border-[#999] rounded-full">
+          available for work
+        </span>
+        <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[400] text-[112px]">
+          Let&apos;s Talk{" "}
+          <div className="roll">
             <Image
-              src="/download.svg"
+              src="/smiley.svg"
               alt=""
-              width={13}
-              height={13}
-              className="opacity-60"
+              width={40}
+              height={40}
+              className="ml-6"
+              ref={imgRef}
             />
           </div>
-        </div>
-        <div>
-          <h5>socials:</h5>
+        </h1>
+      </AnimationWrapper>
 
-          <Socials />
-        </div>
-        <div>
-          <h5>works from:</h5>
-          2021—2023
-        </div>
+      <AnimationWrapper>
+        <div className="w-full txt text-[80%] flex items-center text-white justify-between mt-28">
+          <div>
+            <h5>Design & Development:</h5>
+            Anthony Animba
+          </div>
+          <div>
+            <h5> more:</h5>
+            <div className="flex gap-1.5 items-center">
+              download cv
+              <Image
+                src="/download.svg"
+                alt=""
+                width={13}
+                height={13}
+                className="opacity-60"
+              />
+            </div>
+          </div>
+          <div>
+            <h5>socials:</h5>
 
-        <a href="#">back to top</a>
-      </div>
+            <Socials />
+          </div>
+          <div>
+            <h5>works from:</h5>
+            2021—2023
+          </div>
+
+          <a href="#">back to top</a>
+        </div>
+      </AnimationWrapper>
     </footer>
   );
 };

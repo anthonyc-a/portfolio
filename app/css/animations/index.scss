@@ -1,4 +1,3 @@
-
 @keyframes linkAnimation {
   0% {
     transform: scaleX(0);
@@ -18,21 +17,35 @@
   }
 }
 
+@keyframes roll {
+  0%,
+  100% {
+    transform: rotate(-10deg); /* Rotate slightly to the left */
+  }
+  50% {
+    transform: rotate(10deg); /* Rotate slightly to the right */
+  }
+}
+
+
+.roll {
+  animation: roll 1s infinite;
+}
+
 .link-anim {
   display: inline-block;
   position: relative;
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 2px;
     right: 0;
     width: 0%;
     height: 1px;
-    background-color: #f8f8f8;
-    mix-blend-mode: difference;
-    transition: .35s ease-in-out;
+    background-color: #1a1a1a;
+    transition: 0.35s ease-in-out;
   }
 
   &:hover::before {
