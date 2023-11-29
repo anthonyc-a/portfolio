@@ -65,7 +65,7 @@ const Project = () => {
                 height={200}
               />
               <div className="w-[55%]">
-                <h4 className="leading-[1.3]  text-[105%]">{project.title}</h4>
+                <h4 className="leading-[1.3]   text-[100%]">{project.title}</h4>
                 <h4 className="text-gray-500 tracking-wide font-[250] text-[90%] ">
                   {project.description}
                 </h4>
