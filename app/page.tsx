@@ -42,7 +42,7 @@ const Home = () => {
           <Hero />
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="xl:container xl:mx-auto">
         <div id="about" className=" p-6 pt-20">
           <div className="grid gap-8 grid-rows-12 grid-cols-4">
             <div className="txt">
