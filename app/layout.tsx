@@ -40,8 +40,8 @@ export default function RootLayout({
             yPos = newYPos;
             gsap.to(wrapper, {
               y: newYPos + "%",
-              duration: 0.5,
-              ease: "power1.out",
+              duration: 1.5,
+              ease: "power2.out",
               overwrite: 'auto' // Overwrite previous animations to avoid conflicts
             });
           }
