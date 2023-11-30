@@ -8,22 +8,22 @@ const Archive = () => {
   const data = [
     {
       name: "Epoch A — E-Commerce Jewellery Website",
-      img: "/double.png",
+      img: "/epoch.png",
       link: "",
     },
     {
       name: "R Architecture — Architecture Portfolio",
-      img: "/r-architecture.jpg",
+      img: "/r-arch.png",
       link: "",
     },
 
     {
       name: "The Dean Dsouza Mindset — Mental Health Blog",
-      img: "/me.jpg",
+      img: "/epoch.png",
       link: "https://example.com",
     },
 
-    { name: "Chroma — Brand Builder Project", img: "/chroma.jpg", link: "" },
+    { name: "Chroma — Brand Builder Project", img: "/chroma-prev.png", link: "" },
     {
       name: "Carhartt WIP Clone — E-Commerce Fashion Website",
       img: "/double.png",
@@ -36,12 +36,12 @@ const Archive = () => {
     },
     {
       name: "Studio PB — Design Studio Website",
-      img: "/studio-pb.jpg",
+      img: "/pb.png",
       link: "",
     },
     {
       name: "Pinque — E-Commerce Health & Beauty Website",
-      img: "/studio-pb.jpg",
+      img: "/pinque.png",
       link: "",
     },
     {
@@ -51,7 +51,7 @@ const Archive = () => {
     },
     {
       name: "Agora — Digital Art Marketplace",
-      img: "/studio-pb.jpg",
+      img: "/agora.png",
       link: "",
     },
   ];

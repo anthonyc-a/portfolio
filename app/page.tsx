@@ -102,7 +102,7 @@ const Home = () => {
 
               <button
                 onClick={setLocation}
-                className="absolute flex items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
+                className="absolute main-btn flex items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
               >
                 explore my work
                 <Image
@@ -138,7 +138,7 @@ const Home = () => {
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span>Koh Lanta, Thailand</span>
 
-                    <span className="tag">Jul 2023</span>
+                    <span className="tag">Sept 2023</span>
                   </div>
                   <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
                   <img
@@ -155,7 +155,7 @@ const Home = () => {
                 <div className="relative rounded-[4px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span>Medewi, Bali</span>
-                    <span className="tag">Mar 2023</span>
+                    <span className="tag">Jul 2023</span>
                   </div>
                   <div className="absolute bottom-0 w-full z-10 h-1/4 bg-gradient-to-t from-black to-transparent"></div>
                   <img
@@ -174,7 +174,7 @@ const Home = () => {
                     <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                       <span>Valletta, Malta</span>
 
-                      <span className="tag">Sep 2023</span>
+                      <span className="tag">Feb 2023</span>
                     </div>
                     <div className="absolute bottom-0 w-full z-10 h-1/4 bg-gradient-to-t from-black to-transparent"></div>
                     <img
@@ -185,25 +185,24 @@ const Home = () => {
                   </div>
 
                   <div className="ml-0 relative w-[50%] h-full txt bg-white p-6 rounded-tr-[4px] rounded-br-[4px]">
-                    <div className="absolute tag txt bottom-4 right-4">
-                      personal project
-                    </div>
                     <ul className="relative mt-auto block h-fit text-[100%]">
                       <li>Blok Studios® / Modular housing project</li>
                       <li>3D Visualisation</li>
-                      <li>Research phase — 01</li>
+                      <li>Research phase — 02</li>
                       <li className="tag ml-auto w-fit">2023</li>
                       <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
-                      <li className="mt-4 lowercase">
-                        blok studios® is a modular housing solution that started as sixth form project (5+ years ago). The goal is
-                        to create modular, accessible housing for all.
+                      <li className="mt-4 ttn">
+                        Blok Studios® is a modular housing solution that started
+                        as sixth form project over 5 years ago. The goal is
+                        to create modular, accessible housing for all, with
+                        hopes of reducing our permenant impact on the planet.
                       </li>
-                      <li className="mt-8 relative link-anim pb-0.5 text-[95%]">
+                      <li className="mt-8 relative w-fit pb-0.5 text-[95%]">
                         <a
                           href="https://www.instagram.com/blokstudios"
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center gap-1 font-[350]"
+                          className="flex items-center tag gap-1 font-[350]"
                         >
                           Learn more
                           <Image
@@ -224,7 +223,7 @@ const Home = () => {
 
         <div id="archive" className="p-6 mt-16">
           <div className="grid gap-4 grid-rows-12 grid-cols-4 mt-8">
-          <div className="txt">
+            <div className="txt">
               <AccentHeaderOne text="archive" />
             </div>
             <Archive />

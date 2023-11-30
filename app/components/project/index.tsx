@@ -9,9 +9,10 @@ const projects = [
     altText: "Double",
     width: 180,
     height: 180,
-    title: "Double — 2023",
+    title: "Double",
     description: "Marketing Agency",
     year: 2023,
+    website: "double-agency.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Consultancy"],
   },
   {
@@ -19,9 +20,10 @@ const projects = [
     altText: "Double",
     width: 180,
     height: 180,
-    title: "Verve TV — 2022",
+    title: "Verve TV ",
     description: "Streaming Service",
     year: 2022,
+    website: "verve.tv",
     tags: ["Consultancy", "Full-Stack", "APIs", "UI/UX"],
   },
   {
@@ -29,9 +31,10 @@ const projects = [
     altText: "Double",
     width: 180,
     height: 180,
-    title: "Archvizual — 2021",
+    title: "Archvizual",
     description: "Visualisation Studio",
     year: 2021,
+    website: "archvizual.com",
     tags: ["Web Design", "UI/UX", "Full-Stack", "CMS"],
   },
 ];
@@ -66,13 +69,11 @@ const Project = () => {
                 height={200}
               />
               <div className="w-[45%]">
-                <h4 className="leading-[1.8]   text-[100%]">
-                  {project.title}
-                </h4>
+                <h4 className="leading-[1.8]   text-[100%]">{project.title}</h4>
                 <h4 className="text-gray-500 tracking-wide font-[200] text-[90%] ">
                   {project.description}
                 </h4>
-                <div className="tags flex items-center gap-1 mt-2.5">
+                <div className="tags flex  flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
                   {project.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="tag">
                       {tag}
@@ -128,26 +129,20 @@ const Project = () => {
                   repudiandae cumque?
                 </p>
                 <div className="flex mt-12 txt  items-center justify-between w-full">
-
                   <a
-                    href="https://double-agency.com"
+                    href={`https://${project.website}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="txt tag flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-all  "
+                    className="txt tag flex items-center gap-1 transition-all  "
                   >
                     <div>
-                    <IoIosLink size={10} />
-
+                      <IoIosLink size={10} />
                     </div>
                     <div>
-                    <span>
-                    double-agency.com
-                    </span>
+                      <span>{project.website}</span>
                     </div>
-                  
-                  
-                  
                   </a>
+                  <div className="tag">{project.year}</div>
                 </div>
               </div>
             )}

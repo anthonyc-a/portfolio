@@ -18,7 +18,8 @@
   font-family: "BrittiSansVariable", sans-serif;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: #f8f8f8;
   background: #1a1a1a;
 }
@@ -26,6 +27,10 @@
 ::selection {
   color: #f8f8f8;
   background: #1a1a1a;
+}
+
+html {
+  height: fit-content;
 }
 
 body {
@@ -147,4 +152,36 @@ footer {
   height: 1px;
   background-color: #999;
   transition: 1s ease-in-out;
+}
+
+.ttn {
+  text-transform: none;
+}
+
+.main-btn {
+  transition: 0.25s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    color: #f8f8f8;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+    transform: translateY(100%);
+    transition: 0.35s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: translateY(0);
+  }
 }
