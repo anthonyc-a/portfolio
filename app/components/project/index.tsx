@@ -57,7 +57,7 @@ const Project = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="project bg-white rounded-[4px] py-8  p-8"
+          className="project bg-white rounded-[4px] py-8  p-4 md:p-8"
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
@@ -67,6 +67,7 @@ const Project = () => {
                 alt={project.altText}
                 width={200}
                 height={200}
+                className="mx-auto md:mx-0"
               />
               <div className="w-[45%]">
                 <h4 className="leading-[1.8]  text-[100%]">{project.title}</h4>

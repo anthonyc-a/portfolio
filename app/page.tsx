@@ -143,7 +143,7 @@ const Home = () => {
           <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
             <div className="col-span-2 md:col-span-1 flex gap-4 h-fit">
               <AnimationWrapper>
-                <div className="relative rounded-[4px] overflow-hidden w-full h-full">
+                <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span>Koh Lanta, Thailand</span>
 
@@ -161,7 +161,7 @@ const Home = () => {
 
             <div className="col-span-2 md:col-span-1 flex gap-4 h-fit">
               <AnimationWrapper stagger={0.2}>
-                <div className="relative rounded-[4px] overflow-hidden w-full h-full">
+                <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span>Medewi, Bali</span>
                     <span className="tag">Jul 2023</span>
@@ -179,7 +179,7 @@ const Home = () => {
             <div className="col-span-2 flex relative justify-between">
               <AnimationWrapper stagger={0.4}>
                 <div className="flex flex-col md:flex-row relative justify-between w-full  h-full">
-                  <div className="relative rounded-tl-[4px] rounded-bl-[4px] h-full w-full md:w-[60%]">
+                  <div className="relative rounded-tl-[0px] rounded-bl-[4px] h-full w-full md:w-[60%]">
                     <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                       <span>Valletta, Malta</span>
 
@@ -193,7 +193,7 @@ const Home = () => {
                     />
                   </div>
 
-                  <div className="ml-0 relative w-full md:w-[50%] h-full txt bg-white p-2 py-6 md:p-6 rounded-tr-[4px] rounded-br-[4px]">
+                  <div className="ml-0 relative w-full md:w-[50%] h-full txt bg-white p-2 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
                     <ul className="relative mt-auto block h-fit text-[100%]">
                       <li>Blok Studios® / Modular housing project</li>
                       <li>3D Visualisation</li>
