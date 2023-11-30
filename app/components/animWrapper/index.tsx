@@ -35,7 +35,7 @@ const AnimationWrapper: React.FC<AnimationWrapperProps> = ({
   }, [inView, stagger]);
 
   return (
-    <div ref={wrapperRef} className="relative opacity-0">
+    <div ref={wrapperRef} className="relative opacity-0 h-fit">
       <div ref={inViewRef}>{children}</div>
     </div>
   );

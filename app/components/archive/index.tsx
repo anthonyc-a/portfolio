@@ -23,7 +23,11 @@ const Archive = () => {
       link: "https://example.com",
     },
 
-    { name: "Chroma — Brand Builder Project", img: "/chroma-prev.png", link: "" },
+    {
+      name: "Chroma — Brand Builder Project",
+      img: "/chroma-prev.png",
+      link: "",
+    },
     {
       name: "Carhartt WIP Clone — E-Commerce Fashion Website",
       img: "/double.png",
@@ -76,7 +80,10 @@ const Archive = () => {
   return (
     <div className="rounded-md relative w-full col-span-3">
       <ImageCursor cursorActive={cursorActive} currentItem={currentItem} />
-      <div ref={inViewRef} className="flex relative flex-col  w-full    items-center justify-between">
+      <div
+        ref={inViewRef}
+        className="flex relative flex-col  w-full    items-center justify-between"
+      >
         {data.map((item: any, index) => (
           <a
             href={item.link ? item.link : null}
@@ -91,12 +98,14 @@ const Archive = () => {
               setCursorActive(false);
             }}
             onClick={() => handleItemClick(item)}
-            className={`py-[14px] hover:px-3 relative flex gap-2 items-center transition-all ease-in-out w-full  ${
+            className={`py-[14px] hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
               expandedItem === item.name ? "bg-gray-200 md:bg-transparent" : ""
             }`}
           >
-            {item.link && <IoIosLink size={14} />}
-            <h4 className="text-[90%]">{item.name}</h4>
+            <h4 className="text-[90%] flex gap-2">
+              {item.link && <IoIosLink size={14} />}
+              {item.name}
+            </h4>
             {expandedItem === item.name && (
               <Image
                 width={600}

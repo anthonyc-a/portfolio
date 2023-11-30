@@ -53,7 +53,7 @@ const Project = () => {
   };
 
   return (
-    <div className="col-span-3 flex flex-col gap-5">
+    <div className="col-span-1 md:col-span-3 flex flex-col gap-5">
       {projects.map((project, index) => (
         <div
           key={index}
@@ -61,7 +61,7 @@ const Project = () => {
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
-            <div className="flex items-center justify-between gap-8">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
               <Image
                 src={project.imageSrc}
                 alt={project.altText}
@@ -73,7 +73,7 @@ const Project = () => {
                 <h4 className=" tracking-wide font-[200] text-[87%] ">
                   {project.description}
                 </h4>
-                <div className="tags flex  flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
+                <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
                   {project.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="tag">
                       {tag}

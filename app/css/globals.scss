@@ -37,6 +37,7 @@ body {
   color: #1a1a1a;
   height: 200vh;
   background-color: #f8f8f8;
+  overflow-x: hidden;
 }
 
 button {
@@ -140,6 +141,10 @@ footer {
   }
 }
 
+.hero {
+  height: 100dvh; 
+}
+
 .project:hover .expand {
   opacity: 1;
 }
@@ -175,6 +180,7 @@ footer {
   &::after {
     content: "";
     position: absolute;
+    display: none;
     top: 0;
     left: 0;
     width: 100%;

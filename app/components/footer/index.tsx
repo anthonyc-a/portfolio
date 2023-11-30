@@ -37,7 +37,7 @@ const Footer = () => {
         <span className="txt p-3 px-4 mx-auto border block w-fit mb-8 text-[#fff] border-[#999] rounded-full">
           available for work
         </span>
-        <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[450] text-[112px]">
+        <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
           Let&apos;s Talk{" "}
           <div className="roll">
             <Image
@@ -53,7 +53,7 @@ const Footer = () => {
       </AnimationWrapper>
 
       <AnimationWrapper>
-        <div className="w-full xl:container xl:mx-auto txt text-[80%] flex items-center text-white justify-between mt-24">
+        <div className="w-full xl:container xl:mx-auto txt text-[80%] flex flex-wrap items-center text-white justify-between mt-24">
           <div>
             <h5>Design & Development:</h5>
             Anthony Animba

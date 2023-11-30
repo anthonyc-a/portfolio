@@ -37,19 +37,19 @@ const Home = () => {
 
   return (
     <div className="w-full  ">
-      <div className="w-full bg-[#1a1a1a] text-[#f8f8f8] rounded-b-md">
+      <div className="w-full bg-[#1a1a1a] text-[#f8f8f8]">
         <div ref={heroRef}>
           <Hero />
         </div>
       </div>
       <div className="xl:container xl:mx-auto">
         <div id="about" className=" p-6 pt-20">
-          <div className="grid gap-8 grid-rows-12 grid-cols-4">
+          <div className="grid gap-8 grid-rows-12 grid-cols-1 md:grid-cols-4">
             <div className="txt">
               <AccentHeaderOne text="about me" />
             </div>
             <AnimationWrapper>
-              <h2 className="w-[175%]">
+              <h2 className="md:w-[175%]">
                 I am passionate about everything that has to do with Digital
                 Design and Art Direction. I enjoy working with agencies and
                 enthusiastic people who want to solve problems through beautiful
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
 
           <AnimationWrapper>
-            <div className="grid relative mt-8 gap-x-12 grid-rows-1 grid-cols-4">
+            <div className="grid relative mt-8 gap-x-12 grid-rows-1 grid-cols-1 md:grid-cols-4">
               <div className="pr-6">
                 <h4 className="mb-4 mt-6">Full-Stack Development</h4>
                 <p>
@@ -102,7 +102,7 @@ const Home = () => {
 
               <button
                 onClick={setLocation}
-                className="absolute main-btn flex items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
+                className="md:absolute mt-8 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
               >
                 <span>explore my work</span>
                 <Image
@@ -118,7 +118,7 @@ const Home = () => {
         </div>
 
         <div id="work" className="p-6 pt-20 mt-6">
-          <div className="grid gap-4 grid-rows-12 grid-cols-4">
+          <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4">
             <div className="txt">
               <AccentHeaderOne text="clients" />
             </div>
@@ -131,8 +131,8 @@ const Home = () => {
             <AccentHeaderOne text="research" />
           </div>
 
-          <div className="grid gap-5 grid-rows-1 grid-cols-4 h-80">
-            <div className="col-span-1 flex gap-4">
+          <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
+            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit">
               <AnimationWrapper>
                 <div className="relative rounded-[4px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
@@ -150,7 +150,7 @@ const Home = () => {
               </AnimationWrapper>
             </div>
 
-            <div className="col-span-1 flex gap-4">
+            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit">
               <AnimationWrapper stagger={0.2}>
                 <div className="relative rounded-[4px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
@@ -169,8 +169,8 @@ const Home = () => {
 
             <div className="col-span-2 flex relative justify-between">
               <AnimationWrapper stagger={0.4}>
-                <div className="flex relative justify-between w-full  h-full">
-                  <div className="relative rounded-tl-[4px] rounded-bl-[4px] h-full w-[60%]">
+                <div className="flex flex-col md:flex-row relative justify-between w-full  h-full">
+                  <div className="relative rounded-tl-[4px] rounded-bl-[4px] h-full w-full md:w-[60%]">
                     <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                       <span>Valletta, Malta</span>
 
@@ -184,7 +184,7 @@ const Home = () => {
                     />
                   </div>
 
-                  <div className="ml-0 relative w-[50%] h-full txt bg-white p-6 rounded-tr-[4px] rounded-br-[4px]">
+                  <div className="ml-0 relative w-full md:w-[50%] h-full txt bg-white p-2 py-6 md:p-6 rounded-tr-[4px] rounded-br-[4px]">
                     <ul className="relative mt-auto block h-fit text-[100%]">
                       <li>Blok Studios® / Modular housing project</li>
                       <li>3D Visualisation</li>
@@ -222,7 +222,7 @@ const Home = () => {
         </div>
 
         <div id="archive" className="p-6 mt-16">
-          <div className="grid gap-4 grid-rows-12 grid-cols-4 mt-8">
+          <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />
             </div>

@@ -5,13 +5,9 @@ import Location from "../location";
 import Socials from "../socials";
 
 const Hero = () => {
-
-
   return (
-    <div
-      className="hero h-[100vh] flex items-center ml-auto mr-[20%] w-fit"
-    >
-      <div className="inner pt-2">
+    <div className="hero flex items-center ml-6 md:ml-auto mr-[20%] w-fit">
+      <div className="inner pt-[60%] md:pt-2">
         <h1>
           <span className="rise">Digital Designer</span>
           <br />
@@ -41,13 +37,15 @@ const Hero = () => {
       </div>
 
       <Location />
-      <div className="txt absolute top-8 h-[42px] flex flex-col justify-center">
+      <div className="txt hidden absolute top-8 h-[42px] md:flex flex-col justify-center">
         <span className="rise">Available for freelance</span>
         <span className="rise">projects in January 2024</span>
       </div>
 
-      <div className="bottom absolute bottom-0 left-0 w-full p-6 flex justify-between items-center">
-        <Socials />
+      <div className="bottom absolute bottom-0 right-0 md:right-[unset] md:left-0 md:w-full p-6 flex justify-between items-center">
+        <div className="hidden md:block">
+          <Socials />
+        </div>
         <span className="txt rise">© 2023</span>
       </div>
     </div>

@@ -5,7 +5,7 @@
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 2rem;
   font-weight: 230;
   line-height: 1;
 
@@ -45,7 +45,7 @@ h4 {
 
 h5 {
   font-size: 95%;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   color: #999;
 }
 
@@ -65,7 +65,7 @@ p {
 .txt {
   font-weight: 300;
   line-height: 1.35;
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   letter-spacing: 0.2px;
   text-transform: uppercase;
 
@@ -83,6 +83,7 @@ p {
   text-transform: uppercase;
   padding: 4px 8px 2px 8px;
   border: 1px solid #a1a1a1;
+  white-space: nowrap;
   border-radius: 40px;
 
   @media (min-width: 1280px) {
