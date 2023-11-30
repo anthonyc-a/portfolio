@@ -29,7 +29,7 @@ export default function RootLayout({
         end: () => `+=${wrapper.offsetHeight}`, // Adjust end based on wrapper height
         scrub: true,
         onUpdate: (self) => {
-          const progress:any = self.progress.toFixed(3);
+          const progress:any = self.progress.toFixed(2);
           const friction = 0.5 - progress * 0.1;
   
           // Calculate the new Y position
@@ -41,7 +41,7 @@ export default function RootLayout({
             gsap.to(wrapper, {
               y: newYPos + "%",
               duration: 1.5,
-              ease: "power2.out",
+              ease: "power4.out",
               overwrite: 'auto' // Overwrite previous animations to avoid conflicts
             });
           }
