@@ -48,6 +48,15 @@ const Home = () => {
             <div className="txt">
               <AccentHeaderOne text="about me" />
             </div>
+            <div className="w-40 md:hidden  lg:w-48 h-40 lg:h-48 rounded-full bg-gray-300  overflow-hidden">
+              <Image
+                src="/me.jpg"
+                alt=""
+                width={1372}
+                height={1507}
+                className="w-full h-full object-cover scale-[1.25] translate-y-2"
+              />
+            </div>
             <AnimationWrapper>
               <h2 className="md:w-[175%]">
                 I am passionate about everything that has to do with Digital
@@ -58,7 +67,7 @@ const Home = () => {
             </AnimationWrapper>
 
             <div></div>
-            <div className="w-40 lg:w-48 h-40 lg:h-48 rounded-full bg-gray-300  overflow-hidden">
+            <div className="w-40 lg:w-48 h-40 lg:h-48 hidden md:block rounded-full bg-gray-300  overflow-hidden">
               <Image
                 src="/me.jpg"
                 alt=""
