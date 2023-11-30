@@ -30,7 +30,7 @@ export default function RootLayout({
         scrub: true,
         onUpdate: (self) => {
           const progress:any = self.progress.toFixed(2);
-          const friction = 0.5 - progress * 0.1;
+          const friction = 1 - progress * 1;
   
           // Calculate the new Y position
           const newYPos = -(progress * 100) * friction;
