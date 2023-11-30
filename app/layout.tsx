@@ -42,8 +42,8 @@ export default function RootLayout({
             yPos = newYPos;
             gsap.to(wrapper, {
               y: newYPos + "%",
-              duration: 0.35,
-              ease: "power4.out",
+              duration: 0.65,
+              ease: "expo.out",
               overwrite: "auto", // Overwrite previous animations to avoid conflicts
             });
           }
