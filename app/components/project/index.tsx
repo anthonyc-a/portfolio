@@ -57,7 +57,7 @@ const Project = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="project bg-white rounded-[4px] py-8  p-4 md:p-8"
+          className="project bg-white rounded-[0px] py-6 md:py-8  p-4 md:p-8"
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
@@ -65,46 +65,66 @@ const Project = () => {
               <Image
                 src={project.imageSrc}
                 alt={project.altText}
-                width={200}
-                height={200}
-                className="mx-auto md:mx-0"
+                width={230}
+                height={230}
+                className="mx-auto mt-2 md:mx-0"
               />
               <div className="w-[45%]">
-                <h4 className="leading-[1.8]  text-[100%]">{project.title}</h4>
-                <h4 className=" tracking-wide font-[200] text-[87%] ">
+                <h4 className="leading-[1] md:leading-[1.8]   text-[100%]">
+                  {project.title}
+                </h4>
+                <h4 className=" tracking-wide font-[300] md:font-[200] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="tag">
+                    <span key={tagIndex} className="tag text-[#333]">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="w-20 txt flex items-center gap-1.5 justify-end">
-                <a className=" text-[95%] link-anim pb-0.5 whitespace-nowrap">
-                  {expandedProjectIndex === index ? "close" : "Learn more"}
+
+              <div className="w-full md:w-20 txt flex items-center gap-1.5 justify-start">
+           
+
+                <a
+                  href={`https://${project.website}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="txt hidden tag  items-center gap-1 transition-all  "
+                >
+                  <div>
+                    <IoIosLink size={10} />
+                  </div>
+                  <div>
+                    <span>{project.website}</span>
+                  </div>
                 </a>
-                <Image
-                  src="/followArrow.svg"
-                  alt=""
-                  width={7}
-                  height={7}
-                  className={`${
-                    expandedProjectIndex === index
-                      ? "rotate-[-45deg]"
-                      : "rotate-[135deg]"
-                  } transition -translate-y-0.5 `}
-                />
+                <div className="flex gap-2">
+                  <a className=" text-[85%] md:text-[95%] link-anim font-[400] pb-0.5 whitespace-nowrap">
+                    {expandedProjectIndex === index ? "close" : "Learn more"}
+                  </a>
+                  <Image
+                    src="/followArrow.svg"
+                    alt=""
+                    width={7}
+                    height={7}
+                    className={`${
+                      expandedProjectIndex === index
+                        ? "rotate-[-45deg]"
+                        : "rotate-[135deg]"
+                    } transition -translate-y-0.5 `}
+                  />
+                </div>
               </div>
             </div>
 
             {expandedProjectIndex === index && (
-              <div className="mt-4 relative w-[65%] flex flex-col ml-auto ">
-                <h4 className="mb-1 text-[90%]">Brief
-                <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
-                
+              <div className="mt-8 md:mt-4 relative w-full md:w-[65%] flex flex-col ml-auto ">
+                <h4 className="mb-1 text-[90%]">
+                  Brief
+                  <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
                 </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -113,9 +133,9 @@ const Project = () => {
                   voluptatibus.
                 </p>
                 <br />
-                <h4 className="mb-1  text-[90%]">Process
-                <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
-                
+                <h4 className="mb-1  text-[90%]">
+                  Process
+                  <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
                 </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.

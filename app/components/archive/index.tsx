@@ -80,10 +80,16 @@ const Archive = () => {
   return (
     <div className="rounded-md relative w-full col-span-3">
       <ImageCursor cursorActive={cursorActive} currentItem={currentItem} />
+
       <div
         ref={inViewRef}
         className="flex relative flex-col  w-full    items-center justify-between"
       >
+        <div
+          className="h-[1px] w-full bg-[#999] transition-all"
+          style={{ width: inView ? "100%" : "100%" }}
+        ></div>
+
         {data.map((item: any, index) => (
           <a
             href={item.link ? item.link : null}
@@ -99,7 +105,7 @@ const Archive = () => {
             }}
             onClick={() => handleItemClick(item)}
             className={`py-[14px] hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
-              expandedItem === item.name ? "bg-gray-200 md:bg-transparent" : ""
+              expandedItem === item.name ? "md:bg-gray-200 md:bg-transparent" : ""
             }`}
           >
             <h4 className="text-[90%] flex gap-2">
@@ -112,7 +118,7 @@ const Archive = () => {
                 height={600}
                 src={item.img}
                 alt={item.name}
-                className="w-full md:hidden"
+                className="w-full md:hidden mt-4 md:mt-0"
               />
             )}
             <div

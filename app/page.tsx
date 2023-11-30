@@ -43,12 +43,12 @@ const Home = () => {
         </div>
       </div>
       <div className="xl:container xl:mx-auto">
-        <div id="about" className=" p-6 pt-20">
+        <div id="about" className=" p-6 pt-10 md:pt-20">
           <div className="grid gap-8 grid-rows-12 grid-cols-1 md:grid-cols-4">
             <div className="txt">
               <AccentHeaderOne text="about me" />
             </div>
-            <div className="w-40 md:hidden  lg:w-48 h-40 lg:h-48 rounded-full bg-gray-300  overflow-hidden">
+            <div className="w-40 md:hidden mt-[-1rem] md:mt-0  lg:w-48 h-40 lg:h-48 rounded-full bg-gray-300  overflow-hidden">
               <Image
                 src="/me.jpg"
                 alt=""
@@ -79,7 +79,7 @@ const Home = () => {
           </div>
 
           <AnimationWrapper>
-            <div className="grid relative mt-8 gap-x-12 grid-rows-1 grid-cols-1 md:grid-cols-4">
+            <div className="grid relative mt-0 md:mt-8 gap-x-12 grid-rows-1 grid-cols-1 md:grid-cols-4">
               <div className="pr-6">
                 <h4 className="mb-4 mt-6">Full-Stack Development</h4>
                 <p>
@@ -126,7 +126,7 @@ const Home = () => {
           </AnimationWrapper>
         </div>
 
-        <div id="work" className="p-6 pt-20 mt-6">
+        <div id="work" className="p-6 pt-10 md:pt-20 mt-6">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4">
             <div className="txt">
               <AccentHeaderOne text="clients" />
@@ -141,13 +141,13 @@ const Home = () => {
           </div>
 
           <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
-            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit">
+            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit order-3">
               <AnimationWrapper>
                 <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span>Koh Lanta, Thailand</span>
 
-                    <span className="tag">Sept 2023</span>
+                    <span className="tag">Sep 2023</span>
                   </div>
                   <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
                   <img
@@ -159,7 +159,7 @@ const Home = () => {
               </AnimationWrapper>
             </div>
 
-            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit">
+            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit order-2">
               <AnimationWrapper stagger={0.2}>
                 <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
@@ -176,7 +176,7 @@ const Home = () => {
               </AnimationWrapper>
             </div>
 
-            <div className="col-span-2 flex relative justify-between">
+            <div className="col-span-2 flex relative justify-between order-1">
               <AnimationWrapper stagger={0.4}>
                 <div className="flex flex-col md:flex-row relative justify-between w-full  h-full">
                   <div className="relative rounded-tl-[0px] rounded-bl-[4px] h-full w-full md:w-[60%]">
@@ -189,13 +189,13 @@ const Home = () => {
                     <img
                       src="malta2.png"
                       alt=""
-                      className="w-[90%]  h-full object-cover brightness-[85%]"
+                      className="w-[100%]  h-full object-cover brightness-[85%]"
                     />
                   </div>
 
-                  <div className="ml-0 relative w-full md:w-[50%] h-full txt bg-white p-2 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
+                  <div className="ml-0 relative w-full md:w-[50%] h-full txt bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
                     <ul className="relative mt-auto block h-fit text-[100%]">
-                      <li>Blok Studios® / Modular housing project</li>
+                      <li>Blok Studios® / Modular housing</li>
                       <li>3D Visualisation</li>
                       <li>Research phase — 001</li>
                       <li className="tag ml-auto w-fit">2023</li>
@@ -230,7 +230,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="archive" className="p-6 mt-16">
+        <div id="archive" className="p-6 mt-4 md:mt-16">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />
