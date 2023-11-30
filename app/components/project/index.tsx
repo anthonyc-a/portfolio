@@ -69,8 +69,8 @@ const Project = () => {
                 height={200}
               />
               <div className="w-[45%]">
-                <h4 className="leading-[1.8]   text-[100%]">{project.title}</h4>
-                <h4 className="text-gray-500 tracking-wide font-[200] text-[90%] ">
+                <h4 className="leading-[1.8]  text-[100%]">{project.title}</h4>
+                <h4 className=" tracking-wide font-[200] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
@@ -101,7 +101,10 @@ const Project = () => {
 
             {expandedProjectIndex === index && (
               <div className="mt-4 relative w-[65%] flex flex-col ml-auto ">
-                <h4 className="mb-1 txt">Brief</h4>
+                <h4 className="mb-1 text-[90%]">Brief
+                <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
+                
+                </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
@@ -109,7 +112,10 @@ const Project = () => {
                   voluptatibus.
                 </p>
                 <br />
-                <h4 className="mb-1 txt">Process</h4>
+                <h4 className="mb-1  text-[90%]">Process
+                <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
+                
+                </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam
@@ -119,7 +125,10 @@ const Project = () => {
                   repudiandae cumque?
                 </p>
                 <br />
-                <h4 className="mb-1 txt">Outcome</h4>
+                <h4 className="mb-1 text-[90%]">
+                  Outcome
+                  <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
+                </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Delectus repellendus corporis est soluta, atque quam

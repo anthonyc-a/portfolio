@@ -104,7 +104,7 @@ const Home = () => {
                 onClick={setLocation}
                 className="absolute main-btn flex items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
               >
-                explore my work
+                <span>explore my work</span>
                 <Image
                   src="/downArrow.svg"
                   alt=""
@@ -170,7 +170,7 @@ const Home = () => {
             <div className="col-span-2 flex relative justify-between">
               <AnimationWrapper stagger={0.4}>
                 <div className="flex relative justify-between w-full  h-full">
-                  <div className="relative rounded-tl-[4px] rounded-bl-[4px] overflow-hidden w-[60%] h-full">
+                  <div className="relative rounded-tl-[4px] rounded-bl-[4px] h-full w-[60%]">
                     <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                       <span>Valletta, Malta</span>
 
@@ -180,7 +180,7 @@ const Home = () => {
                     <img
                       src="malta2.png"
                       alt=""
-                      className="w-[100%]  h-full object-cover brightness-[85%]"
+                      className="w-[90%]  h-full object-cover brightness-[85%]"
                     />
                   </div>
 
@@ -188,14 +188,14 @@ const Home = () => {
                     <ul className="relative mt-auto block h-fit text-[100%]">
                       <li>Blok Studios® / Modular housing project</li>
                       <li>3D Visualisation</li>
-                      <li>Research phase — 02</li>
+                      <li>Research phase — 001</li>
                       <li className="tag ml-auto w-fit">2023</li>
                       <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
-                      <li className="mt-4 ttn">
+                      <li className="mt-8 ttn">
                         Blok Studios® is a modular housing solution that started
-                        as sixth form project over 5 years ago. The goal is
-                        to create modular, accessible housing for all, with
-                        hopes of reducing our permenant impact on the planet.
+                        as sixth form project over 5 years ago. The goal is to
+                        create modular, accessible housing for all, with hopes
+                        of reducing our permenant impact on the planet.
                       </li>
                       <li className="mt-8 relative w-fit pb-0.5 text-[95%]">
                         <a
