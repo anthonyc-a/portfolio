@@ -32,22 +32,19 @@ export default function RootLayout({
         end: () => `+=${wrapper.offsetHeight}`, // Adjust end based on wrapper height
         scrub: true,
         onUpdate: (self) => {
-          const progress: any = self.progress.toFixed(3);
+          const progress: any = self.progress.toFixed(2);
           const friction = 2 - progress * 1;
 
           // Calculate the new Y position
-          const newYPos = -(progress * 50) * friction;
+          const newYPos = -(progress * 10) * friction;
 
           // Update the position only if it has changed
           if (newYPos !== yPos) {
             yPos = newYPos;
             gsap.to(wrapper, {
               y: newYPos + "%",
-              duration: 0.65,
-              ease: CustomEase.create(
-                "custom",
-                "M0,0 C0.084,0.61 0.033,0.846 0.1,0.9 0.175,0.962 0.374,1 1,1 "
-              ),
+              duration: 1,
+              ease: 'power4.out',
               overwrite: "auto", // Overwrite previous animations to avoid conflicts
             });
           }
