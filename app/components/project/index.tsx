@@ -99,7 +99,7 @@ const Project = () => {
                     <span>{project.website}</span>
                   </div>
                 </a>
-                <button className=" main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full">
+                <button className=" main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-3 px-4 border border-[#999] rounded-full">
                   <a className=" text-[85%] main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "Learn more"}
                   </a>
