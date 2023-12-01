@@ -76,7 +76,7 @@ const Footer = () => {
 
             <Socials />
           </div>
-          <div className="md:hidden w-20"></div>
+          <div className="md:hidden w-32"></div>
           <div className="mt-4 md:mt-0">
             <h5>works from:</h5>
             2021—2023
