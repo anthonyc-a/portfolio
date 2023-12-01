@@ -136,7 +136,7 @@ const Home = () => {
         </div>
 
         <div id="research" className="p-6 mt-6">
-          <div className="txt mb-6 md:mb-12">
+          <div className="txt mb-8 md:mb-12">
             <AccentHeaderOne text="research" />
           </div>
 
