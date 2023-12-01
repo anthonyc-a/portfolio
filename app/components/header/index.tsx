@@ -11,7 +11,7 @@ const Header = () => {
           <span className="text-[80%] absolute top-0 right-[-10px]">™</span>{" "}
         </Link>
       </div>
-      <div className="txt pr-12 hidden md:block">
+      <div className="txt pr-12 hidden lg:block">
         <span className="rise load-delay">Designer / Developer</span>
         <br />
         <span className="rise load-delay">Portfolio / 2023 — 2024</span>

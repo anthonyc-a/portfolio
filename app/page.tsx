@@ -141,7 +141,7 @@ const Home = () => {
           </div>
 
           <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
-            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit order-3">
+            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit order-3 md:order-[unset]">
               <AnimationWrapper>
                 <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
@@ -159,7 +159,7 @@ const Home = () => {
               </AnimationWrapper>
             </div>
 
-            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit order-2">
+            <div className="col-span-2 md:col-span-1 flex gap-4 h-fit order-2 md:order-[unset]">
               <AnimationWrapper stagger={0.2}>
                 <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
@@ -176,10 +176,10 @@ const Home = () => {
               </AnimationWrapper>
             </div>
 
-            <div className="col-span-2 flex relative justify-between order-1">
+            <div className="col-span-2  h-fit flex relative justify-between order-1  md:order-[unset]">
               <AnimationWrapper stagger={0.4}>
-                <div className="flex flex-col md:flex-row relative justify-between w-full  h-full">
-                  <div className="relative rounded-tl-[0px] rounded-bl-[4px] h-full w-full md:w-[60%]">
+                <div className="flex flex-col-reverse md:flex-row relative justify-between w-full  h-full">
+                  <div className="relative rounded-tl-[0px] rounded-bl-[4px] h-full w-full md:w-[65%]">
                     <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                       <span>Valletta, Malta</span>
 
@@ -193,7 +193,7 @@ const Home = () => {
                     />
                   </div>
 
-                  <div className="ml-0 relative w-full md:w-[50%] h-full txt bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
+                  <div className="ml-0 relative w-full md:w-[65%] h-full txt bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
                     <ul className="relative mt-auto block h-fit text-[100%]">
                       <li>Blok Studios® / Modular housing</li>
                       <li>3D Visualisation</li>
@@ -230,7 +230,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="archive" className="p-6 mt-4 md:mt-16">
+        <div id="archive" className="p-6 mt-4 md:mt-10">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />

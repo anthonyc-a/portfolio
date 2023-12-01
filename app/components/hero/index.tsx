@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       <Location />
-      <div className="txt hidden absolute top-8 h-[42px] md:flex flex-col justify-center">
+      <div className="txt hidden absolute top-9 h-[42px] md:flex flex-col justify-center">
         <span className="rise">Available for freelance</span>
         <span className="rise">projects in January 2024</span>
       </div>

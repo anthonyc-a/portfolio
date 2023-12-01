@@ -85,9 +85,7 @@ const Project = () => {
                 </div>
               </div>
 
-              <div className="w-full md:w-20 txt flex items-center gap-1.5 justify-start">
-           
-
+              <div className="w-full md:w-fit txt flex items-center gap-1.5 justify-start">
                 <a
                   href={`https://${project.website}`}
                   target="_blank"
@@ -101,8 +99,8 @@ const Project = () => {
                     <span>{project.website}</span>
                   </div>
                 </a>
-                <div className="flex gap-2">
-                  <a className=" text-[85%] md:text-[95%] link-anim font-[400] pb-0.5 whitespace-nowrap">
+                <button className=" main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full">
+                  <a className=" text-[85%] main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "Learn more"}
                   </a>
                   <Image
@@ -116,7 +114,7 @@ const Project = () => {
                         : "rotate-[135deg]"
                     } transition -translate-y-0.5 `}
                   />
-                </div>
+                </button>
               </div>
             </div>
 

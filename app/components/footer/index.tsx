@@ -45,7 +45,7 @@ const Footer = () => {
               alt=""
               width={40}
               height={40}
-              className="ml-6"
+              className="ml-6 w-8 md:w-[40px] h-8 md:h-[40px]"
               ref={imgRef}
             />
           </div>

@@ -143,6 +143,10 @@ footer {
 
 .hero {
   height: 100dvh; 
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
 }
 
 .project:hover .expand {
