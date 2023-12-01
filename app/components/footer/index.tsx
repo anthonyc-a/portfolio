@@ -53,7 +53,7 @@ const Footer = () => {
       </AnimationWrapper>
 
       <AnimationWrapper>
-        <div className="w-full xl:container xl:mx-auto txt text-[80%] flex flex-wrap items-center text-white justify-between mt-24">
+        <div className="w-full xl:container xl:mx-auto txt text-[80%] flex flex-wrap items-center text-white justify-between mt-16 md:mt-24">
           <div className="mb-8 md:mb-0">
             <h5>Design & Development:</h5>
             Anthony Animba
