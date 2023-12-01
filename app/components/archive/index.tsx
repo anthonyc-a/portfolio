@@ -104,7 +104,7 @@ const Archive = () => {
               setCursorActive(false);
             }}
             onClick={() => handleItemClick(item)}
-            className={`py-[14px] hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
+            className={`py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
               expandedItem === item.name ? "md:bg-gray-200 md:bg-transparent" : ""
             }`}
           >
