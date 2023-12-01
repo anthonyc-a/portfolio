@@ -106,11 +106,11 @@ const Archive = () => {
               setCursorActive(false);
             }}
             onClick={() => handleItemClick(item)}
-            className={`py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
+            className={`int py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
               expandedItem === item.name ? "md:bg-gray-200 md:bg-transparent" : ""
             }`}
           >
-            <h4 className="text-[90%] flex gap-2">
+            <h4 className="text-[90%] flex gap-2 int">
               {item.link && <IoIosLink size={14} />}
               {item.name}
             </h4>

@@ -101,8 +101,8 @@ const Project = () => {
                     <span>{project.website}</span>
                   </div>
                 </a>
-                <button className=" main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2 md:pb-1.5 px-4 border border-[#999] rounded-full">
-                  <a className=" text-[85%] main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
+                <button className="int main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2 md:pb-1.5 px-4 border border-[#999] rounded-full">
+                  <a className=" text-[85%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "Learn more"}
                   </a>
                   <Image
@@ -114,7 +114,7 @@ const Project = () => {
                       expandedProjectIndex === index
                         ? "rotate-[-45deg]"
                         : "rotate-[135deg]"
-                    } transition -translate-y-0.5 `}
+                    } transition int -translate-y-0.5 `}
                   />
                 </button>
               </div>

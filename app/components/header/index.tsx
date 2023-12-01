@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="header text-[#eee] flex justify-between items-start md:items-center absolute top-0 left-0 p-6 py-9 w-full z-[9999]">
+    <div className="header text-[#f8f8f8] flex justify-between items-start md:items-center absolute top-0 left-0 p-6 py-9 w-full z-[9999]">
       <div className="logo relative flex items-center gap-3">
         <Link href="#" className="relative">
           Anthony Animba{" "}

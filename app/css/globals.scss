@@ -76,7 +76,6 @@ footer {
   pointer-events: none;
   transform-origin: center;
   opacity: 0;
-  transition: opacity 0.6s ease;
   z-index: 99999;
 
   @media (pointer: coarse) {
@@ -85,7 +84,7 @@ footer {
 }
 
 .img-cursor {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +177,7 @@ footer {
   }
 
   &:hover {
-    border-color: transparent;
+    border-color: #333;
   }
 
   &::after {

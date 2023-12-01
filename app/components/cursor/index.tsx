@@ -18,6 +18,22 @@ const Cursor: React.FC<any> = ({
     const mouseY = clientY - cursorRef?.current?.clientHeight / 2;
     cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0 )`;
     cursorRef.current.style.opacity = 1;
+
+    const hoveredElement = document.elementFromPoint(clientX, clientY);
+    if (hoveredElement?.classList.contains("mail")) {
+      cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0 ) scale(1.35)`;
+      cursorRef.current.innerText = "Mail me";
+      cursorRef.current.style.width = '100px';
+      cursorRef.current.style.height = '100px';
+      cursorRef.current.style.color = "white";
+      cursorRef.current.style.textAlign = "center";
+    } else {
+      cursorRef.current.innerText = "";
+      cursorRef.current.style.width = '';
+      cursorRef.current.style.height = '';
+      cursorRef.current.style.color = "";
+      cursorRef.current.style.textAlign = "";
+    }
   };
 
   const handleScroll = () => {
@@ -30,7 +46,7 @@ const Cursor: React.FC<any> = ({
   }, [cursorRef]);
 
   return (
-    <div className="cursor" ref={cursorRef}>
+    <div className="cursor txt" ref={cursorRef}>
     </div>
   );
 };

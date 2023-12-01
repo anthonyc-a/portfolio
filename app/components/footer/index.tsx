@@ -34,11 +34,11 @@ const Footer = () => {
       ref={inViewRef}
     >
       <AnimationWrapper>
-        <span className="txt scale-90 md:scale-100 p-3 px-4 mx-auto border block w-fit mb-8 text-[#fff] border-[#999] rounded-full">
+        <span className="txt scale-90 md:scale-100 p-3 px-4 mx-auto border block w-fit mb-8 text-[#f8f8f8] border-[#999] rounded-full">
           available for work
         </span>
-        <h1 className="mx-auto flex items-center text-white tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
-          <a href="mailto:anthonyc.animba@gmail.com">Let&apos;s Talk </a>
+        <h1 className="mx-auto flex items-center text-[#f8f8f8] tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
+          <a href="mailto:anthonyc.animba@gmail.com" className="mail">Let&apos;s Talk </a>
 
           <div className="roll">
             <Image
@@ -54,21 +54,21 @@ const Footer = () => {
       </AnimationWrapper>
 
       <AnimationWrapper>
-        <div className="w-full xl:container xl:mx-auto txt  flex flex-wrap items-center text-white justify-between mt-20 md:mt-24">
+        <div className="w-full xl:container xl:mx-auto txt  flex flex-wrap items-center text-[#f8f8f8] justify-between mt-20 md:mt-24">
           <div className="mb-8 md:mb-0">
             <h5>Design & Development:</h5>
             Anthony Animba
           </div>
           <div className="mb-8 md:mb-0">
             <h5> more:</h5>
-            <div className="flex gap-1.5 items-center">
+            <div className="flex gap-1.5 items-center int">
               download cv
               <Image
                 src="/download.svg"
                 alt=""
                 width={13}
                 height={13}
-                className="opacity-60"
+                className="opacity-60 int"
               />
             </div>
           </div>
@@ -83,7 +83,7 @@ const Footer = () => {
             2021 — 2023
           </div>
 
-          <a href="/" className="tag mt-4 ml-auto md:ml-0 md:mt-0">
+          <a href="/" className="tag mt-4 ml-auto md:ml-0 md:mt-0 int">
             back to top
           </a>
         </div>

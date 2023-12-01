@@ -7,9 +7,9 @@ const Button = () => {
   }
 
   return (
-    <button onClick={setLocation} className="appear  p-2.5 flex items-center gap-3 pt-3 px-5 border w-fit border-white rounded-full">
+    <button onClick={setLocation} className="appear int  p-2.5 flex items-center gap-3 pt-3 px-5 border w-fit border-white rounded-full">
       Scroll for more
-      <Image src="/downArrow.svg" alt='' width={7} height={7} />
+      <Image src="/downArrow.svg" alt='' width={7} height={7} className="int" />
     </button>
   );
 };

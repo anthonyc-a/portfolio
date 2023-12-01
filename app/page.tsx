@@ -112,15 +112,15 @@ const Home = () => {
 
               <button
                 onClick={setLocation}
-                className="md:absolute mt-8 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
+                className="md:absolute  int mt-8 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
               >
-                <span>explore my work</span>
+                <span className="int">explore my work</span>
                 <Image
                   src="/downArrow.svg"
                   alt=""
                   width={7}
                   height={7}
-                  className="brightness-0"
+                  className="int brightness-0"
                 />
               </button>
             </div>
@@ -212,7 +212,7 @@ const Home = () => {
                           href="https://www.instagram.com/blokstudios"
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center tag gap-1 font-[350]"
+                          className="flex items-center tag gap-1 font-[350] int"
                         >
                           Learn more
                           <Image
@@ -220,6 +220,7 @@ const Home = () => {
                             alt=""
                             width={7}
                             height={7}
+                            className="int"
                           />
                         </a>
                       </li>
