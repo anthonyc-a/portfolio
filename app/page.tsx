@@ -136,7 +136,7 @@ const Home = () => {
         </div>
 
         <div id="research" className="p-6 mt-6">
-          <div className="txt mb-12">
+          <div className="txt mb-6 md:mb-12">
             <AccentHeaderOne text="research" />
           </div>
 
@@ -201,7 +201,7 @@ const Home = () => {
                       <li className="tag ml-auto w-fit">2023</li>
                       <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
                       <li className="mt-8 ttn">
-                        Blok Studios® is a modular housing solution that started
+                        BLOK Studios® is a modular housing solution that started
                         as sixth form project over 5 years ago. The goal is to
                         create modular, accessible housing for all, with hopes
                         of reducing our permenant impact on the planet.
