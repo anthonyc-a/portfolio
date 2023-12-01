@@ -145,7 +145,7 @@ const Home = () => {
               <AnimationWrapper>
                 <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
-                    <span>Koh Lanta, Thailand</span>
+                    <span>Ko Lanta, Thailand</span>
 
                     <span className="tag">Sep 2023</span>
                   </div>

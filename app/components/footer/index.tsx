@@ -53,37 +53,39 @@ const Footer = () => {
       </AnimationWrapper>
 
       <AnimationWrapper>
-        <div className="w-full xl:container xl:mx-auto txt text-[80%] flex flex-wrap items-center text-white justify-between mt-20 md:mt-24">
-          <div className="mb-8 md:mb-0">
-            <h5>Design & Development:</h5>
-            Anthony Animba
-          </div>
-          <div className="mb-8 md:mb-0">
-            <h5> more:</h5>
-            <div className="flex gap-1.5 items-center">
-              download cv
-              <Image
-                src="/download.svg"
-                alt=""
-                width={13}
-                height={13}
-                className="opacity-60"
-              />
+          <div className="w-full xl:container xl:mx-auto txt  flex flex-wrap items-center text-white justify-between mt-20 md:mt-24">
+            <div className="mb-8 md:mb-0">
+              <h5>Design & Development:</h5>
+              Anthony Animba
             </div>
-          </div>
-          <div className="mb-6 md:mb-0">
-            <h5>socials:</h5>
+            <div className="mb-8 md:mb-0">
+              <h5> more:</h5>
+              <div className="flex gap-1.5 items-center">
+                download cv
+                <Image
+                  src="/download.svg"
+                  alt=""
+                  width={13}
+                  height={13}
+                  className="opacity-60"
+                />
+              </div>
+            </div>
+            <div className="mb-6 md:mb-0">
+              <h5>socials:</h5>
 
-            <Socials />
-          </div>
-          <div className="md:hidden w-32"></div>
-          <div className="mt-4 md:mt-0">
-            <h5>works from:</h5>
-            2021 — 2023
-          </div>
+              <Socials />
+            </div>
+            <div className="md:hidden w-32"></div>
+            <div className="mt-4 md:mt-0">
+              <h5>works from:</h5>
+              2021 — 2023
+            </div>
 
-          <a href="/" className="tag mt-4 ml-auto md:ml-0 md:mt-0">back to top</a>
-        </div>
+            <a href="/" className="tag mt-4 ml-auto md:ml-0 md:mt-0">
+              back to top
+            </a>
+          </div>
       </AnimationWrapper>
     </footer>
   );
