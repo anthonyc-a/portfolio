@@ -10,7 +10,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Header from "./components/header";
 import Cursor from "./components/cursor";
 import Footer from "./components/footer";
-import { CustomEase } from "gsap/all";
 
 export default function RootLayout({
   children,
@@ -44,7 +43,7 @@ export default function RootLayout({
             gsap.to(wrapper, {
               y: newYPos + "%",
               duration: 0.5,
-              ease: 'power4.out',
+              ease: "power4.out",
               overwrite: "auto", // Overwrite previous animations to avoid conflicts
             });
           }
@@ -59,6 +58,17 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <title>
+          Anthony Animba - Digital Designer and Full-Stack Developer
+        </title>
+        <meta
+          name="description"
+          content="Digital Designer and Full-Stack Developer Currently based in London"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      </head>
       <body>
         <Cursor />
         <div ref={wrapperRef} className="friction-wrapper">

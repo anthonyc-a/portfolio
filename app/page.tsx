@@ -9,6 +9,7 @@ import Archive from "./components/archive";
 import AnimationWrapper from "./components/animWrapper";
 import AccentHeaderOne from "./components/accent";
 
+
 const Home = () => {
   const textRef = useRef(null);
 

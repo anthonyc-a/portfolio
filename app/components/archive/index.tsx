@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import ImageCursor from "../imgCursor";
 import Image from "next/image";
