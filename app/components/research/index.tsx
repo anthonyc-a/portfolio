@@ -52,8 +52,8 @@ const Research = () => {
             <br />
             The structures will be fully modular and can be integrated into
             pre-existing structures - helping to reduce unnecessary demolitions
-            - or as stand alone units. The units will be fully customisable and
-            can be built to any size or specification.
+            - or as stand alone units. The units are fully customisable and
+            built to any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
