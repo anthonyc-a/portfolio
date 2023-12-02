@@ -103,7 +103,7 @@ const Research = () => {
             <br />
             <br />
             The structures will be fully modular and can be integrated in to
-            pre-existing structures to reduce unnecessary demolitions or as
+            pre-existing structures helping to reduce unnecessary demolitions or as
             stand alone units. The units will be fully customisable and can be
             built to any size or specification.
           </li>
