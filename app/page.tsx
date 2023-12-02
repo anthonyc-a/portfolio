@@ -60,10 +60,10 @@ const Home = () => {
             </div>
             <AnimationWrapper>
               <h2 className="md:w-[175%]">
-                A Designer and Full-Stack Developer with over 5 years
-                experience working with small to medium-sized businesses,
-                startups and individuals, ensuring brand growth through
-                thoughtful design and incisive technical execution.
+                A Designer and Full-Stack Developer with over 5 years experience
+                working with small to medium-sized businesses, startups and
+                individuals, ensuring brand growth through thoughtful design and
+                incisive technical execution.
               </h2>
             </AnimationWrapper>
 
@@ -84,29 +84,29 @@ const Home = () => {
               <div className="pr-6">
                 <h4 className="mb-4 mt-6">Full-Stack Development</h4>
                 <p>
-                  By using my expertise as a digital designer, I make sure that
-                  a visual identity can be used to its full extent throughout
-                  all touchpoints in an accessible and user-friendly way. Not
-                  just timeless, but usable in todays digital world.
+                  My expertise as a full-stack developer allows me to create
+                  custom end-to-end solutions for my clients. I use the latest
+                  technologies to create fast, responsive and secure websites
+                  and apps which are built to scale.
                 </p>
               </div>
               <div className="pr-6">
                 <h4 className="mb-4 mt-6">Digital Design</h4>
                 <p>
-                  I always strive to create memorable experiences that are
-                  aesthetically appealing, functional and distinctive. Whether
-                  it&apos;s inspiring marketing websites, convincing e-commerce
-                  sites or apps that are truly beneficial to users.
+                  A designer by nature, I have an eye for detail and a passion
+                  for creating functional, satisfying experiences. With a deep
+                  understanding of the design process, I can help point you in
+                  the right direction, no matter what stage you&apos;re at.
                 </p>
               </div>
 
               <div className="pr-6">
                 <h4 className="mb-4 mt-6">Art Direction</h4>
                 <p>
-                  With my extensive experience in creating everything digital,
+                  Extensive experience with digital marketing and branding means
                   I&apos;m able to establish a strong foundation in the choice
-                  of typography, color and photography to ensure that users
-                  perceive the brand and presence in a consistent way.
+                  of typography, color and photography to ensure users perceive
+                  your brand in a true and consistent manner.
                 </p>
               </div>
 

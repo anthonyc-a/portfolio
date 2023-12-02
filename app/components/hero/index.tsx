@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="relative mt-5 z-20">
           <p className="relative z-10 text-white  w-fit whitespace-nowrap">
             <span className="rise">
-            Mostly working as an independent, I create  
+            Mainly working as an independent, I create  
 
 
             </span>

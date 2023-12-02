@@ -23,7 +23,7 @@ const researchData = [
 const Research = () => {
   return (
     <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
-       <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
+      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">
             <strong>Blok Studios® / Modular housing</strong>{" "}
@@ -36,16 +36,16 @@ const Research = () => {
           </li>
           <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
           <li className="mt-8 md:mt-6 ttn txt">
-            BLOK Studios® is a modular housing initiative which began over 5
-            years ago as a sixth-form project. The goal is to create modular,
-            accessible housing for all, with hopes of reducing our permenant
-            impact on the planet.
+            BLOK Studios® is a modular housing initiative that began over 5
+            years ago as a sixth-form project and has since turned into my conceptual
+            product design playground. The goal is to create modular, accessible
+            housing for all, with hopes of reducing our permanent impact on the
+            planet.
             <br />
             <br />
-            The structures will be fully modular and can be integrated in to
-            pre-existing structures to reduce unnecessary demolitions or as
-            stand alone units. The units will be fully customisable and can be
-            built to any size or specification.
+            BLOKS® will be fully modular and can be integrated in to
+            pre-existing structures reducing unnecessary
+            demolitions, or as stand alone units which will be fully customisable.
           </li>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
