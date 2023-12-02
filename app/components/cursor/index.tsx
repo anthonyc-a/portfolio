@@ -22,7 +22,7 @@ const Cursor: React.FC<any> = ({
     const hoveredElement = document.elementFromPoint(clientX, clientY);
     if (hoveredElement?.classList.contains("mail")) {
       cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0 ) scale(1.35)`;
-      cursorRef.current.innerText = "Mail me";
+      cursorRef.current.innerText = "Contact";
       cursorRef.current.style.width = '100px';
       cursorRef.current.style.height = '100px';
       cursorRef.current.style.color = "white";
