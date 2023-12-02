@@ -57,7 +57,7 @@ const Project = () => {
 
   const [inViewRef, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.65,
+    threshold: 0,
   });
 
   return (
