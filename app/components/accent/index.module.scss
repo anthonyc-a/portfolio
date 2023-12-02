@@ -16,6 +16,11 @@
       font-size: 0.65rem;
       font-weight: 440;
       letter-spacing: 0.5px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 0.7rem;
+        
+      }
   
       &::before {
         position: absolute;

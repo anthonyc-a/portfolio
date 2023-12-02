@@ -25,7 +25,7 @@ const data = [
   {
     title: "Art Direction",
     description:
-      "Extensive experience with digital marketing and branding means I'm able to establish a strong foundation in the choice of typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+      "Extensive experience with digital marketing and branding means I'm able to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
   },
 ];
 
@@ -86,7 +86,7 @@ const Home = () => {
               <h2 className="md:w-[175%]">
                 A Designer and Full-Stack Developer with over 5 years experience
                 working with small to medium-sized businesses, startups and
-                individuals, ensuring brand growth through thoughtful design and
+                individuals helping to ensure brand growth through thoughtful design and
                 incisive technical execution.
               </h2>
             </AnimationWrapper>
@@ -106,7 +106,7 @@ const Home = () => {
           <AnimationWrapper>
             <div
               ref={inViewRef}
-              className="grid pr-6 relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4"
+              className="grid smpr-6 relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4"
             >
               {data.map((item, index) => (
                 <div key={index}>
@@ -152,7 +152,7 @@ const Home = () => {
           <Research />
         </div>
 
-        <div id="archive" className="p-6 mt-4 md:mt-20">
+        <div id="archive" className="p-6 mt-4 md:mt-40">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />

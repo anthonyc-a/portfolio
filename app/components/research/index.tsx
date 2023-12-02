@@ -75,19 +75,19 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
+        className="relative w-full h-full col-span-1 md:col-span-3 bg-white"
       >
         <Carousel autoplay>
           {researchData.map((item, index) => (
             <div
               key={index}
-              className={`col-span-2 md:col-span-1 flex gap-4 h-fit order-${
+              className={`col-span-2 md:col-span-3 flex gap-4 h-[380px] order-${
                 index + 1
               } md:order-[unset]`}
             >
               <div className="relative rounded-[0px] overflow-hidden w-full h-full">
                 <div className="absolute bottom-2 w-full flex items-center justify-between p-4 text-white txt z-20">
-                  <span className="text-[95%] md-text-[100%]">
+                  <span className="text-[95%] md-text-[110%]">
                     {item.location}
                   </span>
                   <span className="tag">{item.date}</span>
