@@ -65,7 +65,7 @@ export default function RootLayout({
         </title>
         <meta
           name="description"
-          content="Digital Designer and Full-Stack Developer Currently based in London"
+          content="I'm a designer and developer currently based in London"
         />
         <meta name="author" content="Anthony Animba" />
         <meta name="keywords" content="Anthony Animba, Designer, Developer" />
