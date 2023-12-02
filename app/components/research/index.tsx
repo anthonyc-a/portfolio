@@ -23,7 +23,7 @@ const researchData = [
 
 const Research = () => {
   const [inViewRef, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
   });
 

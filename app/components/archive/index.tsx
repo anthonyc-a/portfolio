@@ -75,7 +75,7 @@ const Archive = () => {
   };
 
   const [inViewRef, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.35,
   });
 
