@@ -36,7 +36,7 @@ const Research = () => {
           </li>
           <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
           <li className="mt-8 md:mt-6 ttn txt">
-            BLOK Studios® is a modular housing project and start-up which began over 5
+            BLOK Studios® is a modular housing initiative which began over 5
             years ago as a sixth-form project. The goal is to create modular,
             accessible housing for all, with hopes of reducing our permenant
             impact on the planet.
@@ -102,7 +102,7 @@ const Research = () => {
           </li>
           <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
           <li className="mt-8 md:mt-6 ttn txt">
-            BLOK Studios® is a modular housing project and start-up which began over 5
+            BLOK Studios® is a modular housing initiative which began over 5
             years ago as a sixth-form project. The goal is to create modular,
             accessible housing for all, with hopes of reducing our permenant
             impact on the planet.

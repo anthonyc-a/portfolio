@@ -62,7 +62,7 @@ const Home = () => {
               <h2 className="md:w-[175%]">
                 A Designer and Full-Stack Developer with over 5 years
                 experience working with small to medium-sized businesses,
-                startups and individuals helping to ensure brand growth through
+                startups and individuals, ensuring brand growth through
                 thoughtful design and incisive technical execution.
               </h2>
             </AnimationWrapper>
