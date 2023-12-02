@@ -2,6 +2,7 @@ import React from "react";
 import AnimationWrapper from "../animWrapper";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import { Carousel } from "antd";
 
 const researchData = [
   {
@@ -72,31 +73,36 @@ const Research = () => {
           </li>
         </ul>
       </div>
-      {researchData.map((item, index) => (
-        <div
-          key={index}
-          className={`col-span-2 md:col-span-1 flex gap-4 h-fit order-${
-            index + 1
-          } md:order-[unset]`}
-        >
-          <AnimationWrapper stagger={index * 0.2}>
-            <div className="relative rounded-[0px] overflow-hidden w-full h-full">
-              <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
-                <span className="text-[95%] md-text-[100%]">
-                  {item.location}
-                </span>
-                <span className="tag">{item.date}</span>
+      <div
+        ref={inViewRef}
+        className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
+      >
+        <Carousel autoplay>
+          {researchData.map((item, index) => (
+            <div
+              key={index}
+              className={`col-span-2 md:col-span-1 flex gap-4 h-fit order-${
+                index + 1
+              } md:order-[unset]`}
+            >
+              <div className="relative rounded-[0px] overflow-hidden w-full h-full">
+                <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
+                  <span className="text-[95%] md-text-[100%]">
+                    {item.location}
+                  </span>
+                  <span className="tag">{item.date}</span>
+                </div>
+                <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
+                <img
+                  src={item.imageSrc}
+                  alt=""
+                  className="w-[100%] brightness-[85%] h-full object-cover"
+                />
               </div>
-              <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
-              <img
-                src={item.imageSrc}
-                alt=""
-                className="w-[100%] brightness-[85%] h-full object-cover"
-              />
             </div>
-          </AnimationWrapper>
-        </div>
-      ))}
+          ))}
+        </Carousel>
+      </div>
       <div className="ml-0 hidden md:flex relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">
