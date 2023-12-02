@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 interface AnimationWrapperProps {
   children: React.ReactNode;
-  stagger?: number; // New prop for stagger
+  stagger?: number;
 }
 
 const AnimationWrapper: React.FC<AnimationWrapperProps> = ({
@@ -16,20 +16,20 @@ const AnimationWrapper: React.FC<AnimationWrapperProps> = ({
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   const [inViewRef, inView] = useInView({
-    triggerOnce: true, // Only trigger animation once
-    threshold: 0.2, // Percentage of element visibility required to trigger animation
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   useEffect(() => {
     const wrapperElement = wrapperRef.current;
 
     if (inView) {
-      const tl = gsap.timeline({ defaults: { opacity: 0, y: 50 } });
+      const tl = gsap.timeline({ defaults: { opacity: 0, y: 30 } });
 
       tl.fromTo(
         wrapperElement,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 0.35, delay: stagger || 0 } // Use the stagger prop if provided, otherwise default to 0
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.35, delay: stagger || 0 }
       );
     }
   }, [inView, stagger]);

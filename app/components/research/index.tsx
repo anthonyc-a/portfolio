@@ -78,6 +78,8 @@ const Research = () => {
         ref={inViewRef}
         className="relative w-full h-full col-span-1 md:col-span-3 bg-white"
       >
+            <AnimationWrapper>
+
         <Carousel autoplay>
           {researchData.map((item, index) => (
             <div
@@ -103,6 +105,8 @@ const Research = () => {
             </div>
           ))}
         </Carousel>
+        </AnimationWrapper>
+
       </div>
       <div className="ml-0 hidden md:flex relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">

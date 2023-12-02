@@ -30,7 +30,7 @@ const data = [
     link: "",
   },
   {
-    name: "Carhartt WIP Clone — E-Commerce Fashion Website",
+    name: "Carhartt WIP Clone — E-Commerce Website",
     img: "/double.png",
     link: "https://example.com",
   },
