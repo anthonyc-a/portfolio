@@ -1,9 +1,10 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import React, { useState } from "react";
 import AnimationWrapper from "../animWrapper";
 import { IoIosLink } from "react-icons/io";
+import { useInView } from "react-intersection-observer";
 
 const projects = [
   {
@@ -13,7 +14,7 @@ const projects = [
     height: 180,
     title: "Double",
     description: "Marketing Agency",
-    year: 'Sept 2023',
+    year: "Sept 2023",
     website: "double-agency.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Consultancy"],
   },
@@ -24,7 +25,7 @@ const projects = [
     height: 180,
     title: "Verve TV ",
     description: "Streaming Service",
-    year: 'Jul 2022',
+    year: "Jul 2022",
     website: "verve.tv",
     tags: ["Full-Stack", "APIs", "UI/UX", "Consultancy"],
   },
@@ -35,9 +36,9 @@ const projects = [
     height: 180,
     title: "Archvizual",
     description: "Visualisation Studio",
-    year: 'Jan 2021',
+    year: "Jan 2021",
     website: "archvizual.com",
-    tags: ["Web Design", "CMS", "Full-Stack", 'Art Direction'],
+    tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
   },
 ];
 
@@ -53,6 +54,11 @@ const Project = () => {
       setExpandedProjectIndex(index);
     }
   };
+
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.65,
+  });
 
   return (
     <div className="col-span-1 md:col-span-3 flex flex-col gap-5">
@@ -121,10 +127,16 @@ const Project = () => {
             </div>
 
             {expandedProjectIndex === index && (
-              <div className="mt-8 md:mt-8 relative w-full lg:md:w-[65%] flex flex-col ml-auto ">
+              <div
+                ref={inViewRef}
+                className="mt-8 md:mt-8 relative w-full lg:md:w-[65%] flex flex-col ml-auto "
+              >
                 <h4 className="mb-1 text-[90%]">
                   Brief
-                  <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
+                  <div
+                    className="divide my-1.5"
+                    style={{ width: inView ? "100%" : 0 }}
+                  />
                 </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -135,7 +147,10 @@ const Project = () => {
                 <br />
                 <h4 className="mb-1  text-[90%]">
                   Process
-                  <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
+                  <div
+                    className="divide my-1.5 delay-75"
+                    style={{ width: inView ? "100%" : 0 }}
+                  />
                 </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -148,7 +163,10 @@ const Project = () => {
                 <br />
                 <h4 className="mb-1 text-[90%]">
                   Outcome
-                  <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
+                  <div
+                    className="divide my-1.5"
+                    style={{ width: inView ? "100%" : 0 }}
+                  />
                 </h4>
                 <p className="w-full">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.

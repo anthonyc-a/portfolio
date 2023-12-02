@@ -114,7 +114,7 @@ const Home = () => {
                   <div
                     className="divide my-3 lg:hidden"
                     style={{ width: inView ? "100%" : 0 }}
-                  ></div>
+                  />
                   <p>{item.description}</p>
                 </div>
               ))}
