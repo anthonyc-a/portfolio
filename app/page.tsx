@@ -57,7 +57,7 @@ const Home = () => {
 
   const [inViewRef, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.35,
+    threshold: 0.65,
   });
 
   return (
