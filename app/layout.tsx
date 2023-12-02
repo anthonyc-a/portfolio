@@ -1,15 +1,15 @@
 "use client";
 
-import "./css/globals.scss";
 import "./css/webfonts/britti-sans-variable.css";
+import "./css/globals.scss";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 import Header from "./components/header";
-import Cursor from "./components/cursor";
 import Footer from "./components/footer";
+import Cursor from "./components/cursor";
 
 export default function RootLayout({
   children,
@@ -56,7 +56,6 @@ export default function RootLayout({
     }
   }, []);
 
-
   return (
     <html lang="en">
       <head>
@@ -68,7 +67,16 @@ export default function RootLayout({
           name="description"
           content="Digital Designer and Full-Stack Developer Currently based in London"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="author" content="Anthony Animba" />
+        <meta name="keywords" content="Anthony Animba, Designer, Developer" />
+        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <title>Your Page Title</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
       </head>
       <body>
         <Cursor />
