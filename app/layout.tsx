@@ -69,7 +69,7 @@ export default function RootLayout({
         />
         <meta name="author" content="Anthony Animba" />
         <meta name="keywords" content="Anthony Animba, Designer, Developer" />
-        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
+        <meta property="og:image" content="/prev.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <title>Your Page Title</title>
