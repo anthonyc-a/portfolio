@@ -110,7 +110,7 @@ const Archive = () => {
               expandedItem === item.name ? "md:bg-gray-200 md:bg-transparent" : ""
             }`}
           >
-            <h4 className="text-[90%] flex gap-2 int">
+            <h4 className="text-[95%] flex gap-2 int">
               {item.link && <IoIosLink size={14} />}
               {item.name}
             </h4>

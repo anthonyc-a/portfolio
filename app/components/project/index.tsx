@@ -26,7 +26,7 @@ const projects = [
     description: "Streaming Service",
     year: 'Jul 2022',
     website: "verve.tv",
-    tags: ["Consultancy", "Full-Stack", "APIs", "UI/UX"],
+    tags: ["Full-Stack", "APIs", "UI/UX", "Consultancy"],
   },
   {
     imageSrc: "/archvizual.png",
@@ -37,7 +37,7 @@ const projects = [
     description: "Visualisation Studio",
     year: 'Jan 2021',
     website: "archvizual.com",
-    tags: ["Web Design", "UI/UX", "Full-Stack", "CMS"],
+    tags: ["Web Design", "CMS", "Full-Stack", 'Art Direction'],
   },
 ];
 
@@ -121,7 +121,7 @@ const Project = () => {
             </div>
 
             {expandedProjectIndex === index && (
-              <div className="mt-8 md:mt-4 relative w-full md:w-[65%] flex flex-col ml-auto ">
+              <div className="mt-8 md:mt-8 relative w-full lg:md:w-[65%] flex flex-col ml-auto ">
                 <h4 className="mb-1 text-[90%]">
                   Brief
                   <div className="w-full h-[1px] bg-[#999] my-1.5"></div>
