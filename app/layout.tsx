@@ -56,9 +56,12 @@ export default function RootLayout({
     }
   }, []);
 
+  const themeColor = scrollY > 0 ? "#f8f8f8" : "#1a1a1a";
+
   return (
     <html lang="en">
       <head>
+      <meta name="theme-color" content={themeColor}/>
         <meta charSet="utf-8" />
         <title>
           Anthony Animba - Digital Designer and Full-Stack Developer
