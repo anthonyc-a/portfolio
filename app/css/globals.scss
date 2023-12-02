@@ -33,6 +33,11 @@ html {
   height: fit-content;
 }
 
+.slick-dots {
+  justify-content: start !important;
+  padding: 0 1rem !important;
+}
+
 body {
   color: #1a1a1a;
   height: 200vh;
