@@ -19,7 +19,6 @@
 }
 
 ::-moz-selection {
-  /* Code for Firefox */
   color: #f8f8f8;
   background: #1a1a1a;
 }
@@ -34,7 +33,7 @@ html {
 }
 
 .slick-dots {
-  justify-content: start !important;
+  justify-content: flex-start !important;
   padding: 0 1rem !important;
 }
 
