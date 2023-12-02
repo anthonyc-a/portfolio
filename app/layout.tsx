@@ -72,7 +72,6 @@ export default function RootLayout({
         <meta property="og:image" content="/prev.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <title>Your Page Title</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
