@@ -9,7 +9,6 @@ import Archive from "./components/archive";
 import AnimationWrapper from "./components/animWrapper";
 import AccentHeaderOne from "./components/accent";
 
-
 const Home = () => {
   const textRef = useRef(null);
 
@@ -60,10 +59,10 @@ const Home = () => {
             </div>
             <AnimationWrapper>
               <h2 className="md:w-[175%]">
-                I am passionate about everything that has to do with Digital
-                Design and Art Direction. I enjoy working with agencies and
-                enthusiastic people who want to solve problems through beautiful
-                designs and digital experiences.
+                A Designer and Full-Stack Developer with 5+ years experience
+                working with small to medium-sized businesses, startups and
+                individuals. I help to ensure brand growth through thoughtful
+                design and incisive technical execution.
               </h2>
             </AnimationWrapper>
 
@@ -114,7 +113,7 @@ const Home = () => {
                 onClick={setLocation}
                 className="md:absolute  int mt-8 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 border border-[#999] rounded-full"
               >
-                <span className="int">explore my work</span>
+                <span className="int">see my work</span>
                 <Image
                   src="/downArrow.svg"
                   alt=""
@@ -148,7 +147,7 @@ const Home = () => {
                   <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span>Ko Lanta, Thailand</span>
 
-                    <span className="tag">Sep 2023</span>
+                    <span className="tag">Sept 2023</span>
                   </div>
                   <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
                   <img
