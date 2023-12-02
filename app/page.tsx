@@ -9,6 +9,25 @@ import Archive from "./components/archive";
 import AnimationWrapper from "./components/animWrapper";
 import AccentHeaderOne from "./components/accent";
 import Research from "./components/research";
+import { useInView } from "react-intersection-observer";
+
+const data = [
+  {
+    title: "Full-Stack Development",
+    description:
+      "My expertise as a full-stack developer allows me to create custom end-to-end solutions for my clients. I use the latest technologies to create fast, responsive and secure websites and apps which are built to scale.",
+  },
+  {
+    title: "Digital Design",
+    description:
+      "A designer by nature, I have an eye for detail and a passion for creating functional, satisfying experiences. With a deep understanding of the design process, I can help point you in the right direction, no matter what stage you're at.",
+  },
+  {
+    title: "Art Direction",
+    description:
+      "Extensive experience with digital marketing and branding means I'm able to establish a strong foundation in the choice of typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+  },
+];
 
 const Home = () => {
   const textRef = useRef(null);
@@ -35,6 +54,11 @@ const Home = () => {
       });
     }
   }, []);
+
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.35,
+  });
 
   return (
     <div className="w-full  ">
@@ -80,34 +104,18 @@ const Home = () => {
           </div>
 
           <AnimationWrapper>
-            <div className="grid relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4">
+            <div ref={inViewRef} className="grid relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4">
               <div className="pr-6">
-                <h4 className="mb-4 mt-6">Full-Stack Development</h4>
-                <p>
-                  My expertise as a full-stack developer allows me to create
-                  custom end-to-end solutions for my clients. I use the latest
-                  technologies to create fast, responsive and secure websites
-                  and apps which are built to scale.
-                </p>
-              </div>
-              <div className="pr-6">
-                <h4 className="mb-4 mt-6">Digital Design</h4>
-                <p>
-                  A designer by nature, I have an eye for detail and a passion
-                  for creating functional, satisfying experiences. With a deep
-                  understanding of the design process, I can help point you in
-                  the right direction, no matter what stage you&apos;re at.
-                </p>
-              </div>
-
-              <div className="pr-6">
-                <h4 className="mb-4 mt-6">Art Direction</h4>
-                <p>
-                  Extensive experience with digital marketing and branding means
-                  I&apos;m able to establish a strong foundation in the choice
-                  of typography, color and photography to ensure users perceive
-                  your brand in a true and consistent manner.
-                </p>
+                {data.map((item, index) => (
+                  <React.Fragment key={index}>
+                    <h4 className="mb-2 md:mb-4 mt-6">{item.title}</h4>
+                    <div
+                      className="h-[1px] w-full bg-[#999] transition-all mb-4 md:hidden"
+                      style={{ width: inView ? "100%" : "0%" }}
+                    ></div>
+                    <p>{item.description}</p>
+                  </React.Fragment>
+                ))}
               </div>
 
               <button

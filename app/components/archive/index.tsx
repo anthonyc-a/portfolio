@@ -6,62 +6,62 @@ import Image from "next/image";
 import { IoIosLink } from "react-icons/io";
 import { useInView } from "react-intersection-observer";
 
+const data = [
+  {
+    name: "Epoch A — E-Commerce Jewellery Website",
+    img: "/epoch.png",
+    link: "",
+  },
+  {
+    name: "R Architecture — Architecture Portfolio",
+    img: "/r-arch.png",
+    link: "",
+  },
+
+  {
+    name: "The Dean Dsouza Mindset — Mental Health Blog",
+    img: "/epoch.png",
+    link: "https://example.com",
+  },
+
+  {
+    name: "Chroma — Brand Builder Project",
+    img: "/chroma-prev.png",
+    link: "",
+  },
+  {
+    name: "Carhartt WIP Clone — E-Commerce Fashion Website",
+    img: "/double.png",
+    link: "https://example.com",
+  },
+  {
+    name: "SUI Wine Imports — Wine Imports Catalogue",
+    img: "/double.png",
+    link: "https://example.com",
+  },
+  {
+    name: "Studio PB — Design Studio Website",
+    img: "/pb.png",
+    link: "",
+  },
+  {
+    name: "Pinque — E-Commerce Health & Beauty Website",
+    img: "/pinque.png",
+    link: "",
+  },
+  {
+    name: "Genesis — Web3 Marketplace & Community",
+    img: "/genesis.jpg",
+    link: "https://example.com",
+  },
+  {
+    name: "Agora — Digital Art Marketplace",
+    img: "/agora.png",
+    link: "",
+  },
+];
+
 const Archive = () => {
-  const data = [
-    {
-      name: "Epoch A — E-Commerce Jewellery Website",
-      img: "/epoch.png",
-      link: "",
-    },
-    {
-      name: "R Architecture — Architecture Portfolio",
-      img: "/r-arch.png",
-      link: "",
-    },
-
-    {
-      name: "The Dean Dsouza Mindset — Mental Health Blog",
-      img: "/epoch.png",
-      link: "https://example.com",
-    },
-
-    {
-      name: "Chroma — Brand Builder Project",
-      img: "/chroma-prev.png",
-      link: "",
-    },
-    {
-      name: "Carhartt WIP Clone — E-Commerce Fashion Website",
-      img: "/double.png",
-      link: "https://example.com",
-    },
-    {
-      name: "SUI Wine Imports — Wine Imports Catalogue",
-      img: "/double.png",
-      link: "https://example.com",
-    },
-    {
-      name: "Studio PB — Design Studio Website",
-      img: "/pb.png",
-      link: "",
-    },
-    {
-      name: "Pinque — E-Commerce Health & Beauty Website",
-      img: "/pinque.png",
-      link: "",
-    },
-    {
-      name: "Genesis — Web3 Marketplace & Community",
-      img: "/genesis.jpg",
-      link: "https://example.com",
-    },
-    {
-      name: "Agora — Digital Art Marketplace",
-      img: "/agora.png",
-      link: "",
-    },
-  ];
-
   const [cursorActive, setCursorActive] = useState(false);
   const [currentItem, setCurrentItem] = useState("");
   const [expandedItem, setExpandedItem] = useState("");
@@ -75,8 +75,8 @@ const Archive = () => {
   };
 
   const [inViewRef, inView] = useInView({
-    triggerOnce: false, // Only trigger animation once
-    threshold: 0.35, // Percentage of element visibility required to trigger animation
+    triggerOnce: false,
+    threshold: 0.35,
   });
 
   return (

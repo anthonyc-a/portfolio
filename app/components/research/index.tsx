@@ -112,7 +112,7 @@ const Research = () => {
               href="https://www.instagram.com/blokstudios"
               target="_blank"
               rel="noreferrer"
-              className="flex  items-center px-8 py-2 rounded-full border border-[#999] gap-1 font-[350] int"
+              className="flex  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-1 font-[350] int"
             >
               <span className="text-[8%]">
               Learn more
