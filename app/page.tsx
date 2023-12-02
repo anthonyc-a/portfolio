@@ -109,7 +109,7 @@ const Home = () => {
                   <div key={index}>
                     <h4 className="mb-2 md:mb-4 mt-6">{item.title}</h4>
                     <div
-                      className="h-[1px] w-full bg-[#999] transition-all mb-4 lg:hidden"
+                      className="h-[1px] w-full bg-[#999] transition-all ease-in-out mb-4 lg:hidden"
                       style={{ width: inView ? "100%" : "0%" }}
                     ></div>
                     <p>{item.description}</p>
