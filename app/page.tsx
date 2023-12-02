@@ -104,17 +104,20 @@ const Home = () => {
           </div>
 
           <AnimationWrapper>
-            <div ref={inViewRef} className="grid pr-6 relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4">
-                {data.map((item, index) => (
-                  <div key={index}>
-                    <h4 className="mb-2 md:mb-4 mt-6">{item.title}</h4>
-                    <div
-                      className="h-[1px] w-full bg-[#999] transition-all ease-in-out mb-4 lg:hidden"
-                      style={{ width: inView ? "100%" : "0%" }}
-                    ></div>
-                    <p>{item.description}</p>
-                  </div>
-                ))}
+            <div
+              ref={inViewRef}
+              className="grid pr-6 relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4"
+            >
+              {data.map((item, index) => (
+                <div key={index}>
+                  <h4 className="mb-2 md:mb-4 mt-6">{item.title}</h4>
+                  <div
+                    className="divide my-3 lg:hidden"
+                    style={{ width: inView ? "100%" : 0 }}
+                  ></div>
+                  <p>{item.description}</p>
+                </div>
+              ))}
 
               <button
                 onClick={setLocation}

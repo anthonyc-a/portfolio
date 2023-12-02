@@ -38,8 +38,8 @@ const Research = () => {
           <li className="txt">Research phase — 01</li>
           <li className="txt">3D Visualisation</li>
           <div
-            className="h-[1px] w-full bg-[#999] transition-all ease-in-out my-4 lg:hidden"
-            style={{ width: inView ? "100%" : "0%" }}
+            className="divide my-4 lg:hidden"
+            style={{ width: inView ? "100%" : 0 }}
           ></div>
           <li className="mt-8 md:mt-6 ttn txt">
             BLOK Studios® is a modular housing initiative that began over 5
