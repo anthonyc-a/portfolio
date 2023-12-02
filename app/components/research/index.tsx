@@ -23,7 +23,7 @@ const researchData = [
 const Research = () => {
   return (
     <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
-      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
+      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">Blok Studios® / Modular housing</h4>
           <li className="txt">Research phase — 01</li>
@@ -83,7 +83,7 @@ const Research = () => {
           </AnimationWrapper>
         </div>
       ))}
-      <div className="ml-0 hidden md:flex relative w-full h-full  bg-white p-4 py-6 md:p-6 rounded-tr-[0px] rounded-br-[4px]">
+      <div className="ml-0 hidden md:flex relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">
             <strong>Blok Studios® / Modular housing</strong>{" "}
@@ -107,14 +107,17 @@ const Research = () => {
             stand alone units. The units will be fully customisable and can be
             built to any size or specification.
           </li>
-          <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
+          <li className="mt-8 relative w-fit pb-0.5">
             <a
               href="https://www.instagram.com/blokstudios"
               target="_blank"
               rel="noreferrer"
-              className="flex txt items-center px-8 py-2 rounded-full border border-[#999] gap-1 font-[350] int"
+              className="flex  items-center px-8 py-2 rounded-full border border-[#999] gap-1 font-[350] int"
             >
+              <span className="text-[8%]">
               Learn more
+
+              </span>
               <Image
                 src="/followArrow.svg"
                 alt=""

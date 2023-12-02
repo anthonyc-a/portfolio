@@ -102,7 +102,7 @@ const Project = () => {
                   </div>
                 </a>
                 <button className="int main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2 md:pb-1.5 px-4 border border-[#999] rounded-full">
-                  <a className=" text-[85%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
+                  <a className=" text-[95%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "Learn more"}
                   </a>
                   <Image
