@@ -86,7 +86,7 @@ const Research = () => {
               } md:order-[unset]`}
             >
               <div className="relative rounded-[0px] overflow-hidden w-full h-full">
-                <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
+                <div className="absolute bottom-2 w-full flex items-center justify-between p-4 text-white txt z-20">
                   <span className="text-[95%] md-text-[100%]">
                     {item.location}
                   </span>
