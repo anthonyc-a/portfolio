@@ -43,16 +43,17 @@ const Research = () => {
             style={{ width: inView ? "100%" : 0 }}
           ></div>
           <li className="mt-8 md:mt-6 ttn txt">
-            BLOK Studios® is a modular housing initiative that began over 5
-            years ago as a sixth-form project and has since turned into my
-            conceptual product design playground. The goal is to create modular,
-            accessible housing for all, with hopes of reducing our permanent
-            impact on the planet.
+            BLOK Studios® is a modular housing initiative set up more than 5
+            years ago initially as a sixth-form project. It&apos;s since turned
+            into a playground for my conceptual product design skills. The goal is to
+            create modular, accessible housing for all, with hopes of reducing
+            our permanent impact on the planet.
             <br />
             <br />
-            BLOKS® will be fully modular and can be integrated in to
-            pre-existing structures reducing unnecessary demolitions, or as
-            stand alone units which will be fully customisable.
+            The structures will be fully modular and can be integrated into
+            pre-existing structures - helping to reduce unnecessary demolitions
+            - or as stand alone units. The units will be fully customisable and
+            can be built to any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
@@ -119,16 +120,17 @@ const Research = () => {
             style={{ width: inView ? "100%" : "0%" }}
           ></div>
           <li className="mt-8 md:mt-6 ttn txt">
-            BLOK Studios® is a modular housing initiative which began over 5
-            years ago as a sixth-form project. The goal is to create modular,
-            accessible housing for all, with hopes of reducing our permenant
-            impact on the planet.
+            BLOK Studios® is a modular housing initiative set up more than 5
+            years ago initially as a sixth-form project but has since turned
+            into my conceptual product design testing grounds. The goal is to
+            create modular, accessible housing for all, with hopes of reducing
+            our permanent impact on the planet.
             <br />
             <br />
-            The structures will be fully modular and can be integrated in to
-            pre-existing structures helping to reduce unnecessary demolitions or
-            as stand alone units. The units will be fully customisable and can
-            be built to any size or specification.
+            The structures will be fully modular and can be integrated into
+            pre-existing structures - helping to reduce unnecessary demolitions
+            - or as stand alone units. The units will be fully customisable and
+            can be built to any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5">
             <a
