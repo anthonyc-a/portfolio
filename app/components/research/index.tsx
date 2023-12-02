@@ -1,6 +1,7 @@
 import React from "react";
 import AnimationWrapper from "../animWrapper";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 const researchData = [
   {
@@ -21,14 +22,25 @@ const researchData = [
 ];
 
 const Research = () => {
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.25,
+  });
+
   return (
     <div className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
-      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
+      <div
+        ref={inViewRef}
+        className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6"
+      >
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">Blok Studios® / Modular housing</h4>
           <li className="txt">Research phase — 01</li>
           <li className="txt">3D Visualisation</li>
-          <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
+          <div
+            className="h-[1px] w-full bg-[#999] transition-all ease-in-out my-4 lg:hidden"
+            style={{ width: inView ? "100%" : "0%" }}
+          ></div>
           <li className="mt-8 md:mt-6 ttn txt">
             BLOK Studios® is a modular housing initiative that began over 5
             years ago as a sixth-form project and has since turned into my
@@ -94,7 +106,10 @@ const Research = () => {
           <li className="txt">
             <strong>3D Visualisation</strong>{" "}
           </li>
-          <li className="w-full h-[1px] mt-4 bg-[#999]"></li>
+          <div
+            className="h-[1px] w-full bg-[#999] transition-all ease-in-out mb-4 lg:hidden"
+            style={{ width: inView ? "100%" : "0%" }}
+          ></div>
           <li className="mt-8 md:mt-6 ttn txt">
             BLOK Studios® is a modular housing initiative which began over 5
             years ago as a sixth-form project. The goal is to create modular,
@@ -103,9 +118,9 @@ const Research = () => {
             <br />
             <br />
             The structures will be fully modular and can be integrated in to
-            pre-existing structures helping to reduce unnecessary demolitions or as
-            stand alone units. The units will be fully customisable and can be
-            built to any size or specification.
+            pre-existing structures helping to reduce unnecessary demolitions or
+            as stand alone units. The units will be fully customisable and can
+            be built to any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5">
             <a
@@ -114,10 +129,7 @@ const Research = () => {
               rel="noreferrer"
               className="flex txt  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-1 font-[350] int"
             >
-              <span className="text-[85%] md:text-[95%]">
-              Learn more
-
-              </span>
+              <span className="text-[85%] md:text-[95%]">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""
