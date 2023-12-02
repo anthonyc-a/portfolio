@@ -107,7 +107,7 @@ const Research = () => {
             <strong>3D Visualisation</strong>{" "}
           </li>
           <div
-            className="h-[1px] w-full bg-[#999] transition-all ease-in-out mb-4 lg:hidden"
+            className="h-[1px] divide w-full bg-[#999] lg:hidden"
             style={{ width: inView ? "100%" : "0%" }}
           ></div>
           <li className="mt-8 md:mt-6 ttn txt">

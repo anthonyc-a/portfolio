@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import ImageCursor from "../imgCursor";
@@ -107,7 +107,9 @@ const Archive = () => {
             }}
             onClick={() => handleItemClick(item)}
             className={`int py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
-              expandedItem === item.name ? "md:bg-gray-200 md:bg-transparent" : ""
+              expandedItem === item.name
+                ? "md:bg-gray-200 md:bg-transparent"
+                : ""
             }`}
           >
             <h4 className="text-[95%] flex gap-2 int">
@@ -124,7 +126,7 @@ const Archive = () => {
               />
             )}
             <div
-              className="divide"
+              className="divide absolute bottom-0 left-0"
               style={{ width: inView ? "100%" : 0 }}
             ></div>
           </a>
