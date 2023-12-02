@@ -28,11 +28,11 @@ const Research = () => {
   });
 
   return (
-    <div ref={inViewRef} className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80">
-      <div
-        
-        className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6"
-      >
+    <div
+      ref={inViewRef}
+      className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
+    >
+      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">Blok Studios® / Modular housing</h4>
           <li className="txt">Research phase — 01</li>
@@ -60,7 +60,7 @@ const Research = () => {
               rel="noreferrer"
               className="flex txt items-center px-8 py-2 rounded-full border border-[#999] gap-1 font-[350] int"
             >
-              Learn more
+              <span className="text-[95%]">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""
@@ -82,7 +82,9 @@ const Research = () => {
           <AnimationWrapper stagger={index * 0.2}>
             <div className="relative rounded-[0px] overflow-hidden w-full h-full">
               <div className="absolute bottom-0 w-full flex items-center justify-between p-4 text-white txt z-20">
-                <span>{item.location}</span>
+                <span className="text-[95%] md-text-[100%]">
+                  {item.location}
+                </span>
                 <span className="tag">{item.date}</span>
               </div>
               <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
@@ -129,7 +131,7 @@ const Research = () => {
               rel="noreferrer"
               className="flex txt  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-1 font-[350] int"
             >
-              <span className="text-[85%] md:text-[95%]">Learn more</span>
+              <span className="text-[95%]">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""
