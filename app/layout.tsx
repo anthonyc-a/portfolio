@@ -56,7 +56,7 @@ export default function RootLayout({
     }
   }, []);
 
-  const themeColor = scrollY > 0 ? "#f8f8f8" : "#1a1a1a";
+  const themeColor = scrollY! > 0 ? "#f8f8f8" : "#1a1a1a";
 
   return (
     <html lang="en">
