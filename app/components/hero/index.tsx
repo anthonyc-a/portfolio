@@ -19,11 +19,11 @@ const Hero = () => {
         <div className="relative mt-5 z-20">
           <p className="relative z-10 text-white  w-fit whitespace-nowrap">
             <span className="rise">
-              Mainly working as an independent, I solve
+              Mainly working as an independent, I create
             </span>
             <br />
             <span className="rise">
-              problems and create digital experiences through{" "}
+              digital experiences and solve problems through{" "}
             </span>
             <br />
             <span className="rise">clear and functional design.</span>

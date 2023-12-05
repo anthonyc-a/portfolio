@@ -44,16 +44,16 @@ const Research = () => {
           ></div>
           <li className="mt-8 md:mt-6 ttn txt">
             BLOK Studios® is a modular housing initiative set up more than 5
-            years ago initially as a sixth-form project. It&apos;s since turned
-            into a playground for my conceptual product design skills. The goal is to
-            create modular, accessible housing for all, with hopes of reducing
-            our permanent impact on the planet.
+            years ago initially as a sixth-form project, but has since turned
+            into my conceptual product design playground. The goal is to create
+            modular, accessible housing for all, with hopes of reducing our
+            permanent impact on the planet.
             <br />
             <br />
             The structures will be fully modular and can be integrated into
             pre-existing structures - helping to reduce unnecessary demolitions
-            - or as stand alone units. The units are fully customisable and
-            built to any size or specification.
+            - or as stand alone units that are fully customisable and built to
+            any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
@@ -78,35 +78,33 @@ const Research = () => {
         ref={inViewRef}
         className="relative w-full h-full col-span-1 md:col-span-3 bg-white"
       >
-            <AnimationWrapper>
-
-        <Carousel autoplay>
-          {researchData.map((item, index) => (
-            <div
-              key={index}
-              className={`col-span-2 md:col-span-3 flex gap-4 h-[380px] order-${
-                index + 1
-              } md:order-[unset]`}
-            >
-              <div className="relative rounded-[0px] overflow-hidden w-full h-full">
-                <div className="absolute bottom-2 w-full flex items-center justify-between p-4 text-white txt z-20">
-                  <span className="text-[95%] md-text-[110%]">
-                    {item.location}
-                  </span>
-                  <span className="tag">{item.date}</span>
+        <AnimationWrapper>
+          <Carousel autoplay>
+            {researchData.map((item, index) => (
+              <div
+                key={index}
+                className={`col-span-2 md:col-span-3 flex gap-4 h-[380px] order-${
+                  index + 1
+                } md:order-[unset]`}
+              >
+                <div className="relative rounded-[0px] overflow-hidden w-full h-full">
+                  <div className="absolute bottom-2 w-full flex items-center justify-between p-4 text-white txt z-20">
+                    <span className="text-[95%] md-text-[110%]">
+                      {item.location}
+                    </span>
+                    <span className="tag">{item.date}</span>
+                  </div>
+                  <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
+                  <img
+                    src={item.imageSrc}
+                    alt=""
+                    className="w-[100%] brightness-[85%] h-full object-cover"
+                  />
                 </div>
-                <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
-                <img
-                  src={item.imageSrc}
-                  alt=""
-                  className="w-[100%] brightness-[85%] h-full object-cover"
-                />
               </div>
-            </div>
-          ))}
-        </Carousel>
+            ))}
+          </Carousel>
         </AnimationWrapper>
-
       </div>
       <div className="ml-0 hidden md:flex relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
@@ -125,16 +123,16 @@ const Research = () => {
           ></div>
           <li className="mt-8 md:mt-6 ttn txt">
             BLOK Studios® is a modular housing initiative set up more than 5
-            years ago initially as a sixth-form project but has since turned
-            into my conceptual product design testing grounds. The goal is to
-            create modular, accessible housing for all, with hopes of reducing
-            our permanent impact on the planet.
+            years ago initially as a sixth-form project, but has since turned
+            into my conceptual product design playground. The goal is to create
+            modular, accessible housing for all, with hopes of reducing our
+            permanent impact on the planet.
             <br />
             <br />
             The structures will be fully modular and can be integrated into
             pre-existing structures - helping to reduce unnecessary demolitions
-            - or as stand alone units. The units will be fully customisable and
-            can be built to any size or specification.
+            - or as stand alone units that are fully customisable and built to
+            any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5">
             <a
