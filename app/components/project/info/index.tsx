@@ -1,0 +1,47 @@
+import React from "react";
+import { IoIosLink } from "react-icons/io";
+
+const Info = ({ inView, project }: any) => {
+  return (
+    <div className="mt-8 md:mt-8 relative w-full lg:md:w-[65%] flex flex-col ml-auto ">
+      <h4 className="mb-1 text-[90%]">
+        Brief
+        <div className="divide my-1.5" style={{ width: inView ? "100%" : 0 }} />
+      </h4>
+      <p className="w-full">{project.content.brief}</p>
+      <br />
+      <h4 className="mb-1  text-[90%]">
+        Process
+        <div
+          className="divide my-1.5 delay-75"
+          style={{ width: inView ? "100%" : 0 }}
+        />
+      </h4>
+      <p className="w-full">{project.content.process}</p>
+      <br />
+      <h4 className="mb-1 text-[90%]">
+        Outcome
+        <div className="divide my-1.5" style={{ width: inView ? "100%" : 0 }} />
+      </h4>
+      <p className="w-full">{project.content.outcome}</p>
+      <div className="flex mt-12  items-center justify-between w-full">
+        <a
+          href={`https://${project.website}`}
+          target="_blank"
+          rel="noreferrer"
+          className="txt tag h-7 flex items-center gap-1 transition-all  "
+        >
+          <div>
+            <IoIosLink size={10} />
+          </div>
+          <div>
+            <span>{project.website}</span>
+          </div>
+        </a>
+        <div className="tag">{project.year}</div>
+      </div>
+    </div>
+  );
+};
+
+export default Info;

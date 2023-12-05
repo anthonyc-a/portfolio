@@ -15,7 +15,7 @@ const skills = [
   {
     title: "Full-Stack Development",
     description:
-      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest technologies to create fast, responsive and secure websites and apps which are built to scale.",
+      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
     icon: '/dev.svg',
   },
   {
@@ -27,7 +27,7 @@ const skills = [
   {
     title: "Art Direction",
     description:
-      "Extensive experience working in the realms of digital marketing and branding means I'm able to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+      "Extensive experience working in the realm of digital marketing and branding means I'm able to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
     icon: '/art.svg',
   },
 ];
@@ -146,14 +146,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="research" className="p-6 mt-6">
+        <div id="research" className="p-6 mt-6 md:mt-8">
           <div className="txt mb-8 md:mb-12">
             <AccentHeaderOne text="research" />
           </div>
           <Research />
         </div>
 
-        <div id="archive" className="p-6 mt-4 md:mt-40">
+        <div id="archive" className="p-6 mt-4 md:mt-32">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />

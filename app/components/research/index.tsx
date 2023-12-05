@@ -51,9 +51,9 @@ const Research = () => {
             <br />
             <br />
             The structures will be fully modular and can be integrated into
-            pre-existing structures - helping to reduce unnecessary demolitions
-            - or as stand alone units that are fully customisable and built to
-            any size or specification.
+            pre-existing buildings - enhancing structural integrity whilst helping
+            to reduce unnecessary demolitions - or as stand alone units that are
+            fully customisable and built to any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
@@ -130,9 +130,9 @@ const Research = () => {
             <br />
             <br />
             The structures will be fully modular and can be integrated into
-            pre-existing structures - helping to reduce unnecessary demolitions
-            - or as stand alone units that are fully customisable and built to
-            any size or specification.
+            pre-existing buildings - enhancing structural integrity whilst helping
+            to reduce unnecessary demolitions - or as stand alone units that are
+            fully customisable and built to any size or specification.
           </li>
           <li className="mt-8 relative w-fit pb-0.5">
             <a
@@ -141,7 +141,7 @@ const Research = () => {
               rel="noreferrer"
               className="flex txt  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-1.5 font-[350] int"
             >
-              <span className="text-[95%]">Learn more</span>
+              <span className="text-[90%] md:text-[95%]">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""

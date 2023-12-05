@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import AnimationWrapper from "../animWrapper";
 import { IoIosLink } from "react-icons/io";
 import { useInView } from "react-intersection-observer";
+import Info from "./info";
 
 const projects = [
   {
@@ -17,6 +18,11 @@ const projects = [
     year: "Sept 2023",
     website: "double-agency.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Consultancy"],
+    content: {
+      brief: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
+    }
   },
   {
     imageSrc: "/verve.png",
@@ -25,9 +31,14 @@ const projects = [
     height: 180,
     title: "Verve TV ",
     description: "Streaming Service",
-    year: "Jul 2022",
-    website: "verve.tv",
+    year: "Aug 2022",
+    website: "twitter.com/vervetvofficial",
     tags: ["Full-Stack", "API", "UI/UX", "Consultancy"],
+    content: {
+      brief: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
+    }
   },
   {
     imageSrc: "/snapi.png",
@@ -36,9 +47,14 @@ const projects = [
     height: 180,
     title: "Snapi",
     description: "Audience Activation",
-    year: "Jan 2021",
-    website: "archvizual.com",
+    year: "Jul 2021",
+    website: "snapi.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
+    content: {
+      brief: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
+    }
   },
   {
     imageSrc: "/archvizual.png",
@@ -48,8 +64,13 @@ const projects = [
     title: "Archvizual",
     description: "Visualisation Studio",
     year: "Jan 2021",
-    website: "archvizual.com",
+    website: "archvizual-redesign.netlify.app",
     tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
+    content: {
+      brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
+    }
   },
 ];
 
@@ -83,10 +104,10 @@ const Project = () => {
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
-              <div className="index txt md:hidden">
-                <span className="text-[#1a1a1a] text-[85%] absolute top-0 right-0">
-                  01 — 00{index + 1}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 ">
+              <div className="index txt  md:hidden md:top-0 md:right-0">
+                <span className="text-[#1a1a1a] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
+                  001 — 0{index + 1}
                 </span>
               </div>
               {expandedProjectIndex === index ? (
@@ -156,71 +177,8 @@ const Project = () => {
             </div>
 
             {expandedProjectIndex === index && (
-              <div
-                ref={inViewRef}
-                className="mt-8 md:mt-8 relative w-full lg:md:w-[65%] flex flex-col ml-auto "
-              >
-                <h4 className="mb-1 text-[90%]">
-                  Brief
-                  <div
-                    className="divide my-1.5"
-                    style={{ width: inView ? "100%" : 0 }}
-                  />
-                </h4>
-                <p className="w-full">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Delectus repellendus corporis est soluta, atque quam
-                  voluptatum at laboriosam quasi repudiandae, ipsum tenetur
-                  voluptatibus.
-                </p>
-                <br />
-                <h4 className="mb-1  text-[90%]">
-                  Process
-                  <div
-                    className="divide my-1.5 delay-75"
-                    style={{ width: inView ? "100%" : 0 }}
-                  />
-                </h4>
-                <p className="w-full">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Delectus repellendus corporis est soluta, atque quam
-                  voluptatum at laboriosam quasi repudiandae, ipsum tenetur
-                  voluptatibus. Aspernatur laborum nihil magni quos dolores, qui
-                  natus veniam dolorem veritatis hic culpa et consequatur
-                  repudiandae cumque?
-                </p>
-                <br />
-                <h4 className="mb-1 text-[90%]">
-                  Outcome
-                  <div
-                    className="divide my-1.5"
-                    style={{ width: inView ? "100%" : 0 }}
-                  />
-                </h4>
-                <p className="w-full">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Delectus repellendus corporis est soluta, atque quam
-                  voluptatum at laboriosam quasi repudiandae, ipsum tenetur
-                  voluptatibus. Aspernatur laborum nihil magni quos dolores, qui
-                  natus veniam dolorem veritatis hic culpa et consequatur
-                  repudiandae cumque?
-                </p>
-                <div className="flex mt-12  items-center justify-between w-full">
-                  <a
-                    href={`https://${project.website}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="txt tag h-7 flex items-center gap-1 transition-all  "
-                  >
-                    <div>
-                      <IoIosLink size={10} />
-                    </div>
-                    <div>
-                      <span>{project.website}</span>
-                    </div>
-                  </a>
-                  <div className="tag">{project.year}</div>
-                </div>
+              <div ref={inViewRef}>
+                <Info inView={inView} project={project} />
               </div>
             )}
           </AnimationWrapper>
@@ -228,16 +186,13 @@ const Project = () => {
       ))}
       {projects.length > 3 && (
         <div
-          className="flex justify-center w-full items-center gap-3 bottom-0 right-0 mt-6 txt"
+          className="flex justify-center w-full items-center gap-3 bottom-0 right-0 mt-6 md:mt-8 txt"
           onClick={() => setShowMore(!showMore)}
         >
           <div className="w-full h-[1px] bg-[#999]" />
 
-          <a className=" absolute flex gap-2 bg-[#f8f8f8] mx-auto text-[90%] int main-btn md:text-[95%] text-center px-4 w-fit font-[400] pb-0.5 whitespace-nowrap">
-            <a>
-            {showMore ? "Show Less" : "More work"}
-
-            </a>
+          <a className=" absolute flex gap-2 bg-[#f8f8f8] mx-auto text-[90%] text-center px-4 md:px-6 w-fit font-[400] pb-0.5 whitespace-nowrap">
+            <span>{showMore ? "Show Less" : "More work"}</span>
             {showMore ? " -" : " +"}
           </a>
         </div>
