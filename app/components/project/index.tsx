@@ -70,6 +70,9 @@ const Project = () => {
         >
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+              <div className="index txt">
+                <span className="text-[#1a1a1a] text-[85%] absolute top-0 right-0">01 — 00{index + 1}</span>
+              </div>
               <Image
                 src={project.imageSrc}
                 alt={project.altText}
