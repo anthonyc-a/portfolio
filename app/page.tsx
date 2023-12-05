@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Hero from "./components/hero";
 import Image from "next/image";
@@ -11,7 +11,7 @@ import AccentHeaderOne from "./components/accent";
 import Research from "./components/research";
 import { useInView } from "react-intersection-observer";
 
-const data = [
+const skills = [
   {
     title: "Full-Stack Development",
     description:
@@ -30,13 +30,16 @@ const data = [
 ];
 
 const Home = () => {
-  const textRef = useRef(null);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   const setLocation = () => {
     window.location.href = "#work";
   };
 
-  const heroRef = useRef<HTMLDivElement>(null);
+  const [inViewRef, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.65,
+  });
 
   useEffect(() => {
     const heroElement = heroRef.current;
@@ -54,11 +57,6 @@ const Home = () => {
       });
     }
   }, []);
-
-  const [inViewRef, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.65,
-  });
 
   return (
     <div className="w-full  ">
@@ -86,8 +84,8 @@ const Home = () => {
               <h2 className="md:w-[175%]">
                 A Designer and Full-Stack Developer with over 5 years experience
                 working with small to medium-sized businesses, startups and
-                individuals helping to ensure brand growth through thoughtful design and
-                incisive technical execution.
+                individuals helping to ensure brand growth through thoughtful
+                design and incisive technical execution.
               </h2>
             </AnimationWrapper>
 
@@ -106,9 +104,9 @@ const Home = () => {
           <AnimationWrapper>
             <div
               ref={inViewRef}
-              className="grid smpr-6 relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4"
+              className="grid relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pr-[200px] lg:pr-0 lg:grid-cols-4"
             >
-              {data.map((item, index) => (
+              {skills.map((item, index) => (
                 <div key={index}>
                   <h4 className="mb-2 md:mb-4 mt-6">{item.title}</h4>
                   <div

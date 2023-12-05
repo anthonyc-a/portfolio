@@ -1,5 +1,3 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
 import Button from "../button";
 import Location from "../location";
 import Socials from "../socials";
@@ -21,13 +19,12 @@ const Hero = () => {
         <div className="relative mt-5 z-20">
           <p className="relative z-10 text-white  w-fit whitespace-nowrap">
             <span className="rise">
-            Mainly working as an independent, I create  
-
-
+              Mainly working as an independent, I solve
             </span>
             <br />
             <span className="rise">
-            digital experiences and solve problems through            </span>
+              problems and create digital experiences through{" "}
+            </span>
             <br />
             <span className="rise">clear and functional design.</span>
           </p>
