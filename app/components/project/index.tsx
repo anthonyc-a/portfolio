@@ -131,7 +131,7 @@ const Project = () => {
                 <h4 className="leading-[1] md:leading-[1.8]   text-[100%]">
                   {project.title}
                 </h4>
-                <h4 className=" tracking-wide font-[350] md:font-[200] text-[87%] ">
+                <h4 className=" tracking-wide font-[300] md:font-[200] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
@@ -158,7 +158,7 @@ const Project = () => {
                   </div>
                 </a>
                 <button className="int main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2 md:pb-1.5 px-4 border border-[#999] rounded-full">
-                  <a className=" text-[100%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
+                  <a className=" text-[100%] int main-btn md:text-[95%] font-[450] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "Learn more"}
                   </a>
                   <Image

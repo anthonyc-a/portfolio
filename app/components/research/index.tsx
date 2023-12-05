@@ -42,7 +42,7 @@ const Research = () => {
             className="divide my-4 lg:hidden"
             style={{ width: inView ? "100%" : 0 }}
           ></div>
-          <li className="mt-8 md:mt-6 ttn txt">
+          <p className="mt-8 md:mt-6">
             BLOK Studios® is a modular housing initiative set up more than 5
             years ago initially as a sixth-form project and has since turned
             into my conceptual product design playground. The goal is to create
@@ -54,13 +54,13 @@ const Research = () => {
             pre-existing buildings - enhancing structural integrity whilst helping
             to reduce unnecessary demolitions - or as stand alone units that are
             fully customisable and built to any size or specification.
-          </li>
+          </p>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
               href="https://www.instagram.com/blokstudios"
               target="_blank"
               rel="noreferrer"
-              className="flex txt items-center px-8 py-2 rounded-full border border-[#999] gap-1.5 font-[350] int"
+              className="flex txt items-center px-8 py-2 rounded-full border border-[#999] gap-2 font-[350] int"
             >
               <span className="text-[95%]">Learn more</span>
               <Image
@@ -76,14 +76,14 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="relative w-full h-full col-span-1 md:col-span-3 bg-white"
+        className="relative w-full h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
           <Carousel autoplay>
             {researchData.map((item, index) => (
               <div
                 key={index}
-                className={`col-span-2 md:col-span-3 flex gap-4 h-[380px] order-${
+                className={`col-span-2 md:col-span-2 flex gap-4 h-[420px] order-${
                   index + 1
                 } md:order-[unset]`}
               >
@@ -93,7 +93,7 @@ const Research = () => {
                       {item.location}
                     </span>
                     <span className="tag tracking-tighter">{item.date}</span>
-                  </div>
+                  </div> 
                   <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
                   <img
                     src={item.imageSrc}
@@ -106,7 +106,7 @@ const Research = () => {
           </Carousel>
         </AnimationWrapper>
       </div>
-      <div className="ml-0 hidden md:flex relative w-full h-full  bg-white p-4 py-6 md:p-6">
+      <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">
             <strong>Blok Studios® / Modular housing</strong>{" "}
@@ -121,7 +121,7 @@ const Research = () => {
             className="h-[1px] divide w-full bg-[#999] lg:hidden"
             style={{ width: inView ? "100%" : "0%" }}
           ></div>
-          <li className="mt-8 md:mt-6 ttn txt">
+          <p className="mt-8 md:mt-6">
             BLOK Studios® is a modular housing initiative set up more than 5
             years ago initially as a sixth-form project and has since turned
             into my conceptual product design playground. The goal is to create
@@ -133,13 +133,13 @@ const Research = () => {
             pre-existing buildings - enhancing structural integrity whilst helping
             to reduce unnecessary demolitions - or as stand alone units that are
             fully customisable and built to any size or specification.
-          </li>
+          </p>
           <li className="mt-8 relative w-fit pb-0.5">
             <a
               href="https://www.instagram.com/blokstudios"
               target="_blank"
               rel="noreferrer"
-              className="flex txt  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-1.5 font-[350] int"
+              className="flex txt  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-2 font-[400] int"
             >
               <span className="text-[90%] md:text-[95%]">Learn more</span>
               <Image
