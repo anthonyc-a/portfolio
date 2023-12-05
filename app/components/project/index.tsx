@@ -106,7 +106,7 @@ const Project = () => {
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 ">
               <div className="index txt  md:hidden md:top-0 md:right-0">
-                <span className="text-[#1a1a1a] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
+                <span className="text-[#1a1a1a] font-[450] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
                   001 — 0{index + 1}
                 </span>
               </div>
@@ -131,7 +131,7 @@ const Project = () => {
                 <h4 className="leading-[1] md:leading-[1.8]   text-[100%]">
                   {project.title}
                 </h4>
-                <h4 className=" tracking-wide font-[300] md:font-[200] text-[87%] ">
+                <h4 className=" tracking-wide font-[350] md:font-[200] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">

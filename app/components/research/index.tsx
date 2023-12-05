@@ -92,7 +92,7 @@ const Research = () => {
                     <span className="text-[95%] md-text-[110%] tracking-tight">
                       {item.location}
                     </span>
-                    <span className="tag">{item.date}</span>
+                    <span className="tag tracking-tighter">{item.date}</span>
                   </div>
                   <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
                   <img

@@ -27,7 +27,7 @@ const skills = [
   {
     title: "Art Direction",
     description:
-      "Extensive experience working in the realm of digital marketing and branding means I'm able to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+      "Extensive experience working in the realm of digital marketing and branding enables me to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
     icon: '/art.svg',
   },
 ];
@@ -137,7 +137,7 @@ const Home = () => {
           </AnimationWrapper>
         </div>
 
-        <div id="work" className="p-6 pt-10 md:pt-20 mt-6">
+        <div id="work" className="p-6 pt-10 md:pt-16 mt-6">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4">
             <div className="txt">
               <AccentHeaderOne text="clients" />
@@ -146,7 +146,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="research" className="p-6 mt-6 md:mt-8">
+        <div id="research" className="p-6 mt-6 md:mt-12">
           <div className="txt mb-8 md:mb-12">
             <AccentHeaderOne text="research" />
           </div>
