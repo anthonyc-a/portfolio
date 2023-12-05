@@ -19,18 +19,16 @@ const Header = () => {
       <div></div>
       <div className="">
         <div className="txt md:hidden mb-4">
-          <span className="rise  text-[90%] load-delay">
+          <p className="rise  text-[90%] load-delay">
             Designer / Developer
-          </span>
-          <br />
-          <span className="rise  text-[90%] load-delay">
+          </p>
+          <p className="rise  text-[90%] load-delay">
             Portfolio / 2023 — 2024
-          </span>
+          </p>
         </div>
         <div className="txt md:hidden mb-4">
-          <span className="rise  text-[90%]">Available for freelance</span>
-          <br />
-          <span className="rise  text-[90%]"> projects in January 2024</span>
+          <p className="rise  text-[90%]">Available for freelance</p>
+          <p className="rise  text-[90%]"> projects in January 2024</p>
         </div>
         <Contact />
       </div>

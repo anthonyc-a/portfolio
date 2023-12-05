@@ -21,7 +21,7 @@ const data = [
   {
     name: "The Dean Dsouza Mindset — Mental Health Blog",
     img: "/epoch.png",
-    link: "https://example.com",
+    link: "https://deandsouzamindset.com",
   },
 
   {
@@ -32,12 +32,12 @@ const data = [
   {
     name: "Carhartt WIP Clone — E-Commerce Website",
     img: "/double.png",
-    link: "https://example.com",
+    link: "https://carhartt-clone-v2.netlify.app",
   },
   {
     name: "SUI Wine Imports — Wine Imports Catalogue",
     img: "/double.png",
-    link: "https://example.com",
+    link: "https://sui-wineimports.com",
   },
   {
     name: "Studio PB — Design Studio Website",
