@@ -52,7 +52,7 @@ const data = [
   {
     name: "Genesis — Web3 Marketplace & Community",
     img: "/genesis.jpg",
-    link: "https://example.com",
+    link: "https://g3nesis.io",
   },
   {
     name: "Agora — Digital Art Marketplace",
