@@ -108,7 +108,6 @@ const Home = () => {
             >
               {skills.map((item, index) => (
                 <div key={index}>
-                  <Image src="/dev.svg" alt="" width={50} height={50} />
                   <h4 className="mb-2 md:mb-4 mt-6">{item.title}</h4>
                   <div
                     className="divide my-3 lg:hidden"
