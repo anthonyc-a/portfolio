@@ -20,7 +20,7 @@ const skills = [
   {
     title: "Digital Design",
     description:
-      "A designer by nature, I have an eye for detail and a passion for creating functional, satisfying experiences. With a deep understanding of the design process, I can help point you in the right direction, no matter what stage you're at.",
+      "A designer by nature, I have an eye for detail and a passion for creating functional, satisfying experiences. With a strong understanding of the design process, I can help point you in the right direction, no matter what stage you're at.",
   },
   {
     title: "Art Direction",
