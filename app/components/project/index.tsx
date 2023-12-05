@@ -71,15 +71,27 @@ const Project = () => {
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
               <div className="index txt">
-                <span className="text-[#1a1a1a] text-[85%] absolute top-0 right-0">01 — 00{index + 1}</span>
+                <span className="text-[#1a1a1a] text-[85%] absolute top-0 right-0">
+                  01 — 00{index + 1}
+                </span>
               </div>
-              <Image
-                src={project.imageSrc}
-                alt={project.altText}
-                width={230}
-                height={230}
-                className="mx-auto mt-2 md:mx-0"
-              />
+              {expandedProjectIndex === index ? (
+                <Image
+                  src={project.imageSrc}
+                  alt={project.altText}
+                  width={230}
+                  height={230}
+                  className="mx-auto mt-2 md:mx-0 float"
+                />
+              ) : (
+                <Image
+                  src={project.imageSrc}
+                  alt={project.altText}
+                  width={230}
+                  height={230}
+                  className="mx-auto mt-2 md:mx-0"
+                />
+              )}
               <div className="w-[45%]">
                 <h4 className="leading-[1] md:leading-[1.8]   text-[100%]">
                   {project.title}
@@ -179,12 +191,12 @@ const Project = () => {
                   natus veniam dolorem veritatis hic culpa et consequatur
                   repudiandae cumque?
                 </p>
-                <div className="flex mt-12 txt  items-center justify-between w-full">
+                <div className="flex mt-12  items-center justify-between w-full">
                   <a
                     href={`https://${project.website}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="txt tag flex items-center gap-1 transition-all  "
+                    className="txt tag h-7 flex items-center gap-1 transition-all  "
                   >
                     <div>
                       <IoIosLink size={10} />

@@ -15,17 +15,20 @@ const skills = [
   {
     title: "Full-Stack Development",
     description:
-      "My expertise as a full-stack developer allows me to create custom end-to-end solutions for my clients. I use the latest technologies to create fast, responsive and secure websites and apps which are built to scale.",
+      "My expertise as a full-stack developer allows me to quickly create custom end-to-end solutions for my clients. I use the latest technologies to create fast, responsive and secure websites and apps which are built to scale.",
+    icon: '/dev.svg',
   },
   {
     title: "Digital Design",
     description:
-      "A designer by nature, I have an eye for detail and a passion for creating functional, satisfying experiences. With a strong understanding of the design process, I can help point you in the right direction, no matter what stage you're at.",
+      "A designer by nature - I have an eye for detail and a passion for creating functional, satisfying user experiences. With a strong understanding of the design process, I can help point you in the right direction, no matter which stage you're at.",
+    icon: '/design.svg',
   },
   {
     title: "Art Direction",
     description:
-      "Extensive experience with digital marketing and branding means I'm able to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+      "Extensive experience working with digital marketing and branding means I'm able to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+    icon: '/art.svg',
   },
 ];
 
