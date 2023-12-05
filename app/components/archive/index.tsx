@@ -19,7 +19,7 @@ const data = [
   },
 
   {
-    name: "The Dean Dsouza Mindset — Mental Health Blog",
+    name: "Dean Dsouza Mindset — Mental Health Blog",
     img: "/epoch.png",
     link: "https://deandsouzamindset.com",
   },

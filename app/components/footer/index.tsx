@@ -72,12 +72,11 @@ const Footer = () => {
               />
             </div>
           </div>
-          <div className="mb-6 md:mb-0">
+          <div className="w-full md:w-[unset] mb-6 md:mb-0">
             <h5>socials:</h5>
 
             <Socials />
           </div>
-          <div className="md:hidden w-32"></div>
           <div className="mt-4 md:mt-0">
             <h5>works from:</h5>
             2021 — 2023

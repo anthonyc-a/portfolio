@@ -15,7 +15,7 @@ const skills = [
   {
     title: "Full-Stack Development",
     description:
-      "My expertise as a full-stack developer allows me to quickly create custom end-to-end solutions for my clients. I use the latest technologies to create fast, responsive and secure websites and apps which are built to scale.",
+      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest technologies to create fast, responsive and secure websites and apps which are built to scale.",
     icon: '/dev.svg',
   },
   {

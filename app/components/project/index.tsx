@@ -27,7 +27,18 @@ const projects = [
     description: "Streaming Service",
     year: "Jul 2022",
     website: "verve.tv",
-    tags: ["Full-Stack", "APIs", "UI/UX", "Consultancy"],
+    tags: ["Full-Stack", "API", "UI/UX", "Consultancy"],
+  },
+  {
+    imageSrc: "/snapi.png",
+    altText: "Double",
+    width: 180,
+    height: 180,
+    title: "Snapi",
+    description: "Audience Activation",
+    year: "Jan 2021",
+    website: "archvizual.com",
+    tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
   },
   {
     imageSrc: "/archvizual.png",
@@ -46,6 +57,7 @@ const Project = () => {
   const [expandedProjectIndex, setExpandedProjectIndex] = useState<
     number | null
   >(null);
+  const [showMore, setShowMore] = useState(false);
 
   const handleProjectClick = (index: number) => {
     if (expandedProjectIndex === index) {
@@ -60,9 +72,11 @@ const Project = () => {
     threshold: 0,
   });
 
+  const visibleProjects = showMore ? projects : projects.slice(0, 3);
+
   return (
     <div className="col-span-1 md:col-span-3 flex flex-col gap-5">
-      {projects.map((project, index) => (
+      {visibleProjects.map((project, index) => (
         <div
           key={index}
           className="project bg-white rounded-[0px] py-6 md:py-8  p-4 md:p-8"
@@ -70,7 +84,7 @@ const Project = () => {
         >
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
-              <div className="index txt">
+              <div className="index txt md:hidden">
                 <span className="text-[#1a1a1a] text-[85%] absolute top-0 right-0">
                   01 — 00{index + 1}
                 </span>
@@ -212,6 +226,22 @@ const Project = () => {
           </AnimationWrapper>
         </div>
       ))}
+      {projects.length > 3 && (
+        <div
+          className="flex justify-center w-full items-center gap-3 bottom-0 right-0 mt-6 txt"
+          onClick={() => setShowMore(!showMore)}
+        >
+          <div className="w-full h-[1px] bg-[#999]" />
+
+          <a className=" absolute flex gap-2 bg-[#f8f8f8] mx-auto text-[90%] int main-btn md:text-[95%] text-center px-4 w-fit font-[400] pb-0.5 whitespace-nowrap">
+            <a>
+            {showMore ? "Show Less" : "More work"}
+
+            </a>
+            {showMore ? " -" : " +"}
+          </a>
+        </div>
+      )}
     </div>
   );
 };
