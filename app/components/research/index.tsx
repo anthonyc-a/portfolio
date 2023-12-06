@@ -127,7 +127,7 @@ const Research = () => {
             className="h-[1px] divide w-full bg-[#999] lg:hidden"
             style={{ width: inView ? "100%" : "0%" }}
           ></div>
-          <p className="mt-8 md:mt-4">
+          <p className="mt-8 md:mt-6">
             BLOK Studios® is a modular housing initiative set up more than 5
             years ago as a sixth-form project and has since turned
             into my conceptual product design playground. The goal is to create

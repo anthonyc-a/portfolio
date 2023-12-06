@@ -176,7 +176,7 @@ const Home = () => {
                   onClick={() => {
                     setLocation("contact");
                   }}
-                  className="font-[450]  int mt-6 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                  className="font-[450]  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
                 >
                   <span className="int">start a project</span>
                   <Image
