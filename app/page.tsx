@@ -158,6 +158,7 @@ const Home = () => {
                   autoPlay
                   loop
                   muted
+                  
                 />
                 <div className="absolute tag bottom-4 text-white right-4">
                   studio showreel 2024
