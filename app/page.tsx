@@ -146,6 +146,8 @@ const Home = () => {
           </div>
         </div>
 
+
+
         <div className="p-6 pt-10 md:pt-16 mt-6 md:mt-4">
           <AnimationWrapper>
             <div className="relative flex flex-col md:flex-row-reverse items-center justify-between">
