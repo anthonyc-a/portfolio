@@ -158,13 +158,13 @@ const Home = () => {
                   muted
                 />
                 <div className="absolute tag bottom-4 text-white right-4">
-                  showreel 2024
+                  studio showreel 2024
                 </div>
               </div>
-              <div className="md:w-[40%] mt-8 md:mt-0">
+              <div className="md:w-[40%] mt-10 md:mt-0">
                 <h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem non quo neque et aspernatur maxime.
+                  Currently available for freelance and contract-based work and
+                  open to all projects, big or small.
                 </h2>
                 <p className="mt-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

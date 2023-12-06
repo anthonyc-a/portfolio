@@ -36,13 +36,13 @@ const Research = () => {
       <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
         <h4 className="txt">
-            <strong>Blok Studios® / Modular housing</strong>{" "}
+            Blok Studios® / Modular housing
           </h4>
           <li className="txt">
-            <strong>Research phase — 01</strong>{" "}
+            Research phase — 01
           </li>
           <li className="txt">
-            <strong>3D Visualisation</strong>{" "}
+            3D Visualisation
           </li>
           <div
             className="divide my-4 lg:hidden"
@@ -82,7 +82,7 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="relative w-[95%] h-fit col-span-1 md:col-span-3 "
+        className="relative w-[100%] h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
           <Carousel autoplay>
@@ -127,7 +127,7 @@ const Research = () => {
             className="h-[1px] divide w-full bg-[#999] lg:hidden"
             style={{ width: inView ? "100%" : "0%" }}
           ></div>
-          <p className="mt-8 md:mt-6">
+          <p className="mt-8 md:mt-4">
             BLOK Studios® is a modular housing initiative set up more than 5
             years ago initially as a sixth-form project and has since turned
             into my conceptual product design playground. The goal is to create
