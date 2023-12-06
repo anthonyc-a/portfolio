@@ -46,25 +46,7 @@ const projects = [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
     },
   },
-  {
-    imageSrc: "/snapi.png",
-    altText: "Double",
-    width: 180,
-    height: 180,
-    title: "Snapi",
-    description: "Audience Activation",
-    year: "Jul 2021",
-    website: "snapi.com",
-    tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
-    content: {
-      brief:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      process:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      outcome:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-    },
-  },
+
   {
     imageSrc: "/archvizual.png",
     altText: "Double",
@@ -78,6 +60,25 @@ const projects = [
     content: {
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+    },
+  },
+  {
+    imageSrc: "/snapi.png",
+    altText: "Double",
+    width: 180,
+    height: 180,
+    title: "Snapi",
+    description: "Audience Activation",
+    year: "Jul 2021",
+    website: "snapi.com",
+    tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
+    content: {
+      brief:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
       process:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
       outcome:
@@ -204,7 +205,7 @@ const Project = () => {
           >
             <div className="w-full absolute top-1/2 rounded-sm -translate-y-1/2 h-[1px] bg-[#aaa]" />
 
-            <a className=" absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag mx-auto text-[90%] text-center p-2 px-4 md:px-4 w-fit font-[400] pb-1 whitespace-nowrap">
+            <a className=" absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag mx-auto text-[90%] text-center p-2 px-4 md:px-2 w-fit font-[400] pb-1 whitespace-nowrap">
               <span>{showMore ? "Show Less" : "load more work"}</span>
               {showMore ? " -" : " +"}
             </a>
