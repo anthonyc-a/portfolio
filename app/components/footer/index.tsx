@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="w-full bg-[#1a1a1a] mt-20 p-6 pt-24 pb-8"
+      className="w-full bg-[#1a1a1a] mt-20 p-6 pt-24 pb-8 z-50"
       id="contact"
       ref={inViewRef}
     >

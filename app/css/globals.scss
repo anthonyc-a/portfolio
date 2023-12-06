@@ -39,6 +39,7 @@ html {
 }
 
 body {
+  position: relative;
   color: #1a1a1a;
   height: 200vh;
   background-color: #f8f8f8;
@@ -73,15 +74,24 @@ footer {
   align-items: center;
   top: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
-  background-color: #999999a1;
+  transition: height 0.25s ease, width 0.25s ease, opacity 0.25s ease;
   backdrop-filter: blur(2px);
   border-radius: 100%;
   pointer-events: none;
   transform-origin: center;
   opacity: 0;
   z-index: 99999;
+
+  .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #999999a1;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+  }
 
   @media (pointer: coarse) {
     display: none;

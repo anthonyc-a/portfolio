@@ -10,6 +10,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Cursor from "./components/cursor";
+import CursorWrapper from "./contexts/cursorContext";
 
 export default function RootLayout({
   children,
@@ -77,14 +78,16 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
       </head>
-      <body>
-        <Cursor />
-        <div ref={wrapperRef} className="friction-wrapper">
-          <Header />
-          {children}
-          <Footer />
-        </div>
-      </body>
+      <CursorWrapper>
+        <body>
+          <Cursor />
+          <div>
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </body>
+      </CursorWrapper>
     </html>
   );
 }

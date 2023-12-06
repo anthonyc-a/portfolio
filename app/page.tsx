@@ -16,19 +16,19 @@ const skills = [
     title: "Full-Stack Development",
     description:
       "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
-    icon: '/dev.svg',
+    icon: "/dev.svg",
   },
   {
     title: "Digital Design",
     description:
       "A designer by nature - I have an eye for detail and a passion for creating functional, satisfying user experiences. With a strong understanding of the design process, I can help point you in the right direction, no matter what stage you're at.",
-    icon: '/design.svg',
+    icon: "/design.svg",
   },
   {
     title: "Art Direction",
     description:
       "Extensive experience working in the realm of digital marketing and branding enables me to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
-    icon: '/art.svg',
+    icon: "/art.svg",
   },
 ];
 
@@ -122,16 +122,16 @@ const Home = () => {
 
               <button
                 onClick={setLocation}
-                className="md:absolute font-[450]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                className="md:absolute font-[400]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
               >
                 <span className="int">see my work</span>
                 <Image
-                    src="/followArrow.svg"
-                    alt=""
-                    width={7}
-                    height={7}
-                    className={`rotate-[135deg] int`}
-                  />
+                  src="/followArrow.svg"
+                  alt=""
+                  width={7}
+                  height={7}
+                  className={`rotate-[135deg] int`}
+                />
               </button>
             </div>
           </AnimationWrapper>
@@ -146,6 +146,48 @@ const Home = () => {
           </div>
         </div>
 
+        <div className="p-6 pt-10 md:pt-16 mt-6 md:mt-4">
+          <AnimationWrapper>
+            <div className="relative flex flex-col md:flex-row-reverse items-center justify-between">
+              <div className="relative md:w-[50%] h-80 overflow-hidden">
+                <video
+                  src="https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
+                  className="w-full h-full object-cover brightness-75"
+                  autoPlay
+                  loop
+                  muted
+                />
+                <div className="absolute tag bottom-4 text-white right-4">
+                  showreel 2024
+                </div>
+              </div>
+              <div className="md:w-[40%] mt-8 md:mt-0">
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem non quo neque et aspernatur maxime.
+                </h2>
+                <p className="mt-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam animi voluptatem assumenda. Velit, doloribus harum?
+                </p>
+                <button
+                  onClick={setLocation}
+                  className="font-[400]  int mt-6 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                >
+                  <span className="int">start a project</span>
+                  <Image
+                    src="/followArrow.svg"
+                    alt=""
+                    width={7}
+                    height={7}
+                    className={`rotate-[135deg] int`}
+                  />
+                </button>
+              </div>
+            </div>
+          </AnimationWrapper>
+        </div>
+
         <div id="research" className="p-6 mt-6 md:mt-12">
           <div className="txt mb-8 md:mb-12">
             <AccentHeaderOne text="research" />
@@ -153,7 +195,7 @@ const Home = () => {
           <Research />
         </div>
 
-        <div id="archive" className="p-6 mt-4 md:mt-32">
+        <div id="archive" className="p-6 mt-4 md:mt-40">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />

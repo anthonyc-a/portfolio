@@ -43,6 +43,21 @@
   }
 }
 
+.enlarge {
+  animation: enlarge 0.35s ease-out;
+  transform-origin: center;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+}
+
 
 .roll {
   animation: roll 1s infinite;

@@ -1,11 +1,16 @@
-'use client'
+"use client";
 
+import { useCursor } from "../../contexts/cursorContext";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-const Cursor: React.FC<any> = ({
-}: any): JSX.Element => {
+const Cursor: React.FC<any> = ({}: any): JSX.Element => {
   const cursorRef = useRef<any>(null);
+  const imgRef = useRef<any>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [cursorType, setCursorType] = useState("");
+
+  const { imageAddress } = useCursor(); // Destructure currentProject from the useProject hook
 
   const cursorFunction = () => {
     document.addEventListener("mousemove", handleMouseMove);
@@ -21,18 +26,12 @@ const Cursor: React.FC<any> = ({
 
     const hoveredElement = document.elementFromPoint(clientX, clientY);
     if (hoveredElement?.classList.contains("mail")) {
-      cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0 ) scale(1.35)`;
-      cursorRef.current.innerText = "Contact";
-      cursorRef.current.style.width = '100px';
-      cursorRef.current.style.height = '100px';
-      cursorRef.current.style.color = "white";
-      cursorRef.current.style.textAlign = "center";
+      setCursorType("mail");
+    }
+    if (hoveredElement?.classList.contains("archImg")) {
+      setCursorType("archImg");
     } else {
-      cursorRef.current.innerText = "";
-      cursorRef.current.style.width = '';
-      cursorRef.current.style.height = '';
-      cursorRef.current.style.color = "";
-      cursorRef.current.style.textAlign = "";
+      setCursorType("");
     }
   };
 
@@ -43,10 +42,33 @@ const Cursor: React.FC<any> = ({
 
   useEffect(() => {
     cursorFunction();
-  }, [cursorRef]);
+    handleScroll();
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="cursor txt" ref={cursorRef}>
+      <div className="inner"></div>
+      <div
+        className={`${
+          cursorType === "mail" ? "" : "hidden opacity-0"
+        } w-32 h-32 enlarge z-50 flex bg-white rounded-full justify-center items-center`}
+      >
+        Contact
+      </div>
+      <Image
+        src={imageAddress}
+        alt=""
+        width={350}
+        height={350}
+        ref={imgRef}
+        className={`z-50 cursorImg ${
+          cursorType === "archImg" ? "" : "hidden opacity-0"
+        } `}
+      />
     </div>
   );
 };

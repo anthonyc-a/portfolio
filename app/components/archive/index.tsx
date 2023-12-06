@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import ImageCursor from "../imgCursor";
 import Image from "next/image";
 import { IoIosLink } from "react-icons/io";
 import { useInView } from "react-intersection-observer";
+import { useCursor } from "../../contexts/cursorContext";
 
 const data = [
   {
@@ -66,6 +66,10 @@ const Archive = () => {
   const [currentItem, setCurrentItem] = useState("");
   const [expandedItem, setExpandedItem] = useState("");
 
+  const { setImageAddress, imageAddress } = useCursor(); // Destructure currentProject from the useProject hook
+
+  console.log(imageAddress);
+
   const handleItemClick = (item: any) => {
     if (expandedItem === item.name) {
       setExpandedItem("");
@@ -81,8 +85,6 @@ const Archive = () => {
 
   return (
     <div className="rounded-md relative w-full col-span-3">
-      <ImageCursor cursorActive={cursorActive} currentItem={currentItem} />
-
       <div
         ref={inViewRef}
         className="flex relative flex-col  w-full    items-center justify-between"
@@ -101,18 +103,20 @@ const Archive = () => {
             onMouseEnter={() => {
               setCursorActive(true);
               setCurrentItem(item.img);
+              setImageAddress(item.img);
             }}
             onMouseLeave={() => {
               setCursorActive(false);
+              setImageAddress("");
             }}
             onClick={() => handleItemClick(item)}
-            className={`int py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
+            className={`archImg int py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
               expandedItem === item.name
                 ? "md:bg-gray-200 md:bg-transparent"
                 : ""
             }`}
           >
-            <h4 className="text-[95%] flex gap-2 int">
+            <h4 className="text-[95%] flex gap-2 int archImg">
               {item.link && <IoIosLink size={14} />}
               {item.name}
             </h4>
@@ -126,7 +130,7 @@ const Archive = () => {
               />
             )}
             <div
-              className="divide absolute bottom-0 left-0"
+              className="divide archImg absolute bottom-0 left-0"
               style={{ width: inView ? "100%" : 0 }}
             ></div>
           </a>

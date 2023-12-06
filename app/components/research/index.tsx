@@ -31,13 +31,19 @@ const Research = () => {
   return (
     <div
       ref={inViewRef}
-      className="grid gap-5 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
+      className="grid gap-5 md:gap-6 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
     >
       <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
-          <h4 className="txt">Blok Studios® / Modular housing</h4>
-          <li className="txt">Research phase — 01</li>
-          <li className="txt">3D Visualisation</li>
+        <h4 className="txt">
+            <strong>Blok Studios® / Modular housing</strong>{" "}
+          </h4>
+          <li className="txt">
+            <strong>Research phase — 01</strong>{" "}
+          </li>
+          <li className="txt">
+            <strong>3D Visualisation</strong>{" "}
+          </li>
           <div
             className="divide my-4 lg:hidden"
             style={{ width: inView ? "100%" : 0 }}
@@ -62,7 +68,7 @@ const Research = () => {
               rel="noreferrer"
               className="flex txt items-center px-8 py-2 rounded-full border border-[#999] gap-2 font-[350] int"
             >
-              <span className="text-[95%]">Learn more</span>
+              <span className="text-[95%] ">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""
@@ -76,18 +82,18 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="relative w-full h-fit col-span-1 md:col-span-3 "
+        className="relative w-[95%] h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
           <Carousel autoplay>
             {researchData.map((item, index) => (
               <div
                 key={index}
-                className={`col-span-2 md:col-span-2 flex gap-4 h-[420px] order-${
+                className={`col-span-2 md:col-span-2  flex gap-4 h-[420px] order-${
                   index + 1
                 } md:order-[unset]`}
               >
-                <div className="relative rounded-[0px] overflow-hidden w-full h-full">
+                <div className="relative overflow-hidden w-full h-full">
                   <div className="absolute bottom-2 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span className="text-[95%] md-text-[110%] tracking-tight">
                       {item.location}
@@ -98,7 +104,7 @@ const Research = () => {
                   <img
                     src={item.imageSrc}
                     alt=""
-                    className="w-[100%] brightness-[85%] h-full object-cover"
+                    className="w-[100%] brightness-[75%] h-full object-cover"
                   />
                 </div>
               </div>
@@ -139,9 +145,9 @@ const Research = () => {
               href="https://www.instagram.com/blokstudios"
               target="_blank"
               rel="noreferrer"
-              className="flex txt  items-center px-8 w-full md:w-fit py-2 rounded-full border border-[#999] gap-2 font-[400] int"
+              className="flex txt  items-center px-6 w-full md:w-fit py-2 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
             >
-              <span className="text-[90%] md:text-[95%]">Learn more</span>
+              <span className="text-[90%] md:text-[95%] font-[400]">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""

@@ -19,10 +19,13 @@ const projects = [
     website: "double-agency.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Consultancy"],
     content: {
-      brief: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
-    }
+      brief:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+    },
   },
   {
     imageSrc: "/verve.png",
@@ -35,10 +38,13 @@ const projects = [
     website: "twitter.com/vervetvofficial",
     tags: ["Full-Stack", "API", "UI/UX", "Consultancy"],
     content: {
-      brief: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
-    }
+      brief:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+    },
   },
   {
     imageSrc: "/snapi.png",
@@ -51,10 +57,13 @@ const projects = [
     website: "snapi.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
     content: {
-      brief: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
-    }
+      brief:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+    },
   },
   {
     imageSrc: "/archvizual.png",
@@ -67,10 +76,13 @@ const projects = [
     website: "archvizual-redesign.netlify.app",
     tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
     content: {
-      brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
-      outcome: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue."
-    }
+      brief:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      process:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      outcome:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+    },
   },
 ];
 
@@ -100,13 +112,13 @@ const Project = () => {
       {visibleProjects.map((project, index) => (
         <div
           key={index}
-          className="project bg-white rounded-[0px] py-6 md:py-8  p-4 md:p-8"
+          className="project bg-white py-6 md:py-8  p-4 md:p-8"
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 ">
-              <div className="index txt  md:hidden md:top-0 md:right-0">
-                <span className="text-[#1a1a1a] font-[450] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
+              <div className="index txt  md:absolute md:top-0 md:right-0">
+                <span className="text-[#1a1a1a] font-[450] md:font-[400] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
                   001 — 0{index + 1}
                 </span>
               </div>
@@ -128,10 +140,10 @@ const Project = () => {
                 />
               )}
               <div className="w-[45%]">
-                <h4 className="leading-[1] md:leading-[1.8]   text-[100%]">
+                <h4 className="leading-[1] md:leading-[1.5]   text-[100%]">
                   {project.title}
                 </h4>
-                <h4 className=" tracking-wide font-[300] md:font-[200] text-[87%] ">
+                <h4 className=" tracking-wide font-[300] md:font-[300] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
@@ -158,7 +170,7 @@ const Project = () => {
                   </div>
                 </a>
                 <button className="int main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2 md:pb-1.5 px-4 border border-[#999] rounded-full">
-                  <a className=" text-[100%] int main-btn md:text-[95%] font-[450] pb-0.5 whitespace-nowrap">
+                  <a className=" text-[100%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "Learn more"}
                   </a>
                   <Image
@@ -185,16 +197,18 @@ const Project = () => {
         </div>
       ))}
       {projects.length > 3 && (
-        <div
-          className="flex justify-center w-full items-center gap-3 bottom-0 right-0 mt-6 md:mt-8 txt"
-          onClick={() => setShowMore(!showMore)}
-        >
-          <div className="w-full h-[1px] bg-[#999]" />
+        <div className="w-full  relative flex items center rounded-[4px]">
+          <div
+            className="flex justify-center  w-full items-center gap-3 bottom-0 right-0 mt-10 md:mt-16 txt"
+            onClick={() => setShowMore(!showMore)}
+          >
+            <div className="w-full absolute top-1/2 -translate-y-1/2 h-[1px] bg-[#999]" />
 
-          <a className=" absolute flex gap-2 bg-[#f8f8f8] mx-auto text-[90%] text-center px-4 md:px-6 w-fit font-[400] pb-0.5 whitespace-nowrap">
-            <span>{showMore ? "Show Less" : "More work"}</span>
-            {showMore ? " -" : " +"}
-          </a>
+            <a className=" absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag mx-auto text-[90%] text-center p-2 px-4 md:px-4 w-fit font-[400] pb-1 whitespace-nowrap">
+              <span>{showMore ? "Show Less" : "more work"}</span>
+              {showMore ? " -" : " +"}
+            </a>
+          </div>
         </div>
       )}
     </div>
