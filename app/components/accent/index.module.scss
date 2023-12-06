@@ -25,12 +25,10 @@
       }
   
       &::before {
-        position: absolute;
         left: 0;
         top: 0;
-        content: " ";
+        content: "// ";
         font-size: 80%;
-        animation: blink 2s linear infinite;
 
         &:nth-child(2) {
           animation-delay: 0.5s;

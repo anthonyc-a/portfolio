@@ -122,7 +122,7 @@ const Home = () => {
 
               <button
                 onClick={setLocation}
-                className="md:absolute font-[400]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                className="md:absolute font-[450]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
               >
                 <span className="int">see my work</span>
                 <Image
@@ -166,7 +166,7 @@ const Home = () => {
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <h2>
                   Currently available for freelance and contract-based work.
-                  I&apos;ll always be open to all projects, big or small.
+                  I&apos;ll always be open to new ideas, big or small.
                 </h2>
                 <p className="mt-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

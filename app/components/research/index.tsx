@@ -50,7 +50,7 @@ const Research = () => {
           ></div>
           <p className="mt-8 md:mt-6">
             BLOK Studios® is a modular housing initiative set up more than 5
-            years ago initially as a sixth-form project and has since turned
+            years ago as a sixth-form project and has since turned
             into my conceptual product design playground. The goal is to create
             modular, accessible housing for all, with hopes of reducing our
             permanent impact on the planet.
@@ -129,7 +129,7 @@ const Research = () => {
           ></div>
           <p className="mt-8 md:mt-4">
             BLOK Studios® is a modular housing initiative set up more than 5
-            years ago initially as a sixth-form project and has since turned
+            years ago as a sixth-form project and has since turned
             into my conceptual product design playground. The goal is to create
             modular, accessible housing for all, with hopes of reducing our
             permanent impact on the planet.
