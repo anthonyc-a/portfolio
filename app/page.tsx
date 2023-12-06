@@ -165,8 +165,8 @@ const Home = () => {
               </div>
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <h2>
-                  Currently available for freelance and contract-based work and
-                  open to all projects, big or small.
+                  Currently available for freelance and contract-based work.
+                  I&apos;ll always be open to all projects, big or small.
                 </h2>
                 <p className="mt-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

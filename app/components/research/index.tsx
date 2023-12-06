@@ -114,7 +114,7 @@ const Research = () => {
       </div>
       <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
-          <h4 className="txt">
+          <h4 className="txt font-[500]">
             <strong>Blok Studios® / Modular housing</strong>{" "}
           </h4>
           <li className="txt">
