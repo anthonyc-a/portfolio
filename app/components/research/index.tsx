@@ -147,7 +147,7 @@ const Research = () => {
               rel="noreferrer"
               className="flex txt  items-center px-6 w-full md:w-fit py-2 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
             >
-              <span className="text-[90%] md:text-[95%] font-[400]">Learn more</span>
+              <span className="text-[90%] md:text-[95%] font-[450]">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""

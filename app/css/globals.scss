@@ -38,6 +38,12 @@ html {
   height: 100% !important;
 }
 
+.gradient-line {
+  width: 100%;
+  height: 1px; /* Adjust the height of the line */
+  background: linear-gradient(to right, transparent, #999, transparent);
+}
+
 strong {
   font-weight: 450;
 }
