@@ -35,8 +35,8 @@ const skills = [
 const Home = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
-  const setLocation = () => {
-    window.location.href = "#work";
+  const setLocation = (location: any) => {
+    window.location.href = `#${location}`;
   };
 
   const [inViewRef, inView] = useInView({
@@ -121,7 +121,9 @@ const Home = () => {
               ))}
 
               <button
-                onClick={setLocation}
+                onClick={() => {
+                  setLocation("work");
+                }}
                 className="md:absolute font-[450]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
               >
                 <span className="int">see my work</span>
@@ -145,8 +147,6 @@ const Home = () => {
             <Project />
           </div>
         </div>
-
-
 
         <div className="p-6 pt-10 md:pt-16 mt-6 md:mt-4">
           <AnimationWrapper>
@@ -173,7 +173,9 @@ const Home = () => {
                   Numquam animi voluptatem assumenda. Velit, doloribus harum?
                 </p>
                 <button
-                  onClick={setLocation}
+                  onClick={() => {
+                    setLocation("contact");
+                  }}
                   className="font-[450]  int mt-6 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
                 >
                   <span className="int">start a project</span>

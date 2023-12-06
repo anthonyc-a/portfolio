@@ -31,7 +31,7 @@ const Research = () => {
   return (
     <div
       ref={inViewRef}
-      className="grid gap-5 md:gap-6 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
+      className="grid gap-5 md:gap-8 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
     >
       <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">

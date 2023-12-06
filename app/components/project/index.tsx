@@ -112,7 +112,7 @@ const Project = () => {
       {visibleProjects.map((project, index) => (
         <div
           key={index}
-          className="project bg-white py-6 md:py-8  p-4 md:p-8"
+          className="project bg-white py-6 md:py-8 md:pt-7  p-4 md:p-8"
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
