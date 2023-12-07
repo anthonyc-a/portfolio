@@ -158,7 +158,7 @@ const Home = () => {
                   autoPlay
                   loop
                   muted
-                  
+
                 />
                 <div className="absolute tag bottom-4 text-white right-4">
                   studio showreel 2024
@@ -166,8 +166,9 @@ const Home = () => {
               </div>
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <h2>
+                I&apos;m always open to new ideas, big or small.
                   Currently available for freelance and contract-based work.
-                  I&apos;m always open to new ideas, big or small.
+              
                 </h2>
                 <p className="mt-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
