@@ -242,7 +242,7 @@ const Home = () => {
                   and inspire freelance projects. Launched this year, my
                   innate curiosty for all things allows me to work on a wide
                   range of projects and ideas. The website is set to launch in
-                  2024
+                  2024.
                  
                 </p>
                 <button
