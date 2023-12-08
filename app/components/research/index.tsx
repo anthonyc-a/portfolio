@@ -60,15 +60,15 @@ const Research = () => {
               href="https://www.instagram.com/blokstudios"
               target="_blank"
               rel="noreferrer"
-              className="flex txt items-center px-8 py-2 rounded-full border border-[#999] gap-2 font-[350] int"
+              className="flex expand txt items-center px-8 py-2 rounded-full border border-[#999] gap-2 font-[350] int"
             >
-              <span className="text-[95%] ">Learn more</span>
+              <span className="text-[95%]  expand">Learn more</span>
               <Image
                 src="/followArrow.svg"
                 alt=""
                 width={7}
                 height={7}
-                className="int"
+                className="int expand"
               />
             </a>
           </li>
@@ -79,7 +79,7 @@ const Research = () => {
         className="relative md:w-[95%] cursor-none h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
-          <Carousel autoplay >
+          <Carousel autoplay>
             {researchData.map((item, index) => (
               <div
                 key={index}
@@ -141,9 +141,9 @@ const Research = () => {
                 href="https://www.instagram.com/blokstudios"
                 target="_blank"
                 rel="noreferrer"
-                className="flex txt  items-center px-6 w-full md:w-fit py-2.5 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
+                className="flex txt expand  items-center px-6 w-full md:w-fit py-2.5 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
               >
-                <span className="text-[90%] md:text-[95%] font-[450]">
+                <span className="text-[90%] expand md:text-[95%] font-[450]">
                   Learn more
                 </span>
                 <Image
@@ -151,7 +151,7 @@ const Research = () => {
                   alt=""
                   width={7}
                   height={7}
-                  className="int"
+                  className="int expand"
                 />
               </a>
             </li>

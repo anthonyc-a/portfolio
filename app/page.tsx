@@ -238,7 +238,7 @@ const Home = () => {
                     href="https://instagram.com/aarkyvstudios"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline hover:no-underline"
+                    className="underline expand hover:no-underline"
                   >
                     Aarkyv Studios 
                   </a> 

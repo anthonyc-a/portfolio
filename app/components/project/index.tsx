@@ -15,7 +15,7 @@ const projects = [
     height: 180,
     title: "Double",
     description: "Marketing Agency",
-    year: "Sept 2023",
+    year: "Sept '23",
     website: "double-agency.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Consultancy"],
     content: {
@@ -34,7 +34,7 @@ const projects = [
     height: 180,
     title: "Verve TV ",
     description: "Streaming Service",
-    year: "Aug 2022",
+    year: "Aug '22",
     website: "twitter.com/vervetvofficial",
     tags: ["Full-Stack", "API", "UI/UX", "Consultancy"],
     content: {
@@ -54,7 +54,7 @@ const projects = [
     height: 180,
     title: "Archvizual",
     description: "Visualisation Studio",
-    year: "Jan 2021",
+    year: "Jan '21",
     website: "archvizual-redesign.netlify.app",
     tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
     content: {
@@ -73,7 +73,7 @@ const projects = [
     height: 180,
     title: "Snapi",
     description: "Audience Activation",
-    year: "Jul 2021",
+    year: "Jul '22",
     website: "snapi.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
     content: {
