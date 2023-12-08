@@ -106,7 +106,7 @@ const Research = () => {
           </Carousel>
         </AnimationWrapper>
       </div>
-      <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-6">
+      <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-8">
         <AnimationWrapper stagger={0.2}>
           <ul className="relative mt-auto block h-fit text-[100%]">
             <h4 className="txt font-[500]">

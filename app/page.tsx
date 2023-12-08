@@ -90,7 +90,7 @@ const Home = () => {
             <div className="txt">
               <AccentHeaderOne text="about me" />
             </div>
-            <div className="w-40 md:hidden mt-[-1rem] md:mt-0  lg:w-48 h-40 lg:h-48 rounded-full bg-gray-300  overflow-hidden">
+            <div className="w-40 md:hidden mt-[-1rem] md:mt-0  h-40 rounded-full bg-gray-300  overflow-hidden">
               <Image
                 src="/me.jpg"
                 alt=""
@@ -109,7 +109,7 @@ const Home = () => {
             </AnimationWrapper>
 
             <div></div>
-            <div className="w-40 lg:w-48 h-40 lg:h-48 hidden md:block rounded-full bg-gray-300  overflow-hidden">
+            <div className="w-40  h-40  hidden md:block rounded-full bg-gray-300  overflow-hidden">
               <Image
                 src="/me.jpg"
                 alt=""
