@@ -98,7 +98,7 @@ const Research = () => {
                   <img
                     src={item.imageSrc}
                     alt=""
-                    className="w-[100%] brightness-[90%] h-full object-cover"
+                    className="w-[100%] brightness-[90%] hover:brightness-[80%] transition-all duration-300 h-full object-cover"
                   />
                 </div>
               </div>
