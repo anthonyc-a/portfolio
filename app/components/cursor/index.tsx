@@ -10,7 +10,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [cursorType, setCursorType] = useState("");
 
-  const { imageAddress } = useCursor(); // Destructure currentProject from the useProject hook
+  const { imageAddress } = useCursor();
 
   const cursorFunction = () => {
     document.addEventListener("mousemove", handleMouseMove);
@@ -22,18 +22,19 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
     const mouseX = clientX - cursorRef?.current?.clientWidth / 2;
     const mouseY = clientY - cursorRef?.current?.clientHeight / 2;
     cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0 )`;
-    cursorRef.current.style.opacity = 1;
+    cursorRef.current.style.opacity = "1";
 
     const hoveredElement = document.elementFromPoint(clientX, clientY);
     if (hoveredElement?.classList.contains("mail")) {
       setCursorType("mail");
-    }
-    if (hoveredElement?.classList.contains("archImg")) {
+    } else if (hoveredElement?.classList.contains("archImg")) {
       setCursorType("archImg");
     } else {
       setCursorType("");
     }
   };
+
+  console.log(cursorType);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -54,10 +55,19 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
       <div className="inner"></div>
       <div
         className={`${
-          cursorType === "mail" ? "" : "hidden opacity-0"
-        } w-32 h-32 enlarge z-50 flex bg-white rounded-full justify-center items-center`}
+          cursorType === "mail" ? "" : "hidden opacity-"
+        } w-40 h-40 gap-1.5 enlarge z-50 font-[450] flex bg-white rounded-full justify-center items-center`}
       >
-        Contact
+        <span>
+        get in touch
+        </span>
+        <Image
+                src="/followArrow.svg"
+                alt=""
+                width={7}
+                height={7}
+                className="int"
+              />
       </div>
       <Image
         src={imageAddress}

@@ -34,6 +34,7 @@ const skills = [
 
 const Home = () => {
   const heroRef = useRef<HTMLDivElement>(null);
+  const [paused, setPaused] = React.useState(false);
 
   const setLocation = (location: any) => {
     window.location.href = `#${location}`;
@@ -61,6 +62,21 @@ const Home = () => {
     }
   }, []);
 
+  const togglePause = () => {
+    const video = document.querySelector("video");
+    const pause = document.querySelector(".pause");
+    setPaused(!paused);
+    if (video) {
+      if (video.paused) {
+        video.play();
+        pause!.classList.add("active");
+      } else {
+        video.pause();
+        pause!.classList.remove("active");
+      }
+    }
+  };
+
   return (
     <div className="w-full  ">
       <div className="w-full bg-[#1a1a1a] text-[#f8f8f8]">
@@ -80,7 +96,7 @@ const Home = () => {
                 alt=""
                 width={1372}
                 height={1507}
-                className="w-full h-full object-cover scale-[1.25] translate-y-2"
+                className="w-full h-full grayscale object-cover scale-[1.25] translate-y-2"
               />
             </div>
             <AnimationWrapper>
@@ -127,13 +143,17 @@ const Home = () => {
                 className="md:absolute font-[450]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
               >
                 <span className="int">see my work</span>
-                <Image
-                  src="/followArrow.svg"
-                  alt=""
-                  width={7}
-                  height={7}
-                  className={`rotate-[135deg] int`}
-                />
+                <div className="arrow h-4 flex items-center overflow-hidden">
+                  <div className="inner">
+                    <Image
+                      src="/followArrow.svg"
+                      alt=""
+                      width={7}
+                      height={7}
+                      className={`rotate-[135deg] int`}
+                    />
+                  </div>
+                </div>
               </button>
             </div>
           </AnimationWrapper>
@@ -154,40 +174,88 @@ const Home = () => {
               <div className="relative md:w-[50%] h-80 overflow-hidden">
                 <video
                   src="https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
-                  className="w-full h-full object-cover brightness-75"
+                  className={`w-full h-full object-cover ${
+                    paused ? "brightness-75" : ""
+                  }`}
                   autoPlay
                   loop
                   muted
-
                 />
+                <div
+                  className="pause scale-75 origin-center absolute bottom-4 left-4"
+                  onClick={togglePause}
+                >
+                  {paused ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      className="scale-125"
+                    >
+                      <path
+                        fill="#fff"
+                        fillRule="evenodd"
+                        d="M8 5v14l11-7z"
+                      ></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="30"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#fff"
+                        fillRule="evenodd"
+                        d="M4 5h5v14H4zm11 0h5v14h-5z"
+                      ></path>
+                    </svg>
+                  )}
+                </div>
                 <div className="absolute tag bottom-4 text-white right-4">
                   studio showreel 2024
                 </div>
               </div>
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <h2>
-                I&apos;m always open to new ideas, big or small.
-                  Currently available for freelance and contract-based work.
-              
+                  I&apos;m always open to new ideas, big or small and currently
+                  available for freelance and contract-based work.
                 </h2>
                 <p className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam animi voluptatem assumenda. Velit, doloribus harum?
+                  My design studio  <a
+                    href="https://instagram.com/aarkyvstudios"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:no-underline"
+                  >
+                    Aarkyv Studios
+                  </a>, which I use to accept, manage
+                  and inspire freelance projects was launched this year. My
+                  innate curiosty for most things allows me to work on a wide
+                  range of projects and ideas. The website is set to launch in
+                  2024
+                 
                 </p>
                 <button
                   onClick={() => {
                     setLocation("contact");
                   }}
-                  className="font-[450]  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                  className="font-[450] main-btn  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
                 >
                   <span className="int">start a project</span>
-                  <Image
-                    src="/followArrow.svg"
-                    alt=""
-                    width={7}
-                    height={7}
-                    className={`rotate-[135deg] int`}
-                  />
+                  <div className="arrow h-4 flex items-center overflow-hidden">
+                    <div className="inner">
+                      <Image
+                        src="/followArrow.svg"
+                        alt=""
+                        width={7}
+                        height={7}
+                        className={`rotate-[135deg] int`}
+                      />
+                    </div>
+                  </div>
                 </button>
               </div>
             </div>

@@ -31,35 +31,29 @@ const Research = () => {
   return (
     <div
       ref={inViewRef}
-      className="grid gap-5 md:gap-8 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
+      className="grid gap-5 md:gap-0 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
     >
       <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
         <ul className="relative mt-auto block h-fit text-[100%]">
-        <h4 className="txt">
-            Blok Studios® / Modular housing
-          </h4>
-          <li className="txt">
-            Research phase — 01
-          </li>
-          <li className="txt">
-            3D Visualisation
-          </li>
+          <h4 className="txt">Blok Studios® / Modular housing</h4>
+          <li className="txt">Research phase — 01</li>
+          <li className="txt">3D Visualisation</li>
           <div
             className="divide my-4 lg:hidden"
             style={{ width: inView ? "100%" : 0 }}
           ></div>
           <p className="mt-8 md:mt-6">
             BLOK Studios® is a modular housing initiative set up more than 5
-            years ago as a sixth-form project and has since turned
-            into my conceptual product design playground. The goal is to create
-            modular, accessible housing for all, with hopes of reducing our
-            permanent impact on the planet.
+            years ago as a sixth-form project and has since turned into my
+            conceptual product design playground. The goal is to create modular,
+            accessible housing for all, with hopes of reducing our permanent
+            impact on the planet.
             <br />
             <br />
             The structures will be fully modular and can be integrated into
-            pre-existing buildings - enhancing structural integrity whilst helping
-            to reduce unnecessary demolitions - or as stand alone units that are
-            fully customisable and built to any size or specification.
+            pre-existing buildings - enhancing structural integrity whilst
+            helping to reduce unnecessary demolitions - or as stand alone units
+            that are fully customisable and built to any size or specification.
           </p>
           <li className="mt-8 relative w-fit pb-0.5 text-[100%]">
             <a
@@ -82,7 +76,7 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="relative w-[100%] h-fit col-span-1 md:col-span-3 "
+        className="relative w-[95%] h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
           <Carousel autoplay>
@@ -99,12 +93,12 @@ const Research = () => {
                       {item.location}
                     </span>
                     <span className="tag tracking-tighter">{item.date}</span>
-                  </div> 
+                  </div>
                   <div className="absolute bottom-0 w-full h-1/4 z-10 bg-gradient-to-t from-black to-transparent"></div>
                   <img
                     src={item.imageSrc}
                     alt=""
-                    className="w-[100%] brightness-[75%] h-full object-cover"
+                    className="w-[100%] brightness-[90%] h-full object-cover"
                   />
                 </div>
               </div>
@@ -113,51 +107,56 @@ const Research = () => {
         </AnimationWrapper>
       </div>
       <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-6">
-        <ul className="relative mt-auto block h-fit text-[100%]">
-          <h4 className="txt font-[500]">
-            <strong>Blok Studios® / Modular housing</strong>{" "}
-          </h4>
-          <li className="txt">
-            <strong>Research phase — 01</strong>{" "}
-          </li>
-          <li className="txt">
-            <strong>3D Visualisation</strong>{" "}
-          </li>
-          <div
-            className="h-[1px] divide w-full bg-[#999] lg:hidden"
-            style={{ width: inView ? "100%" : "0%" }}
-          ></div>
-          <p className="mt-8 md:mt-6">
-            BLOK Studios® is a modular housing initiative set up more than 5
-            years ago as a sixth-form project and has since turned
-            into my conceptual product design playground. The goal is to create
-            modular, accessible housing for all, with hopes of reducing our
-            permanent impact on the planet.
-            <br />
-            <br />
-            The structures will be fully modular and can be integrated into
-            pre-existing buildings - enhancing structural integrity whilst helping
-            to reduce unnecessary demolitions - or as stand alone units that are
-            fully customisable and built to any size or specification.
-          </p>
-          <li className="mt-8 relative w-fit pb-0.5">
-            <a
-              href="https://www.instagram.com/blokstudios"
-              target="_blank"
-              rel="noreferrer"
-              className="flex txt  items-center px-6 w-full md:w-fit py-2 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
-            >
-              <span className="text-[90%] md:text-[95%] font-[450]">Learn more</span>
-              <Image
-                src="/followArrow.svg"
-                alt=""
-                width={7}
-                height={7}
-                className="int"
-              />
-            </a>
-          </li>
-        </ul>
+        <AnimationWrapper stagger={0.2}>
+          <ul className="relative mt-auto block h-fit text-[100%]">
+            <h4 className="txt font-[500]">
+              <strong>Blok Studios® / Modular housing</strong>{" "}
+            </h4>
+            <li className="txt">
+              <strong>Research phase — 01</strong>{" "}
+            </li>
+            <li className="txt">
+              <strong>3D Visualisation</strong>{" "}
+            </li>
+            <div
+              className="h-[1px] divide w-full bg-[#999] lg:hidden"
+              style={{ width: inView ? "100%" : "0%" }}
+            ></div>
+            <p className="mt-8 md:mt-6">
+              BLOK Studios® is a modular housing initiative set up more than 5
+              years ago as a sixth-form project and has since turned into my
+              conceptual product design playground. The goal is to create
+              modular, accessible housing for all, with hopes of reducing our
+              permanent impact on the planet.
+              <br />
+              <br />
+              The structures will be fully modular and can be integrated into
+              pre-existing buildings - enhancing structural integrity whilst
+              helping to reduce unnecessary demolitions - or as stand alone
+              units that are fully customisable and built to any size or
+              specification.
+            </p>
+            <li className="mt-8 relative w-fit pb-0.5">
+              <a
+                href="https://www.instagram.com/blokstudios"
+                target="_blank"
+                rel="noreferrer"
+                className="flex txt  items-center px-6 w-full md:w-fit py-2.5 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
+              >
+                <span className="text-[90%] md:text-[95%] font-[450]">
+                  Learn more
+                </span>
+                <Image
+                  src="/followArrow.svg"
+                  alt=""
+                  width={7}
+                  height={7}
+                  className="int"
+                />
+              </a>
+            </li>
+          </ul>
+        </AnimationWrapper>
       </div>
     </div>
   );

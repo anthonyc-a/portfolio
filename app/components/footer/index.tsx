@@ -37,7 +37,7 @@ const Footer = () => {
         <span className="txt scale-90 md:scale-100 p-3 px-4 mx-auto border block w-fit mb-8 text-[#f8f8f8] border-[#999] rounded-full">
           available for work
         </span>
-        <h1 className="mx-auto flex items-center text-[#f8f8f8] tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
+        <h1 className="mx-auto mail flex items-center text-[#f8f8f8] tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
           <a href="mailto:anthonyc.animba@gmail.com" className="mail">Let&apos;s Talk </a>
 
           <div className="roll">
@@ -52,6 +52,7 @@ const Footer = () => {
           </div>
         </h1>
       </AnimationWrapper>
+      
 
       <AnimationWrapper>
         <div className="w-full xl:container xl:mx-auto txt  flex flex-wrap items-center text-[#f8f8f8] justify-between mt-20 md:mt-24">
