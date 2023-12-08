@@ -260,3 +260,11 @@ footer {
     transform: translateY(0);
   }
 }
+
+.dark-btn {
+  &:hover {
+    .arrow {
+      filter: invert(0);
+    }
+  }
+}
