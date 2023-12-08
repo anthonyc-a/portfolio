@@ -76,7 +76,7 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="relative w-[95%] h-fit col-span-1 md:col-span-3 "
+        className="relative md:w-[95%] h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
           <Carousel autoplay>
