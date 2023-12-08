@@ -96,7 +96,7 @@ const Home = () => {
                 alt=""
                 width={1372}
                 height={1507}
-                className="w-full h-full grayscale object-cover scale-[1.25] translate-y-2"
+                className="w-full h-full  object-cover scale-[1.25] translate-y-2"
               />
             </div>
             <AnimationWrapper>
@@ -219,6 +219,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="md:w-[40%] mt-10 md:mt-0">
+                <div className="txt pb-8 ">
+                  <span className="text-[95%]  font-[400]">
+                  let&apos;s collaborate
+                  </span>
+                 </div>
                 <h2>
                   I&apos;m always open to new ideas, big or small, and currently
                   available for freelance and contract-based work.
