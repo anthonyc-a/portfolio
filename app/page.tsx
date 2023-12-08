@@ -220,7 +220,7 @@ const Home = () => {
               </div>
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <h2>
-                  I&apos;m always open to new ideas, big or small and currently
+                  I&apos;m always open to new ideas, big or small, and currently
                   available for freelance and contract-based work.
                 </h2>
                 <p className="mt-4">
@@ -230,10 +230,12 @@ const Home = () => {
                     rel="noreferrer"
                     className="underline hover:no-underline"
                   >
-                    Aarkyv Studios
-                  </a>, which I use to accept, manage
-                  and inspire freelance projects was launched this year. My
-                  innate curiosty for most things allows me to work on a wide
+                    Aarkyv Studios 
+                  </a> 
+                  {" "}
+                  is used to accept, manage
+                  and inspire freelance projects. Launched this year, my
+                  innate curiosty for all things allows me to work on a wide
                   range of projects and ideas. The website is set to launch in
                   2024
                  
