@@ -79,7 +79,7 @@ const Research = () => {
         className="relative md:w-[95%] h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
-          <Carousel autoplay>
+          <Carousel autoplay >
             {researchData.map((item, index) => (
               <div
                 key={index}

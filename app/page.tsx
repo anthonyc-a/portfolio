@@ -220,7 +220,7 @@ const Home = () => {
               </div>
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <div className="txt pb-8 ">
-                  <span className="text-[95%]  font-[400]">
+                  <span className="text-[95%]  font-[450]">
                   let&apos;s collaborate
                   </span>
                  </div>
