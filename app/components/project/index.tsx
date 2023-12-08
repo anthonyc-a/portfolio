@@ -59,7 +59,7 @@ const projects = [
     tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
     content: {
       brief:
-        "The brief for this project was to develop a temporary solution for archvizual.com, a renowned 3D designer's portfolio website. The goal was to showcase their work while their main website development was in progress and delayed. The solution needed to be lightweight and visually appealing, aligning with the designer's branding and design aesthetics.",
+        "The brief for this project was to develop a temporary solution for archvizual.com, a renowned 3D designer's portfolio website. The goal was to showcase their work while their main website development was delayed. The solution needed to be lightweight and visually appealing, aligning with the designer's branding and design aesthetics.",
       process:
         "To meet the project's goals, I followed a structured process. Firstly, I closely collaborated with the Archvizual team to understand their requirements and the designer's vision. I conducted a thorough analysis of the existing design assets and gathered insights to inform my design decisions. Leveraging Figma, React, Gatsby, Styled Components, and Contentful CMS, I developed a visually appealing and user-friendly portfolio website. Throughout the process, I maintained open communication with the client and incorporated their feedback to ensure the final product met their expectations.",
       outcome:
