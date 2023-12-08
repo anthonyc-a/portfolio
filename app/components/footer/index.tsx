@@ -38,7 +38,7 @@ const Footer = () => {
           available for work
         </span>
         <h1 className="mx-auto mail flex items-center text-[#f8f8f8] tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
-          <a href="mailto:anthonyc.animba@gmail.com" className="mail">Let&apos;s Talk </a>
+          <a href="mailto:anthonyc.animba@gmail.com" className="mail cursor-none">Let&apos;s Talk </a>
 
           <div className="roll">
             <Image
