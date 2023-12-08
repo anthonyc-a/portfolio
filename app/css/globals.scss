@@ -6,13 +6,18 @@
 @import "./animations/index.scss";
 
 * {
-  cursor: none !important;
 }
 
 :root {
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
   font-family: "BrittiSansVariable", Arial, Helvetica, sans-serif;
+}
+
+.cursor-none {
+  &:hover {
+    cursor: none !important;
+  }
 }
 
 ::-moz-selection {

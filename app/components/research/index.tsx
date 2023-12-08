@@ -76,7 +76,7 @@ const Research = () => {
       </div>
       <div
         ref={inViewRef}
-        className="relative md:w-[95%] h-fit col-span-1 md:col-span-3 "
+        className="relative md:w-[95%] cursor-none h-fit col-span-1 md:col-span-3 "
       >
         <AnimationWrapper>
           <Carousel autoplay >
@@ -88,7 +88,7 @@ const Research = () => {
                 } md:order-[unset]`}
               >
                 <div className="relative overflow-hidden w-full h-full">
-                  <div className="absolute bottom-2 w-full flex items-center justify-between p-4 text-white txt z-20">
+                  <div className="absolute bottom-1.5 w-full flex items-center justify-between p-4 text-white txt z-20">
                     <span className="text-[95%] md-text-[110%] tracking-tight">
                       {item.location}
                     </span>
@@ -98,7 +98,7 @@ const Research = () => {
                   <img
                     src={item.imageSrc}
                     alt=""
-                    className="w-[100%] brightness-[90%] hover:brightness-[80%] transition-all duration-300 h-full object-cover"
+                    className="w-[100%] cursor-none brightness-[90%] hover:brightness-[80%] transition-all duration-300 h-full object-cover"
                   />
                 </div>
               </div>

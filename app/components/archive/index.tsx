@@ -110,7 +110,7 @@ const Archive = () => {
               setImageAddress("");
             }}
             onClick={() => handleItemClick(item)}
-            className={`archImg int py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
+            className={`archImg cursor-none int py-[14px] md:hover:px-3 relative flex flex-col md:flex-row gap-2 md:items-center transition-all ease-in-out w-full  ${
               expandedItem === item.name
                 ? "md:bg-gray-200 md:bg-transparent"
                 : ""

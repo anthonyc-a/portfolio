@@ -174,7 +174,7 @@ const Home = () => {
               <div className="relative md:w-[50%] h-80 overflow-hidden">
                 <video
                   src="/vid.mp4"
-                  className={`w-full h-full object-cover transition-all duration-300 ${
+                  className={`w-full cursor-none h-full object-cover transition-all duration-300 ${
                     paused ? "brightness-75" : ""
                   }`}
                   autoPlay
@@ -182,7 +182,7 @@ const Home = () => {
                   muted
                 />
                 <div
-                  className="pause scale-75 origin-center absolute bottom-4 left-4"
+                  className="pause cursor-pointer expand scale-75 origin-center absolute bottom-4 left-4"
                   onClick={togglePause}
                 >
                   {paused ? (
@@ -191,12 +191,14 @@ const Home = () => {
                       width="24"
                       height="30"
                       viewBox="0 0 24 24"
-                      className="scale-125"
+                      className="scale-125 expand"
                     >
                       <path
                         fill="#fff"
                         fillRule="evenodd"
                         d="M8 5v14l11-7z"
+                      className="expand"
+
                       ></path>
                     </svg>
                   ) : (
@@ -205,11 +207,14 @@ const Home = () => {
                       width="24"
                       height="30"
                       viewBox="0 0 24 24"
+                      className="expand"
                     >
                       <path
                         fill="#fff"
                         fillRule="evenodd"
                         d="M4 5h5v14H4zm11 0h5v14h-5z"
+                      className="expand"
+
                       ></path>
                     </svg>
                   )}

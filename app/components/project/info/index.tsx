@@ -37,13 +37,13 @@ const Info = ({ inView, project }: any) => {
             href={`https://${project.website}`}
             target="_blank"
             rel="noreferrer"
-            className="txt tag h-7 flex items-center gap-1 transition-all  "
+            className="txt tag expand h-7 flex items-center gap-1 transition-all  "
           >
-            <div>
+            <div className="expand">
               <IoIosLink size={10} />
             </div>
-            <div>
-              <span>{project.website}</span>
+            <div className="expand">
+              <span className="expand">{project.website}</span>
             </div>
           </a>
         )}
