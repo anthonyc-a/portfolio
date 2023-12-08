@@ -120,7 +120,7 @@ const Home = () => {
             </div>
           </div>
 
-          <AnimationWrapper>
+          <AnimationWrapper stagger={0.2} >
             <div
               ref={inViewRef}
               className="grid relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pb-[80px] lg:pb-0 lg:grid-cols-4"
