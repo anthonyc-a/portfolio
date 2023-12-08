@@ -173,7 +173,7 @@ const Home = () => {
             <div className="relative flex flex-col md:flex-row-reverse items-center justify-between">
               <div className="relative md:w-[50%] h-80 overflow-hidden">
                 <video
-                  src="https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
+                  src="/vid.mp4"
                   className={`w-full h-full object-cover ${
                     paused ? "brightness-75" : ""
                   }`}
