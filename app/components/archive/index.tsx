@@ -20,7 +20,7 @@ const data = [
 
   {
     name: "Dean Dsouza Mindset — Mental Health Blog",
-    img: "/epoch.png",
+    img: "/dsouza.png",
     link: "https://deandsouzamindset.com",
   },
 
@@ -31,12 +31,12 @@ const data = [
   },
   {
     name: "Carhartt WIP Clone — E-Commerce Website",
-    img: "/double.png",
+    img: "/carhartt.png",
     link: "https://carhartt-clone-v2.netlify.app",
   },
   {
     name: "SUI Wine Imports — Wine Imports Catalogue",
-    img: "/double.png",
+    img: "/sui.png",
     link: "https://sui-wineimports.com",
   },
   {
@@ -51,7 +51,7 @@ const data = [
   },
   {
     name: "Genesis — Web3 Marketplace & Community",
-    img: "/genesis.jpg",
+    img: "/genesis.png",
     link: "https://g3nesis.io",
   },
   {
