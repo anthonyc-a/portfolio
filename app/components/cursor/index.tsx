@@ -56,7 +56,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
       <div
         className={`${
           cursorType === "mail" ? "" : "hidden opacity-0"
-        } w-40 h-40 gap-1.5 absolute enlarge z-50 font-[450] flex bg-white rounded-full justify-center items-center`}
+        } w-40 h-40 gap-1 absolute enlarge z-50 font-[450] flex bg-white rounded-full justify-center items-center`}
       >
         <span>get in touch</span>
         <Image
