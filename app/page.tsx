@@ -225,7 +225,7 @@ const Home = () => {
                   </span>
                  </div>
                 <h2>
-                  I&apos;m always open to new ideas, big or small, and currently
+                  I&apos;m always open to new ideas, big or small and currently
                   available for freelance and contract-based work.
                 </h2>
                 <p className="mt-4">
