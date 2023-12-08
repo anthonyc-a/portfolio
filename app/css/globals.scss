@@ -92,6 +92,7 @@ footer {
   opacity: 0;
   z-index: 99999;
 
+
   .inner {
     position: absolute;
     top: 50%;
@@ -102,6 +103,13 @@ footer {
     height: 25px;
     border-radius: 100%;
   }
+
+  .expand {
+    width: 40px !important;
+    height: 40px !important;
+    transition: 0.25s ease-out;
+  }
+
 
   @media (pointer: coarse) {
     display: none;

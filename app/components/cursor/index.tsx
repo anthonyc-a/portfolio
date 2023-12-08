@@ -29,6 +29,8 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
       setCursorType("mail");
     } else if (hoveredElement?.classList.contains("archImg")) {
       setCursorType("archImg");
+    } else if (hoveredElement?.classList.contains("expand")) {
+      setCursorType("expand");
     } else {
       setCursorType("");
     }
@@ -52,7 +54,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
 
   return (
     <div className="cursor txt" ref={cursorRef}>
-      <div className="inner"></div>
+      <div className={`inner ${cursorType === "expand" ? "expand" : ""}`}></div>
       <div
         className={`${
           cursorType === "mail" ? "" : "hidden opacity-0"

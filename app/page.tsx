@@ -140,9 +140,9 @@ const Home = () => {
                 onClick={() => {
                   setLocation("work");
                 }}
-                className="md:absolute font-[450]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                className="md:absolute expand font-[450]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
               >
-                <span className="int">see my work</span>
+                <span className="int expand">see my work</span>
                 <div className="arrow h-4 flex items-center overflow-hidden">
                   <div className="inner">
                     <Image
@@ -249,17 +249,17 @@ const Home = () => {
                   onClick={() => {
                     setLocation("contact");
                   }}
-                  className="font-[450] main-btn  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                  className="font-[450] expand main-btn  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
                 >
-                  <span className="int">start a project</span>
-                  <div className="arrow h-4 flex items-center overflow-hidden">
-                    <div className="inner">
+                  <span className="int expand">start a project</span>
+                  <div className="arrow expand h-4 flex items-center overflow-hidden">
+                    <div className="inner expand">
                       <Image
                         src="/followArrow.svg"
                         alt=""
                         width={7}
                         height={7}
-                        className={`rotate-[135deg] int`}
+                        className={`rotate-[135deg] expand int`}
                       />
                     </div>
                   </div>

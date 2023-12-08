@@ -14,7 +14,7 @@ const Info = ({ inView, project }: any) => {
       <h4 className="mb-1  text-[90%]">
         02. Process
         <div
-          className="divide my-1.5 delay-75"
+          className="divide my-1.5 delay-50"
           style={{ width: inView ? "100%" : 0 }}
         />
       </h4>

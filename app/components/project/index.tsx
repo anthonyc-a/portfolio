@@ -170,8 +170,8 @@ const Project = () => {
                     <span>{project.website}</span>
                   </div>
                 </a>
-                <button className="int main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2.5 md:pb-2 px-4 border border-[#999] rounded-full">
-                  <a className=" text-[100%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
+                <button className="int expand main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2.5 md:pb-2 px-4 border border-[#999] rounded-full">
+                  <a className="expand text-[100%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "details"}
                   </a>
                       <Image
@@ -183,7 +183,7 @@ const Project = () => {
                           expandedProjectIndex === index
                             ? "rotate-[-45deg]"
                             : "rotate-[135deg]"
-                        } transition int -translate-y-0.5 `}
+                        } transition expand int -translate-y-0.5 `}
                       />
                 </button>
               </div>
@@ -200,13 +200,13 @@ const Project = () => {
       {projects.length > 3 && (
         <div className="w-full  relative flex items center rounded-[4px]">
           <div
-            className="flex justify-center  w-full items-center gap-3 bottom-0 right-0 mt-10 md:mt-16 txt"
+            className="flex expand justify-center  w-full items-center gap-3 bottom-0 right-0 mt-10 md:mt-16 txt"
             onClick={() => setShowMore(!showMore)}
           >
             <div className="w-full absolute top-1/2 rounded-sm -translate-y-1/2 h-[1px] gradient-line" />
 
-            <a className=" absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag mx-auto text-[90%] text-center p-2 px-4 md:px-2 w-fit font-[400] pb-1 whitespace-nowrap">
-              <span>{showMore ? "Show Less" : "load more"}</span>
+            <a className="expand absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag mx-auto text-[90%] text-center p-2 px-4 md:px-2 w-fit font-[400] pb-1 whitespace-nowrap">
+              <span className="expand">{showMore ? "Show Less" : "load more"}</span>
               {showMore ? " -" : " +"}
             </a>
           </div>
