@@ -35,7 +35,7 @@ const Scrollbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed w-[240px] flex items-center  gap-6  z-[50] transition-all bg-white rounded-full bottom-6 right-6 p-4 ${
+      className={`fixed w-[240px] flex items-center  gap-6  z-[50] transition-all bg-white rounded-full bottom-6 right-6 p-3 px-4 ${
         isVisible ? "opacity-100 shadow" : "opacity-0 translate-y-2"
       }`}
     >
