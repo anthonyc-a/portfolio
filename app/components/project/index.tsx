@@ -147,7 +147,7 @@ const Project = () => {
                 <h4 className=" tracking-wide font-[300] md:font-[300] text-[87%] ">
                   {project.description}
                 </h4>
-                <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
+                <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="tag text-[#333]">
                       {tag}

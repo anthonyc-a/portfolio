@@ -11,6 +11,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Cursor from "./components/cursor";
 import CursorWrapper from "./contexts/cursorContext";
+import Scrollbar from "./components/scrollbar";
 
 export default function RootLayout({
   children,
@@ -81,6 +82,7 @@ export default function RootLayout({
       <CursorWrapper>
         <body>
           <Cursor />
+          <Scrollbar/>
           <div>
             <Header />
             {children}

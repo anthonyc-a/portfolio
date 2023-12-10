@@ -143,7 +143,7 @@ const Research = () => {
                 rel="noreferrer"
                 className="flex txt expand  items-center px-6 w-full md:w-fit py-2.5 rounded-full border border-[#999] hover:border-[#1a1a1a] transition-all gap-2 font-[400] int"
               >
-                <span className="text-[90%] expand md:text-[95%] font-[450]">
+                <span className="text-[90%] expand md:text-[95%] font-[400]">
                   Learn more
                 </span>
                 <Image
