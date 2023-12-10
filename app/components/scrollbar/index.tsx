@@ -41,6 +41,7 @@ const Scrollbar: React.FC = () => {
           isVisible ? "opacity-100 shadow" : "opacity-0 translate-y-2"
         }`}
       >
+        
         <div className="w-full bg-gray-200 h-[1px]">
           <div
             className="h-full bg-[#1a1a1a]"
