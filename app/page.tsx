@@ -10,7 +10,6 @@ import AnimationWrapper from "./components/animWrapper";
 import AccentHeaderOne from "./components/accent";
 import Research from "./components/research";
 import { useInView } from "react-intersection-observer";
-import { IoIosPause, IoIosPlay } from "react-icons/io";
 
 const skills = [
   {
