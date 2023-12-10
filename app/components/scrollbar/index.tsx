@@ -34,7 +34,8 @@ const Scrollbar: React.FC = () => {
     };
   }, [isVisible, prevScrollY]);
 
-  if (scrollY)
+  if (typeof window !== "undefined") {
+    // Access scrollY here
     return (
       scrollY > window.innerHeight * 0.5 && (
         <div
@@ -73,8 +74,7 @@ const Scrollbar: React.FC = () => {
         </div>
       )
     );
-
-    else return null
+  }
 };
 
 export default Scrollbar;
