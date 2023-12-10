@@ -140,9 +140,9 @@ const Home = () => {
                 onClick={() => {
                   setLocation("work");
                 }}
-                className="md:absolute expand font-[400]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                className="md:absolute expand font-[400]  int mt-10 md:mt-0 main-btn flex justify-center items-center gap-3 bottom-0 right-0 p-3 px-4 md:px-6 border border-[#999] rounded-full"
               >
-                <span className="int expand">see my work</span>
+                <span className="int expand">explore my work</span>
                 <div className="arrow h-4 flex items-center overflow-hidden">
                   <div className="inner">
                     <Image
