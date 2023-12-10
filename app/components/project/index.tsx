@@ -119,7 +119,7 @@ const Project = () => {
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 ">
               <div className="index txt  md:absolute md:top-0 md:right-0">
-                <span className="text-[#1a1a1a] font-[450] md:font-[400] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
+                <span className="text-[#1a1a1a] font-[450] md:font-[450] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
                   001 — 0{index + 1}
                 </span>
               </div>
