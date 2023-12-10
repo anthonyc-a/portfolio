@@ -12,7 +12,6 @@
     &Inner {
       position: relative;
       width: fit-content;
-      //  padding: 0 20px;
       font-size: 0.65rem;
       font-weight: 400;
       letter-spacing: 0.2px;
@@ -27,7 +26,7 @@
       &::before {
         left: 0;
         top: 0;
-        content: "// ";
+        content: " ";
         font-size: 80%;
 
         &:nth-child(2) {
