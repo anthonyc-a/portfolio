@@ -234,7 +234,7 @@ const Home = () => {
                   available for freelance and contract-based work.
                 </h2>
                 <p className="mt-4">
-                  I use <a
+                  <a
                     href="https://instagram.com/aarkyvstudios"
                     target="_blank"
                     rel="noreferrer"
@@ -243,7 +243,7 @@ const Home = () => {
                     Aarkyv Studios 
                   </a> 
                   {" "}
-                  to accept, manage
+                  is used to accept, manage
                   and provide inspiration when carrying out freelance projects. Launched this year, my
                    curiosty for all things allows me to work on a wide
                   range of projects and ideas. The website is set to launch in
