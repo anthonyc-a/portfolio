@@ -14,12 +14,6 @@ import { IoIosPause, IoIosPlay } from "react-icons/io";
 
 const skills = [
   {
-    title: "Art Direction",
-    description:
-      "Extensive experience working in the realm of digital marketing and branding enables me to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
-    icon: "/art.svg",
-  },
-  {
     title: "Digital Design",
     description:
       "A designer by nature - I have an eye for detail and a passion for creating functional, satisfying user experiences. With a strong understanding of the design process, I can help point you in the right direction, no matter what stage you're at.",
@@ -28,8 +22,14 @@ const skills = [
   {
     title: "Development",
     description:
-      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
+      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
     icon: "/dev.svg",
+  },
+  {
+    title: "Art Direction",
+    description:
+      "Extensive experience working in the realm of digital marketing and branding enables me to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+    icon: "/art.svg",
   },
 ];
 
@@ -187,9 +187,34 @@ const Home = () => {
                   onClick={togglePause}
                 >
                   {paused ? (
-                    <IoIosPlay size={20} color="#fff" />
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="expand"
+                    >
+                      <path className="expand" d="M128 104.3v303.4c0 6.4 6.5 10.4 11.7 7.2l240.5-151.7c5.1-3.2 5.1-11.1 0-14.3L139.7 97.2c-5.2-3.3-11.7.7-11.7 7.1z"></path>
+                    </svg>
                   ) : (
-                    <IoIosPause size={20} color="#fff" />
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="expand"
+
+                    >
+                      <path className="expand" d="M199.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8zM375.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8z"></path>
+                    </svg>
                   )}
                 </div>
                 <div className="absolute tag bottom-4 text-white right-4">
