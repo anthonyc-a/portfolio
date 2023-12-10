@@ -244,8 +244,8 @@ const Home = () => {
                   </a> 
                   {" "}
                   is used to accept, manage
-                  and provide inspiration when carrying out freelance projects. Launched this year, my
-                   curiosty for all things allows me to work on a wide
+                  and provide inspiration when carrying out freelance projects. Founded this year, my
+                   insatiable curiosty allows me to work on a wide
                   range of projects and ideas. The website is set to launch in
                   2024.
                  
