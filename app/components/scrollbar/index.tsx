@@ -73,6 +73,8 @@ const Scrollbar: React.FC = () => {
         </div>
       )
     );
+
+    else return null
 };
 
 export default Scrollbar;
