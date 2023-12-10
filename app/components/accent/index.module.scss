@@ -13,7 +13,7 @@
       position: relative;
       width: fit-content;
       font-size: 0.65rem;
-      padding: 0 20px;
+      // padding: 0 20px;
       font-weight: 400;
       letter-spacing: 0.2px;
 
@@ -27,7 +27,7 @@
       &::before {
         left: 0;
         top: 0;
-        content: " >";
+        content: " ";
         font-size: 80%;
         position: absolute;
         animation: blink 2s linear infinite;
@@ -40,7 +40,7 @@
   
       &::after {
         right: 0;
-        content: "< ";
+        content: " ";
         font-size: 80%;
         position: absolute;
         top: 0;
