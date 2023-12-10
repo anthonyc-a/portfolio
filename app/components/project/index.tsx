@@ -205,8 +205,8 @@ const Project = () => {
           >
             <div className="w-full absolute top-1/2 rounded-sm -translate-y-1/2 h-[1px] gradient-line" />
 
-            <a className="expand absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag cursor-pointer mx-auto text-[90%] text-center p-2 px-4 md:px-2 w-fit font-[400] pb-1 whitespace-nowrap">
-              <span className="expand">
+            <a className="expand absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag cursor-pointer mx-auto text-[90%] text-center p-2 px-4 md:px-2 w-fit pb-1 whitespace-nowrap">
+              <span className="expand font-[450]">
                 {showMore ? "Show Less" : "show more"}
               </span>
               {showMore ? " -" : " +"}
