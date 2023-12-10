@@ -13,10 +13,10 @@ import { useInView } from "react-intersection-observer";
 
 const skills = [
   {
-    title: "Full-Stack Development",
+    title: "Art Direction",
     description:
-      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
-    icon: "/dev.svg",
+      "Extensive experience working in the realm of digital marketing and branding enables me to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
+    icon: "/art.svg",
   },
   {
     title: "Digital Design",
@@ -25,10 +25,10 @@ const skills = [
     icon: "/design.svg",
   },
   {
-    title: "Art Direction",
+    title: "Development",
     description:
-      "Extensive experience working in the realm of digital marketing and branding enables me to establish a strong foundation using typography, color and photography to ensure users perceive your brand in a true and consistent manner.",
-    icon: "/art.svg",
+      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for my clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
+    icon: "/dev.svg",
   },
 ];
 
@@ -120,7 +120,7 @@ const Home = () => {
             </div>
           </div>
 
-          <AnimationWrapper stagger={0.2} >
+          <AnimationWrapper stagger={0.2}>
             <div
               ref={inViewRef}
               className="grid relative mt-0 md:mt-10 gap-x-12 grid-rows-1 grid-cols-1 sm:pb-[80px] lg:pb-0 lg:grid-cols-4"
@@ -197,8 +197,7 @@ const Home = () => {
                         fill="#fff"
                         fillRule="evenodd"
                         d="M8 5v14l11-7z"
-                      className="expand"
-
+                        className="expand"
                       ></path>
                     </svg>
                   ) : (
@@ -213,8 +212,7 @@ const Home = () => {
                         fill="#fff"
                         fillRule="evenodd"
                         d="M4 5h5v14H4zm11 0h5v14h-5z"
-                      className="expand"
-
+                        className="expand"
                       ></path>
                     </svg>
                   )}
@@ -226,9 +224,9 @@ const Home = () => {
               <div className="md:w-[40%] mt-10 md:mt-0">
                 <div className="txt pb-8 ">
                   <span className="text-[95%] font-[450]">
-                  let&apos;s work together
+                    let&apos;s work together
                   </span>
-                 </div>
+                </div>
                 <h2>
                   I&apos;m always open to new ideas, big or small and currently
                   available for freelance and contract-based work.
@@ -240,15 +238,12 @@ const Home = () => {
                     rel="noreferrer"
                     className="underline expand hover:no-underline"
                   >
-                    Aarkyv Studios 
-                  </a> 
-                  {" "}
-                  is used to accept, manage
-                  and provide inspiration when carrying out freelance projects. Founded this year, my
-                   insatiable curiosty allows me to work on a wide
-                  range of projects and ideas. The website is set to launch in
-                  2024.
-                 
+                    Aarkyv Studios
+                  </a>{" "}
+                  is used to accept, manage and provide inspiration when
+                  carrying out freelance projects. Founded this year, my
+                  insatiable curiosty allows me to work on a wide range of
+                  projects and ideas. The website is set to launch in 2024.
                 </p>
                 <button
                   onClick={() => {

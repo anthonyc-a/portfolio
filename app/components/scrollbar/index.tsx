@@ -35,7 +35,7 @@ const Scrollbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed hidden lg:flex w-[240px] items-center  gap-6  z-[50] transition-all bg-white rounded-full bottom-6 right-6 p-3 px-4 ${
+      className={`fixed hidden md:flex w-[240px] items-center  gap-6  z-[50] transition-all bg-white rounded-full bottom-6 right-6 p-3 px-4 ${
         isVisible ? "opacity-100 shadow" : "opacity-0 translate-y-2"
       }`}
     >
@@ -49,14 +49,14 @@ const Scrollbar: React.FC = () => {
       </div>
       <a
         href="/"
-        className="opacity-60 flex items-center gap-2 transition-all txt int  hover:opacity-100 "
+        className="opacity-60 expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
       >
          <Image
           src="/download.svg"
           alt=""
           width={14}
           height={14}
-          className="rotate-180 invert"
+          className="rotate-180 expand invert"
         />
        
       </a>
