@@ -10,6 +10,7 @@ import AnimationWrapper from "./components/animWrapper";
 import AccentHeaderOne from "./components/accent";
 import Research from "./components/research";
 import { useInView } from "react-intersection-observer";
+import { IoIosPause, IoIosPlay } from "react-icons/io";
 
 const skills = [
   {
@@ -182,39 +183,13 @@ const Home = () => {
                   muted
                 />
                 <div
-                  className="pause cursor-pointer expand scale-75 origin-center absolute bottom-4 left-4"
+                  className="pause cursor-pointer expand scale-90 origin-center absolute bottom-4 left-4"
                   onClick={togglePause}
                 >
                   {paused ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      className="scale-125 expand"
-                    >
-                      <path
-                        fill="#fff"
-                        fillRule="evenodd"
-                        d="M8 5v14l11-7z"
-                        className="expand"
-                      ></path>
-                    </svg>
+                    <IoIosPlay size={20} color="#fff" />
                   ) : (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      className="expand"
-                    >
-                      <path
-                        fill="#fff"
-                        fillRule="evenodd"
-                        d="M4 5h5v14H4zm11 0h5v14h-5z"
-                        className="expand"
-                      ></path>
-                    </svg>
+                    <IoIosPause size={20} color="#fff" />
                   )}
                 </div>
                 <div className="absolute tag bottom-4 text-white right-4">
