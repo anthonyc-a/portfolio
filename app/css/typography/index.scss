@@ -98,14 +98,11 @@ p {
   border-radius: 40px;
 
   @media (min-width: 768px) {
-    font-size: 0.6rem;
-    font-weight: 450;
     line-height: 1.35;
   padding: 4px 8px 2px 8px;
   }
 
   @media (min-width: 1280px) {
-    font-size: 0.6rem;
     line-height: 1.35;
   }
 }
