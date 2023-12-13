@@ -269,7 +269,7 @@ const Home = () => {
           </AnimationWrapper>
         </div>
 
-        <div id="research" className="p-6 mt-6 md:mt-12">
+        <div id="research" className="p-6 mt-6 md:mt-14">
           <div className="txt mb-8 md:mb-12">
             <AccentHeaderOne text="research" />
           </div>
