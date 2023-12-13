@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
           <div className="mb-8 md:mb-0">
             <h5> more:</h5>
-            <a className="flex expand gap-1.5 items-center int" href="mailto:anthonyc.animba@gmail.com?subject=CV%20Request&body=I%20am%20requesting%20your%20CV.">
+            <a className="flex expand gap-1.5 items-center int" href="mailto:anthonyc.animba@gmail.com?subject=CV%20Request&body=I%20am%20requesting%20your%20CV%20✨">
               request cv
               <Image
                 src="/download.svg"

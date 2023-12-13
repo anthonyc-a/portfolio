@@ -116,7 +116,7 @@ const Archive = () => {
                 : ""
             }`}
           >
-            <h4 className="text-[90%] flex gap-2 int archImg">
+            <h4 className="text-[95%] flex gap-2 int archImg">
               <div className="translate-y-0.5">
               {item.link && <IoIosLink size={14} />}
 

@@ -30,7 +30,6 @@ const skills = [
       "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
     icon: "/dev.svg",
   },
-  
 ];
 
 const Home = () => {
@@ -172,7 +171,7 @@ const Home = () => {
         <div className="p-6 pt-10 md:pt-16 mt-6 md:mt-4">
           <AnimationWrapper>
             <div className="relative flex flex-col md:flex-row-reverse items-center justify-between">
-              <div className="relative md:w-[50%] h-80 overflow-hidden">
+              <div className="relative md:w-[50%] h-[360px] overflow-hidden">
                 <video
                   src="/vid.mp4"
                   className={`w-full h-full object-cover transition-all duration-300 ${
@@ -182,7 +181,7 @@ const Home = () => {
                   loop
                   muted
                 />
-                  <div className="absolute bottom-0 w-full h-1/4 z-0 bg-gradient-to-t from-black to-transparent"></div>
+                <div className="absolute bottom-0 w-full h-1/4 z-0 bg-gradient-to-t from-black to-transparent"></div>
                 <div
                   className="pause cursor-pointer expand scale-90 origin-center absolute bottom-4 left-4"
                   onClick={togglePause}
@@ -199,7 +198,10 @@ const Home = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       className="expand"
                     >
-                      <path className="expand" d="M128 104.3v303.4c0 6.4 6.5 10.4 11.7 7.2l240.5-151.7c5.1-3.2 5.1-11.1 0-14.3L139.7 97.2c-5.2-3.3-11.7.7-11.7 7.1z"></path>
+                      <path
+                        className="expand"
+                        d="M128 104.3v303.4c0 6.4 6.5 10.4 11.7 7.2l240.5-151.7c5.1-3.2 5.1-11.1 0-14.3L139.7 97.2c-5.2-3.3-11.7.7-11.7 7.1z"
+                      ></path>
                     </svg>
                   ) : (
                     <svg
@@ -212,9 +214,11 @@ const Home = () => {
                       width="20"
                       xmlns="http://www.w3.org/2000/svg"
                       className="expand"
-
                     >
-                      <path className="expand" d="M199.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8zM375.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8z"></path>
+                      <path
+                        className="expand"
+                        d="M199.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8zM375.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8z"
+                      ></path>
                     </svg>
                   )}
                 </div>
@@ -241,30 +245,48 @@ const Home = () => {
                   >
                     Aarkyv Studios
                   </a>{" "}
-                  is used to accept, manage and provide inspiration when
-                  working on freelance projects. Founded this year, my
-                  insatiable curiosty allows me to work on a wide range of
-                  projects and ideas. The website is set to launch in 2024.
+                  is used to accept, manage and provide inspiration when working
+                  on freelance projects. Founded this year, my insatiable
+                  curiosty allows me to work on a wide range of projects and
+                  ideas. The website is set to launch in 2024.
                 </p>
-                <button
-                  onClick={() => {
-                    setLocation("contact");
-                  }}
-                  className="font-[400] expand main-btn  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
-                >
-                  <span className="int expand">start a project</span>
-                  <div className="arrow expand h-4 flex items-center overflow-hidden">
-                    <div className="inner expand">
+                <div className="flex items-center gap-8">
+                  <button
+                    onClick={() => {
+                      setLocation("contact");
+                    }}
+                    className="font-[400] expand main-btn  int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 px-4 md:px-8 border border-[#999] rounded-full"
+                  >
+                    <span className="int expand">start a project</span>
+                    <div className="arrow expand h-4 flex items-center overflow-hidden">
+                      <div className="inner expand">
+                        <Image
+                          src="/followArrow.svg"
+                          alt=""
+                          width={7}
+                          height={7}
+                          className={`rotate-[135deg] expand int`}
+                        />
+                      </div>
+                    </div>
+                  </button>
+                  <a
+                    href="https://instagram.com/aarkyvstudios"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="font-[400] expand int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 rounded-full">
+                      <span className="int expand">learn more</span>
                       <Image
                         src="/followArrow.svg"
                         alt=""
                         width={7}
                         height={7}
-                        className={`rotate-[135deg] expand int`}
+                        className="int expand"
                       />
-                    </div>
-                  </div>
-                </button>
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </AnimationWrapper>
