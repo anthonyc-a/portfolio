@@ -27,7 +27,7 @@ const Cookies = () => {
   return (
     <>
       {show && (
-        <div className="cookies bg-[#fff] backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-5 w-fit z-[9999] left-2 md:right-8  ">
+        <div className="cookies bg-[#fff] backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-5 w-fit z-[9999] left-2 md:left-5 ">
           <div className="w-full h-full p-6 flex items-center justify-between">
             <div className="flex items-center gap-5 pr-6 font-[450]">
               <Image src={"/cookie.svg"} alt="" width={23} height={23} />

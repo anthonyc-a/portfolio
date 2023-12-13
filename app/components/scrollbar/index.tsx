@@ -51,7 +51,7 @@ const Scrollbar: React.FC = () => {
               }}
             ></div>
           </div>
-          <div className="flex items-center gap-3 ml-auto w-16">
+          <div className="flex items-center justify-end gap-3 ml-auto w-16">
             <a
               href="#contact"
               className="opacity-80 expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
