@@ -38,7 +38,12 @@ const Footer = () => {
           available for work
         </span>
         <h1 className="mx-auto mail flex items-center text-[#f8f8f8] tracking-[1px] w-fit uppercase font-[450] text-[56px] whitespace-nowrap md:text-[112px]">
-          <a href="mailto:anthonyc.animba@gmail.com" className="mail cursor-none">Let&apos;s Talk </a>
+          <a
+            href="mailto:anthonyc.animba@gmail.com"
+            className="mail cursor-none"
+          >
+            Let&apos;s Talk{" "}
+          </a>
 
           <div className="roll">
             <Image
@@ -52,7 +57,6 @@ const Footer = () => {
           </div>
         </h1>
       </AnimationWrapper>
-      
 
       <AnimationWrapper>
         <div className="w-full xl:container xl:mx-auto txt  flex flex-wrap items-center text-[#f8f8f8] justify-between mt-20 md:mt-24">
@@ -62,16 +66,16 @@ const Footer = () => {
           </div>
           <div className="mb-8 md:mb-0">
             <h5> more:</h5>
-            <div className="flex gap-1.5 items-center int">
-              download cv
+            <a className="flex expand gap-1.5 items-center int" href="mailto:anthonyc.animba@gmail.com?subject=CV%20Request&body=I%20am%20requesting%20your%20CV.">
+              request cv
               <Image
                 src="/download.svg"
                 alt=""
                 width={13}
                 height={13}
-                className="opacity-60 int"
+                className="opacity-60 int expand"
               />
-            </div>
+            </a>
           </div>
           <div className="w-full md:w-[unset] mb-6 md:mb-0">
             <h5>socials:</h5>

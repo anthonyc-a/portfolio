@@ -52,13 +52,7 @@ const Scrollbar: React.FC = () => {
             ></div>
           </div>
           <div className="flex items-center justify-end gap-3 ml-auto w-16">
-            <a
-              href="#contact"
-              className="opacity-80 expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
-            >
-              <MdMailOutline size={13} />
-            </a>
-            <a
+          <a
               href="/"
               className=" expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
             >
@@ -70,6 +64,13 @@ const Scrollbar: React.FC = () => {
                 className="rotate-180 expand invert"
               />
             </a>
+            <a
+              href="#contact"
+              className="opacity-80 expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
+            >
+              <MdMailOutline size={13} />
+            </a>
+      
           </div>
         </div>
       )
