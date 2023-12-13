@@ -38,7 +38,7 @@ const Cookies = () => {
               </p>
             </div>
             <div className="flex gap-4">
-              <button className="appear text-white expand hover:brightness-90 transition-all duration-300 p-3 flex delay int justify-center items-center whitespace-nowrap gap-2.5 pb-2.5 z-[9999] px-8 w-full text-center bg-[#272727] rounded-full">
+              <button className=" text-white expand hover:brightness-90 transition-all duration-300 p-3 flex delay int justify-center items-center whitespace-nowrap gap-2.5 pb-2.5 z-[9999] px-8 w-full text-center bg-[#272727] rounded-full">
                 I Accept
               </button>
             </div>
