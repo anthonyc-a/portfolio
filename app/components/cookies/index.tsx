@@ -26,14 +26,14 @@ const Cookies = () => {
 
   return (
     <>
-      {show && (
+      {!show && (
         <div className="cookies bg-[#fff] backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-5 w-fit z-[9999] left-2 md:left-5 ">
           <div className="w-full h-full p-6 flex items-center justify-between">
             <div className="flex items-center gap-5 pr-6 font-[450]">
               <Image src={"/cookie.svg"} alt="" width={23} height={23} />
 
               <p>
-                This website uses <span className="underline">cookies</span> to
+                This website uses <a href="/" className="underline expand font-[400]">cookies</a> to
                 enhance your experience.
               </p>
             </div>
