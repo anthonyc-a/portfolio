@@ -6,13 +6,13 @@ const Info = ({ inView, project }: any) => {
   return (
     <div className="mt-8 md:mt-8 relative w-full lg:md:w-[65%] flex flex-col ml-auto ">
       <h4 className="mb-1 text-[90%]">
-        01. Brief
+        Brief
         <div className="divide my-1.5" style={{ width: inView ? "100%" : 0 }} />
       </h4>
       <p className="w-full">{project.content.brief}</p>
       <br />
       <h4 className="mb-1  text-[90%]">
-        02. Process
+        Process
         <div
           className="divide my-1.5 delay-50"
           style={{ width: inView ? "100%" : 0 }}
@@ -21,7 +21,7 @@ const Info = ({ inView, project }: any) => {
       <p className="w-full">{project.content.process}</p>
       <br />
       <h4 className="mb-1 text-[90%]">
-        03. Outcome
+        Outcome
         <div className="divide my-1.5" style={{ width: inView ? "100%" : 0 }} />
       </h4>
       <p className="w-full">{project.content.outcome}</p>
