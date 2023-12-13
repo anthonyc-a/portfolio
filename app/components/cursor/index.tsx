@@ -36,8 +36,6 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
     }
   };
 
-  console.log(cursorType);
-
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -69,16 +67,20 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
           className="int"
         />
       </div>
-      <Image
-        src={imageAddress}
-        alt=""
-        width={350}
-        height={350}
-        ref={imgRef}
-        className={`z-50 cursorImg ${
-          cursorType === "archImg" ? "" : "hidden opacity-0"
+      <div
+        className={`z-50 cursorImg w-[350px] absolute h-[350px] overflow-hidden ${
+          cursorType === "archImg" ? "open" : "hidden opacity-0"
         } `}
-      />
+      >
+        <Image
+          src={imageAddress}
+          alt=""
+          width={350}
+          height={350}
+          ref={imgRef}
+          className="w-full absolute  top-0 left-0"
+        />
+      </div>
     </div>
   );
 };

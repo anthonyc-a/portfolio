@@ -175,7 +175,7 @@ const Home = () => {
               <div className="relative md:w-[50%] h-80 overflow-hidden">
                 <video
                   src="/vid.mp4"
-                  className={`w-full cursor-none h-full object-cover transition-all duration-300 ${
+                  className={`w-full h-full object-cover transition-all duration-300 ${
                     paused ? "brightness-75" : ""
                   }`}
                   autoPlay

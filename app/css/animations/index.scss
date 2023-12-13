@@ -58,6 +58,20 @@
   
 }
 
+.open {
+  animation: open 0.5s ease-in-out forwards;
+  transform-origin: top;
+}
+
+@keyframes open {
+  from {
+    height: 0;
+  }
+  to {
+    height: 350px;
+  }
+}
+
 
 .roll {
   animation: roll 1s infinite;
