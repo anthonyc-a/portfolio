@@ -182,6 +182,7 @@ const Home = () => {
                   loop
                   muted
                 />
+                  <div className="absolute bottom-0 w-full h-1/4 z-0 bg-gradient-to-t from-black to-transparent"></div>
                 <div
                   className="pause cursor-pointer expand scale-90 origin-center absolute bottom-4 left-4"
                   onClick={togglePause}
