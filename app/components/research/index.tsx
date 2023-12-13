@@ -33,7 +33,7 @@ const Research = () => {
       ref={inViewRef}
       className="grid gap-5 md:gap-0 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
     >
-      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-6">
+      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-8">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">Blok Studios® / Modular housing</h4>
           <li className="txt">Research phase — 01</li>
@@ -106,7 +106,7 @@ const Research = () => {
           </Carousel>
         </AnimationWrapper>
       </div>
-      <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-8">
+      <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-10">
         <AnimationWrapper stagger={0.2}>
           <ul className="relative mt-auto block h-fit text-[100%]">
             <h4 className="txt font-[500]">
@@ -122,7 +122,7 @@ const Research = () => {
               className="h-[1px] divide w-full bg-[#999] lg:hidden"
               style={{ width: inView ? "100%" : "0%" }}
             ></div>
-            <p className="mt-8 md:mt-6">
+            <p className="mt-8 md:mt-5">
               BLOK Studios® is a modular housing initiative set up more than 5
               years ago as a sixth-form project and has since turned into my
               conceptual product design playground. The goal is to create

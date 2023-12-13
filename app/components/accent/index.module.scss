@@ -27,10 +27,9 @@
       &::before {
         left: 0;
         top: 0;
-        content: " ";
+        content: " //";
         font-size: 80%;
-        position: absolute;
-        animation: blink 2s linear infinite;
+        margin-right: 0.5rem;
 
 
         &:nth-child(2) {
