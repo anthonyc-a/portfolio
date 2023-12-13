@@ -240,7 +240,7 @@ const Home = () => {
                     Aarkyv Studios
                   </a>{" "}
                   is used to accept, manage and provide inspiration when
-                  carrying out freelance projects. Founded this year, my
+                  working on freelance projects. Founded this year, my
                   insatiable curiosty allows me to work on a wide range of
                   projects and ideas. The website is set to launch in 2024.
                 </p>
