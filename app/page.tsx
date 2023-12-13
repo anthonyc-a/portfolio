@@ -275,7 +275,7 @@ const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button className="font-[400] expand int mt-6 md:mt-8 flex justify-center items-center gap-3 p-3 rounded-full">
+                    <button className="font-[400] expand int mt-6 md:mt-8 flex justify-center items-center gap-3.5 p-3 rounded-full">
                       <span className="int expand">learn more</span>
                       <Image
                         src="/followArrow.svg"
