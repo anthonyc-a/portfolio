@@ -56,7 +56,7 @@ const Scrollbar: React.FC = () => {
               href="#contact"
               className="opacity-80 expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
             >
-              <MdMailOutline />
+              <MdMailOutline size={13} />
             </a>
             <a
               href="/"
@@ -65,8 +65,8 @@ const Scrollbar: React.FC = () => {
               <Image
                 src="/download.svg"
                 alt=""
-                width={10}
-                height={10}
+                width={11}
+                height={11}
                 className="rotate-180 expand invert"
               />
             </a>
