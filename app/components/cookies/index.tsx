@@ -29,13 +29,16 @@ const Cookies = () => {
       {show && (
         <div className="cookies bg-[#fff] backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-5 w-fit z-[9999] left-2 md:left-5 ">
           <div className="w-full h-full p-6 flex items-center justify-between">
-            <div className="flex items-center gap-5 pr-6 font-[450]">
+            <div className="flex items-center gap-8 pr-6 font-[450]">
               <Image src={"/cookie.svg"} alt="" width={23} height={23} />
-
+              <div className="flex flex-col">
+              <h4>Cookies</h4>
               <p>
                 This website uses <a href="/" className="underline expand font-[400]">cookies</a> to
                 enhance your experience.
               </p>
+              </div>
+          
             </div>
             <div className="flex gap-4">
               <button onClick={close} className=" text-white expand hover:brightness-90 transition-all duration-300 p-3 flex delay int justify-center items-center whitespace-nowrap gap-2.5 pb-2.5 z-[9999] px-8 w-full text-center bg-[#272727] rounded-full">

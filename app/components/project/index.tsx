@@ -35,7 +35,7 @@ const projects = [
     title: "Verve TV ",
     description: "Streaming Service",
     year: "Aug '22",
-    website: "twitter.com/vervetvofficial",
+    website: "vervetv.app",
     tags: ["Full-Stack", "API", "UI/UX", "Consultancy"],
     content: {
       brief:
