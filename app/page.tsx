@@ -96,7 +96,7 @@ const Home = () => {
                 alt=""
                 width={1372}
                 height={1507}
-                className="w-full h-full  object-cover scale-[1.25] translate-y-2"
+                className="w-full h-full  object-cover scale-[1.25] rounded-full translate-y-2"
               />
             </div>
             <AnimationWrapper>
