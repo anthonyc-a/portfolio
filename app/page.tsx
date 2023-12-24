@@ -236,7 +236,7 @@ const Home = () => {
                   I&apos;m always open to new ideas, big or small and currently
                   available for freelance and contract-based work
                 </h2>
-                <p className="mt-4 lg:pr-12 lg:mt-7">
+                <p className="mt-4 lg:pr-12 opacity-[0.87] lg:mt-7">
                   <a
                     href="https://instagram.com/aarkyvstudios"
                     target="_blank"
