@@ -9,7 +9,7 @@ const Info = ({ inView, project }: any) => {
         Brief
         <div className="divide my-1.5" style={{ width: inView ? "100%" : 0 }} />
       </h4>
-      <p className="w-full">{project.content.brief}</p>
+      <p className="w-full opacity-[0.95]">{project.content.brief}</p>
       <br />
       <h4 className="mb-1  text-[90%]">
         Process
@@ -18,13 +18,13 @@ const Info = ({ inView, project }: any) => {
           style={{ width: inView ? "100%" : 0 }}
         />
       </h4>
-      <p className="w-full">{project.content.process}</p>
+      <p className="w-full opacity-[0.95]">{project.content.process}</p>
       <br />
       <h4 className="mb-1 text-[90%]">
         Outcome
         <div className="divide my-1.5" style={{ width: inView ? "100%" : 0 }} />
       </h4>
-      <p className="w-full">{project.content.outcome}</p>
+      <p className="w-full opacity-[0.95]">{project.content.outcome}</p>
       <div className="flex mt-12  items-center justify-between w-full">
         {project.website === "snapi.com" ? (
           <div className="tag flex gap-1 items-center">
