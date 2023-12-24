@@ -66,25 +66,7 @@ const projects = [
     },
   },
 
-  {
-    imageSrc: "/archvizual.png",
-    altText: "Double",
-    width: 180,
-    height: 180,
-    title: "Archvizual",
-    description: "3D Visualisation Studio",
-    year: "Jan '21",
-    website: "archvizual-redesign.netlify.app",
-    tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
-    content: {
-      brief:
-        "The brief for this project was to develop a temporary solution for archvizual.com, a renowned 3D designer's portfolio website. The goal was to showcase their work while their new website development was delayed. The solution needed to be lightweight and visually appealing, aligning with the designer's branding and design aesthetics.",
-      process:
-        "To meet the project's goals, I followed a structured process. Firstly, I closely collaborated with Roman to understand his requirements and vision. I conducted a thorough analysis of the existing design assets and gathered insights to inform my design decisions. Leveraging Figma, React, Gatsby, Styled Components, and Contentful CMS, I developed a visually appealing and user-friendly portfolio website. Throughout the process, I maintained open communication with the client and incorporated their feedback to ensure the final product met their expectations.",
-      outcome:
-        "As a result of my contributions, I successfully delivered a lightweight and visually appealing temporary portfolio website for Archvizual in a couple of days. The website effectively showcased the designer's work and maintained consistency with their desired branding and design aesthetics. By utilizing basic design principles with intuitive animations, I ensured a seamless user experience. The temporary solution served its purpose by providing an efficient platform for the designer to exhibit their work before their new website was complete.",
-    },
-  },
+
   {
     imageSrc: "/snapi.png",
     altText: "Double",
@@ -102,6 +84,25 @@ const projects = [
         "To fulfill the brief, I followed a structured process. Firstly, I collaborated closely with Manu, Snapi's founder, to understand his product vision and user requirements. I conducted user research and gathered insights to inform the design and development process. Using Figma, I created wireframes and interactive prototypes that aligned with the user-centric design approach. Once the design was approved, I utilized React, Next.js, Styled Components, and Tailwind CSS to implement the front-end functionalities. Throughout the process, I continuously tested and iterated on the design and functionality to ensure a seamless and engaging user experience.",
       outcome:
         "As a result of my contributions, Snapi's audience activation product saw significant improvements in user engagement and usability. The new functionalities I implemented successfully enhanced the overall user experience and eliminated gaps in usability, visible through increased user retention with insights provided by real-time analystics. By leveraging my skills in Figma, React, Next.js, Styled Components, and Tailwind CSS, I created an intuitive and visually appealing interface that drove user engagement and satisfaction.",
+    },
+  },
+  {
+    imageSrc: "/archvizual.png",
+    altText: "Double",
+    width: 180,
+    height: 180,
+    title: "Archvizual",
+    description: "3D Visualisation Studio",
+    year: "Jan '21",
+    website: "archvizual-redesign.netlify.app",
+    tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
+    content: {
+      brief:
+        "The brief for this project was to develop a temporary solution for archvizual.com, a renowned 3D designer's portfolio website. The goal was to showcase their work while their new website development was delayed. The solution needed to be lightweight and visually appealing, aligning with the designer's branding and design aesthetics.",
+      process:
+        "To meet the project's goals, I followed a structured process. Firstly, I closely collaborated with Roman to understand his requirements and vision. I conducted a thorough analysis of the existing design assets and gathered insights to inform my design decisions. Leveraging Figma, React, Gatsby, Styled Components, and Contentful CMS, I developed a visually appealing and user-friendly portfolio website. Throughout the process, I maintained open communication with the client and incorporated their feedback to ensure the final product met their expectations.",
+      outcome:
+        "As a result of my contributions, I successfully delivered a lightweight and visually appealing temporary portfolio website for Archvizual in a couple of days. The website effectively showcased the designer's work and maintained consistency with their desired branding and design aesthetics. By utilizing basic design principles with intuitive animations, I ensured a seamless user experience. The temporary solution served its purpose by providing an efficient platform for the designer to exhibit their work before their new website was complete.",
     },
   },
 ];
