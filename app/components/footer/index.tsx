@@ -87,7 +87,7 @@ const Footer = () => {
             2021 — 2024
           </div>
 
-          <a href="/" className="tag mt-4 ml-auto md:ml-0 md:mt-0 int">
+          <a href="/" className="tag mt-4 expand ml-auto md:ml-0 md:mt-0 int">
             back to top
           </a>
         </div>

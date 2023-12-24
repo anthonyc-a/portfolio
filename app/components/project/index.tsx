@@ -72,7 +72,7 @@ const projects = [
     width: 180,
     height: 180,
     title: "Archvizual",
-    description: "Visualisation Studio",
+    description: "3D Visualisation Studio",
     year: "Jan '21",
     website: "archvizual-redesign.netlify.app",
     tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
@@ -138,7 +138,7 @@ const Project = () => {
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 ">
               <div className="index txt  md:absolute md:top-0 md:right-0">
-                <span className="text-[#181818] opacity-[0.87] font-[450] md:font-[450] text-[85%] md:text-[95%] absolute  md:relative top-0 right-0">
+                <span className="text-[#181818] font-[450] md:font-[450] text-[85%] md:text-[95%] absolute  md:relative top-0 right-0">
                   001 — 0{index + 1}
                 </span>
               </div>
