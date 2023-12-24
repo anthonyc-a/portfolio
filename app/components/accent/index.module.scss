@@ -1,24 +1,24 @@
 .header {
     position: sticky;
-    top: 48px;
+    top: 56px;
     width: fit-content;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     z-index: -1;
-    color: #000;
+    color: #181818;
   
     &Inner {
       position: relative;
       width: fit-content;
-      font-size: 0.65rem;
+      font-size: 0.65rem !important;
       // padding: 0 20px;
-      font-weight: 400;
-      letter-spacing: 0.2px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
 
       @media screen and (min-width: 768px) {
-        font-size: 0.67rem;
+        font-size: 0.67rem !important;
       font-weight: 450;
 
         
@@ -27,8 +27,9 @@
       &::before {
         left: 0;
         top: 0;
-        content: "";
+        content: "//";
         font-size: 80%;
+        margin-right: 8px;
 
 
         &:nth-child(2) {

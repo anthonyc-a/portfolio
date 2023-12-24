@@ -56,7 +56,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
       <div
         className={`${
           cursorType === "mail" ? "" : "hidden opacity-0"
-        } w-40 h-40 gap-1 absolute cursor-none enlarge z-50 font-[450] flex bg-white rounded-full justify-center items-center`}
+        } w-40 h-40 gap-1 absolute cursor-none enlarge z-50 font-[500] flex bg-white rounded-full justify-center items-center`}
       >
         <span>get in touch</span>
         <Image
@@ -78,7 +78,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
           width={350}
           height={350}
           ref={imgRef}
-          className="w-full absolute  top-0 left-0"
+          className="w-full absolute rounded-[3px]  top-0 left-0"
         />
       </div>
     </div>

@@ -39,8 +39,8 @@ const Scrollbar: React.FC = () => {
     return (
       scrollY > window.innerHeight * 0.5 && (
         <div
-          className={`fixed hidden md:flex w-[280px] items-center  gap-5  z-[50] transition-all bg-white rounded-full bottom-6 right-6 p-3 px-4 ${
-            isVisible ? "opacity-100 shadow" : "opacity-0 translate-y-2"
+          className={`fixed flex md:flex w-[280px] items-center  gap-5  z-[50] transition-all bg-white rounded-full bottom-4 right-2 md:bottom-6 md:right-6 p-3 px-4 ${
+            isVisible ? "opacity-100 border border-gray-200" : "opacity-0 translate-y-2"
           }`}
         >
           <div className="w-full bg-gray-200 h-[1px]">

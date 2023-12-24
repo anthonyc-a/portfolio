@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="hidden md:block">
           <Socials />
         </div>
-        <span className="txt rise">© 2023</span>
+        <span className="txt rise">© 2024</span>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="w-full bg-[#1a1a1a] mt-20 p-6 pt-24 pb-8 z-50"
+      className="w-full bg-[#181818] mt-20 p-6 pt-24 pb-8 z-50"
       id="contact"
       ref={inViewRef}
     >
@@ -66,14 +66,14 @@ const Footer = () => {
           </div>
           <div className="mb-8 md:mb-0">
             <h5> more:</h5>
-            <a className="flex expand gap-1.5 items-center int" href="mailto:anthonyc.animba@gmail.com?subject=CV%20Request">
+            <a className="flex cv expand gap-1.5 items-center int" href="mailto:anthonyc.animba@gmail.com?subject=CV%20Request%20✨">
               request cv
               <Image
                 src="/download.svg"
                 alt=""
                 width={13}
                 height={13}
-                className="opacity-60 int expand"
+                className=" int expand"
               />
             </a>
           </div>
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
           <div className="mt-4 md:mt-0">
             <h5>works from:</h5>
-            2021 — 2023
+            2021 — 2024
           </div>
 
           <a href="/" className="tag mt-4 ml-auto md:ml-0 md:mt-0 int">

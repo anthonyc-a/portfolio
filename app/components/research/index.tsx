@@ -33,7 +33,7 @@ const Research = () => {
       ref={inViewRef}
       className="grid gap-8 md:gap-0 grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-4 md:h-80"
     >
-      <div className="ml-0 md:hidden relative w-full h-full  bg-white p-4 py-6 md:p-9">
+      <div className="ml-0 md:hidden relative w-full h-full rounded-md  bg-white p-4 py-6 md:p-9">
         <ul className="relative mt-auto block h-fit text-[100%]">
           <h4 className="txt">Blok Studios® / Modular housing</h4>
           <li className="txt">Research phase — 01</li>
@@ -98,7 +98,7 @@ const Research = () => {
                   <img
                     src={item.imageSrc}
                     alt=""
-                    className="w-[100%] cursor-none brightness-[90%] hover:brightness-[80%] transition-all duration-300 h-full object-cover"
+                    className="w-[100%] rounded-md cursor-none brightness-[90%] hover:brightness-[80%] transition-all duration-300 h-full object-cover"
                   />
                 </div>
               </div>
@@ -106,7 +106,7 @@ const Research = () => {
           </Carousel>
         </AnimationWrapper>
       </div>
-      <div className="ml-0 hidden md:flex relative w-full h-fit  bg-white p-4 py-6 md:p-9">
+      <div className="ml-0 hidden md:flex relative w-full h-fit rounded-md  bg-white p-4 py-6 md:p-9">
         <AnimationWrapper stagger={0.2}>
           <ul className="relative mt-auto block h-fit text-[100%]">
             <h4 className="txt font-[500]">

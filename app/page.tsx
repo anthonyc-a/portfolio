@@ -27,7 +27,7 @@ const skills = [
   {
     title: "Development",
     description:
-      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps which are built to scale.",
+      "My expertise as a full-stack developer allows me to rapidly create custom end-to-end solutions for clients. I use the latest industry-standard technologies to create fast, responsive and secure websites and apps that are built to scale.",
     icon: "/dev.svg",
   },
 ];
@@ -79,7 +79,7 @@ const Home = () => {
 
   return (
     <div className="w-full  ">
-      <div className="w-full z-[100] bg-[#1a1a1a] text-[#f8f8f8]">
+      <div className="w-full z-[100] bg-[#181818] text-[#f8f8f8]">
         <div ref={heroRef}>
           <Hero />
         </div>
@@ -91,20 +91,20 @@ const Home = () => {
               <AccentHeaderOne text="about me" />
             </div>
             <div className="w-40 md:hidden mt-[-1rem] md:mt-0  h-40 rounded-full bg-gray-300  overflow-hidden">
-              <Image
+            <div className="w-40 md:hidden h-40 rounded-full bg-gray-300  overflow-hidden">
+              <img
                 src="/me.jpg"
                 alt=""
-                width={1372}
-                height={1507}
-                className="w-full h-full  object-cover scale-[1.25] rounded-full translate-y-2"
+                className="w-full h-full  object-cover scale-[1.25] translate-y-2"
               />
+            </div>
             </div>
             <AnimationWrapper>
               <h2 className="md:w-[175%]">
                 A Designer and Full-Stack Developer with over 5 years experience
                 working with small to medium-sized businesses, startups and
                 individuals helping to ensure brand growth through thoughtful
-                design and incisive technical execution.
+                design and incisive technical execution
               </h2>
             </AnimationWrapper>
 
@@ -132,7 +132,7 @@ const Home = () => {
                     className="divide my-3 lg:hidden"
                     style={{ width: inView ? "100%" : 0 }}
                   />
-                  <p>{item.description}</p>
+                  <p className="opacity-[0.87]">{item.description}</p>
                 </div>
               ))}
 
@@ -183,7 +183,7 @@ const Home = () => {
                 />
                 <div className="absolute bottom-0 w-full h-1/4 z-0 bg-gradient-to-t from-black to-transparent"></div>
                 <div
-                  className="pause cursor-pointer expand scale-90 origin-center absolute bottom-4 left-4"
+                  className="pause cursor-pointer expand scale-[0.8] origin-center absolute bottom-4 left-4"
                   onClick={togglePause}
                 >
                   {paused ? (
@@ -222,7 +222,7 @@ const Home = () => {
                     </svg>
                   )}
                 </div>
-                <div className="absolute tag bottom-4 text-white right-4">
+                <div className="absolute tag bottom-4 text-[#eee] right-4">
                   studio showreel 2024
                 </div>
               </div>
@@ -234,21 +234,21 @@ const Home = () => {
                 </div>
                 <h2>
                   I&apos;m always open to new ideas, big or small and currently
-                  available for freelance and contract-based work.
+                  available for freelance and contract-based work
                 </h2>
-                <p className="mt-4">
+                <p className="mt-4 lg:mt-7">
                   <a
                     href="https://instagram.com/aarkyvstudios"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline expand hover:no-underline"
+                    className="underline font-[400] expand hover:no-underline"
                   >
                     Aarkyv Studios
                   </a>{" "}
                   is used to accept, manage and provide inspiration when working
-                  on freelance projects. Founded this year, my insatiable
+                  on freelance projects. Founded last year, my insatiable
                   curiosty allows me to work on a wide range of projects and
-                  ideas. The website is set to launch in 2024.
+                  ideas. The website is set to launch this year.
                 </p>
                 <div className="flex items-center gap-8">
                   <button
@@ -275,15 +275,9 @@ const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button className="font-[400] expand int mt-6 md:mt-8 flex justify-center items-center gap-3.5 p-3 rounded-full">
+                    <button className="font-[400] expand int mt-6 md:mt-8 flex justify-center items-center gap-2 p-3 rounded-full">
                       <span className="int expand">learn more</span>
-                      <Image
-                        src="/followArrow.svg"
-                        alt=""
-                        width={7}
-                        height={7}
-                        className="int expand"
-                      />
+                 
                     </button>
                   </a>
                 </div>
@@ -292,14 +286,8 @@ const Home = () => {
           </AnimationWrapper>
         </div>
 
-        <div id="research" className="p-6 mt-6 md:mt-14">
-          <div className="txt mb-8 md:mb-12">
-            <AccentHeaderOne text="research" />
-          </div>
-          <Research />
-        </div>
 
-        <div id="archive" className="p-6 mt-4 md:mt-40">
+        <div id="archive" className="p-6 mt-4 md:mt-14">
           <div className="grid gap-4 grid-rows-12 grid-cols-1 md:grid-cols-4 mt-8">
             <div className="txt">
               <AccentHeaderOne text="archive" />

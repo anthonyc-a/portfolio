@@ -9,6 +9,25 @@ import Info from "./info";
 
 const projects = [
   {
+    imageSrc: "/dsy.png",
+    altText: "DeSalvo",
+    width: 180,
+    height: 180,
+    title: "De Salvo Yachts",
+    description: "Yacht Designer",
+    year: "Dec '23",
+    website: "snapi.com",
+    tags: ["UI/UX", "Web Design", "Full-Stack", "Art Direction"],
+    content: {
+      brief:
+        "I was tasked with designing and developing the digital face of a British Italian yacht design business, the primary goal was to encapsulate the essence of elegance and innovation. Employing Next.js, Tailwind CSS, and Contentful, the aim was to seamlessly integrate cutting-edge technologies to bring forth a website that not only mirrors the sophistication of their work but also acts as a captivating digital showcase for the brand.",
+      process:
+        "To fulfill the brief, I followed a systematic process. Firstly, I conducted a thorough review of the website's design and identified areas that needed improvement. I then generated design concepts and prototypes using Figma, ensuring alignment with the client's branding and target audience. Throughout the process, I actively made iterative improvements based on the client's input.",
+      outcome:
+        "In under a week, the Next.js and Tailwind-powered website emerged. The seamless integration of these technologies facilitated not only a visually captivating user interface but also an intuitive and responsive user experience. The website, acting as the forefront of the business, showcased the designer's portfolio with a balance of innovation and aesthetic appeal. The use of Contentful allowed for effortless content management, ensuring that the digital representation of the yachts could be dynamically updated to align with the evolving nature of the business.",
+    },
+  },
+  {
     imageSrc: "/double.png",
     altText: "Double",
     width: 180,
@@ -24,7 +43,7 @@ const projects = [
       process:
         "To fulfill the brief, I followed a systematic process. Firstly, I conducted a thorough review of the website's design and identified areas that needed improvement. I then generated design concepts and prototypes using Figma, ensuring alignment with the client's branding and target audience. Collaborating with the development team, I implemented the approved design changes using React, Gatsby, and SCSS. Throughout the process, I actively sought feedback from stakeholders and made iterative improvements based on their input.",
       outcome:
-        "By the end of the contract, I successfully made noticeable visual and performance improvements to the Double Agency website. These changes positively impacted various aspects, including search engine optimization (SEO), analytics, and load time. Additionally, my contributions helped the team make an informed decision regarding the best framework to use for their new website and future client projects.",
+        "By the end of the contract, I successfully made notable visual and performance improvements to the Double Agency website. These changes positively impacted various aspects, including search engine optimization (SEO), analytics, and load time. Additionally, my contributions helped the team make an informed decision regarding the best framework to use for their new website (currently in use) and future client projects.",
     },
   },
   {
@@ -39,7 +58,7 @@ const projects = [
     tags: ["Full-Stack", "API", "UI/UX", "Consultancy"],
     content: {
       brief:
-        "The project's brief was to create a high-quality MVP application for Verve TV. The aim was to leverage Next.js, styled components, and Tailwind CSS to deliver a seamless and visually appealing user experience. Additionally, the application needed to integrate AWS for user management and streaming functionalities.",
+        "The project's brief was to create a high-quality MVP application for Verve TV. The aim was to leverage Next.js, styled components, and Tailwind CSS to deliver a seamless and visually appealing user experience. Additionally, the application needed to integrate an AWS back-end for user management and streaming functionalities.",
       process:
         "To meet the project's goals, I followed a structured process. Initially, I collaborated closely with the Verve TV team to understand their vision and requirements. Next, I developed wireframes and interactive prototypes using Figma, ensuring a user-centric design approach. Once the design was approved, I started implementing the MVP application using Next.js, styled components, and Tailwind CSS. Throughout the development process, I continuously tested and iterated on the features to ensure optimal performance and usability.",
       outcome:
@@ -59,11 +78,11 @@ const projects = [
     tags: ["Web Design", "CMS", "Full-Stack", "Art Direction"],
     content: {
       brief:
-        "The brief for this project was to develop a temporary solution for archvizual.com, a renowned 3D designer's portfolio website. The goal was to showcase their work while their main website development was delayed. The solution needed to be lightweight and visually appealing, aligning with the designer's branding and design aesthetics.",
+        "The brief for this project was to develop a temporary solution for archvizual.com, a renowned 3D designer's portfolio website. The goal was to showcase their work while their new website development was delayed. The solution needed to be lightweight and visually appealing, aligning with the designer's branding and design aesthetics.",
       process:
-        "To meet the project's goals, I followed a structured process. Firstly, I closely collaborated with the Archvizual team to understand their requirements and the designer's vision. I conducted a thorough analysis of the existing design assets and gathered insights to inform my design decisions. Leveraging Figma, React, Gatsby, Styled Components, and Contentful CMS, I developed a visually appealing and user-friendly portfolio website. Throughout the process, I maintained open communication with the client and incorporated their feedback to ensure the final product met their expectations.",
+        "To meet the project's goals, I followed a structured process. Firstly, I closely collaborated with Roman to understand his requirements and vision. I conducted a thorough analysis of the existing design assets and gathered insights to inform my design decisions. Leveraging Figma, React, Gatsby, Styled Components, and Contentful CMS, I developed a visually appealing and user-friendly portfolio website. Throughout the process, I maintained open communication with the client and incorporated their feedback to ensure the final product met their expectations.",
       outcome:
-        "As a result of my contributions, I successfully delivered a lightweight and visually appealing temporary portfolio website for Archvizual in under a week. The website effectively showcased the designer's work and maintained consistency with their desired branding and design aesthetics. By utilizing basic design principles with intuitive animations, I ensured a seamless user experience. The temporary solution served its purpose by providing an efficient platform for the designer to exhibit their work before their main website was complete.",
+        "As a result of my contributions, I successfully delivered a lightweight and visually appealing temporary portfolio website for Archvizual in a couple of days. The website effectively showcased the designer's work and maintained consistency with their desired branding and design aesthetics. By utilizing basic design principles with intuitive animations, I ensured a seamless user experience. The temporary solution served its purpose by providing an efficient platform for the designer to exhibit their work before their new website was complete.",
     },
   },
   {
@@ -72,7 +91,7 @@ const projects = [
     width: 180,
     height: 180,
     title: "Snapi",
-    description: "Audience Activation",
+    description: "Marketing Tool",
     year: "Jul '22",
     website: "snapi.com",
     tags: ["UI/UX", "Web Design", "Front-End", "Art Direction"],
@@ -80,9 +99,9 @@ const projects = [
       brief:
         "The brief for this project was to leverage my expertise in UI/UX design and front-end development to enhance Snapi's audience activation product. The goal was to implement new features that would improve user engagement and bridge any usability gaps through thoughtful and intuitive design.",
       process:
-        "To fulfill the brief, I followed a structured process. Firstly, I collaborated closely with the Snapi team to understand their product vision and user requirements. I conducted user research and gathered insights to inform the design and development process. Using Figma, I created wireframes and interactive prototypes that aligned with the user-centric design approach. Once the design was approved, I utilized React, Next.js, Styled Components, and Tailwind CSS to implement the front-end functionalities. Throughout the process, I continuously tested and iterated on the design and functionality to ensure a seamless and engaging user experience.",
+        "To fulfill the brief, I followed a structured process. Firstly, I collaborated closely with Manu, Snapi's founder, to understand his product vision and user requirements. I conducted user research and gathered insights to inform the design and development process. Using Figma, I created wireframes and interactive prototypes that aligned with the user-centric design approach. Once the design was approved, I utilized React, Next.js, Styled Components, and Tailwind CSS to implement the front-end functionalities. Throughout the process, I continuously tested and iterated on the design and functionality to ensure a seamless and engaging user experience.",
       outcome:
-        "As a result of my contributions, Snapi's audience activation product saw significant improvements in user engagement and usability. The new functionalities I implemented successfully enhanced the overall user experience and eliminated gaps in usability. By leveraging my skills in Figma, React, Next.js, Styled Components, and Tailwind CSS, I created an intuitive and visually appealing interface that drove user engagement and satisfaction.",
+        "As a result of my contributions, Snapi's audience activation product saw significant improvements in user engagement and usability. The new functionalities I implemented successfully enhanced the overall user experience and eliminated gaps in usability, visible through increased user retention with insights provided by real-time analystics. By leveraging my skills in Figma, React, Next.js, Styled Components, and Tailwind CSS, I created an intuitive and visually appealing interface that drove user engagement and satisfaction.",
     },
   },
 ];
@@ -109,17 +128,17 @@ const Project = () => {
   const visibleProjects = showMore ? projects : projects.slice(0, 3);
 
   return (
-    <div className="col-span-1 md:col-span-3 flex flex-col gap-5">
+    <div className="col-span-1 md:col-span-3 flex flex-col gap-6">
       {visibleProjects.map((project, index) => (
         <div
           key={index}
-          className="project cursor-pointer bg-white py-6 md:py-8 md:pt-7 max-h-[2000px] transition-all h-fit  p-4 md:p-8"
+          className="project cursor-pointer bg-white rounded-[3px] py-6 md:py-8 md:pt-7 max-h-[2000px] transition-all h-fit  p-4 md:p-8"
           onClick={() => handleProjectClick(index)}
         >
           <AnimationWrapper>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 ">
               <div className="index txt  md:absolute md:top-0 md:right-0">
-                <span className="text-[#1a1a1a] font-[450] md:font-[450] text-[85%] md:text-[90%] absolute  md:relative top-0 right-0">
+                <span className="text-[#181818] opacity-[0.87] font-[450] md:font-[450] text-[85%] md:text-[95%] absolute  md:relative top-0 right-0">
                   001 — 0{index + 1}
                 </span>
               </div>
@@ -144,12 +163,12 @@ const Project = () => {
                 <h4 className="leading-[1] md:leading-[1.5]   text-[100%]">
                   {project.title}
                 </h4>
-                <h4 className=" tracking-wide font-[300] md:font-[300] text-[87%] ">
+                <h4 className=" tracking-wide font-[300] opacity-[0.87] md:font-[400] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="tag text-[#333]">
+                    <span key={tagIndex} className="tag font-[500] text-[#222]">
                       {tag}
                     </span>
                   ))}
@@ -171,7 +190,7 @@ const Project = () => {
                   </div>
                 </a>
                 <button className="int expand main-btn flex justify-center w-full md:w-32 items-center gap-3 bottom-0 right-0 p-2 md:p-2.5 md:pb-2 px-4 border border-[#999] rounded-full">
-                  <a className="expand text-[100%] int main-btn md:text-[95%] font-[400] pb-0.5 whitespace-nowrap">
+                  <a className="expand text-[100%] int main-btn md:text-[95%] font-[500] pb-0.5 whitespace-nowrap">
                     {expandedProjectIndex === index ? "close" : "details"}
                   </a>
                   <Image
@@ -205,11 +224,11 @@ const Project = () => {
           >
             <div className="w-full absolute top-1/2 rounded-sm -translate-y-1/2 h-[1px] gradient-line" />
 
-            <a className="expand absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f8f8f8] tag cursor-pointer mx-auto text-[90%] text-center p-2 px-4 md:px-2 w-fit pb-1 whitespace-nowrap">
-              <span className="expand font-[450]">
+            <a className="expand absolute top-1/2 -translate-y-1/2 flex gap-2 bg-[#f2f2f2] tag cursor-pointer mx-auto text-[90%] text-center p-2 px-4 md:px-4 w-fit pb-1 whitespace-nowrap">
+              <span className="expand font-[500] tracking-[0.2px]">
                 {showMore ? "Show Less" : "show more"}
               </span>
-              {showMore ? " -" : " +"}
+              {showMore ? " " : " "}
             </a>
           </div>
         </div>

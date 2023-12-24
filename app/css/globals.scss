@@ -20,16 +20,37 @@
 
 ::-moz-selection {
   color: #f8f8f8;
-  background: #1a1a1a;
+  background: #181818;
 }
 
 ::selection {
   color: #f8f8f8;
-  background: #1a1a1a;
+  background: #181818;
 }
 
 html {
   height: fit-content;
+}
+
+html {
+  --scrollbarBG: #f2f2f2;
+  --thumbBG: #999;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 10px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 .slick-dots {
@@ -47,21 +68,33 @@ html {
   background: linear-gradient(to right, transparent, #999, transparent);
 }
 
+.cv {
+  &:hover img {
+    opacity: 1;
+  }
+  img {
+    opacity: 0.6;
+    transition: 0.25s ease-in-out;
+    
+  }
+}
+
 strong {
   font-weight: 460;
 }
 
 body {
   position: relative;
-  color: #1a1a1a;
+  color: #181818;
   height: 200vh;
-  background-color: #f8f8f8;
+  background-color: #f2f2f2;
   overflow-x: hidden;
 }
 
 button {
   font-size: 0.7rem;
-  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-weight: 500 !important;
   text-transform: uppercase;
 }
 
@@ -71,7 +104,7 @@ footer {
     content: "";
     position: absolute;
     top: -14px;
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
     left: 0;
     width: 100%;
     height: 24px;
@@ -142,6 +175,7 @@ footer {
 .logo {
   font-weight: 300;
   letter-spacing: -0.2px;
+  font-size: 18px;
 
   &::before {
     content: "";
@@ -150,7 +184,7 @@ footer {
     left: -1px;
     width: 120%;
     height: 100%;
-    background-color: #1a1a1a;
+    background-color: #181818;
     animation: rise 1s 0s ease-in-out forwards;
     z-index: 10;
   }
@@ -247,7 +281,7 @@ footer {
 
   span {
     mix-blend-mode: difference;
-    color: #1a1a1a;
+    color: #181818;
     z-index: 10;
   }
 
@@ -263,7 +297,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1a1a1a;
+    background-color: #181818;
     transform: translateY(100%);
     transition: 0.35s ease-in-out;
     z-index: -1;
