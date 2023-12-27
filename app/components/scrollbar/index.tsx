@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { MdMailOutline } from "react-icons/md";
+import ThemeToggle from "../theme";
 
 const Scrollbar: React.FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -39,8 +40,10 @@ const Scrollbar: React.FC = () => {
     return (
       scrollY > window.innerHeight * 0.5 && (
         <div
-          className={`fixed flex md:flex w-[280px] items-center  gap-5  z-[50] transition-all bg-white rounded-full bottom-4 right-2 md:bottom-6 md:right-6 p-3 px-4 ${
-            isVisible ? "opacity-100 border border-gray-200" : "opacity-0 translate-y-2"
+          className={`fixed flex md:flex min-w-[280px] items-center  gap-5  z-[50] transition-all bg-white rounded-full bottom-4 right-2 md:bottom-6 md:right-6 p-3 px-4 ${
+            isVisible
+              ? "opacity-100 border border-gray-200"
+              : "opacity-0 translate-y-2"
           }`}
         >
           <div className="w-full bg-gray-200 h-[1px]">
@@ -51,8 +54,9 @@ const Scrollbar: React.FC = () => {
               }}
             ></div>
           </div>
-          <div className="flex items-center justify-end gap-3 ml-auto w-16">
-          <a
+          <div className="flex items-center justify-end gap-2 ml-auto w-16">
+            <ThemeToggle />
+            <a
               href="/"
               className=" expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "
             >
@@ -70,7 +74,6 @@ const Scrollbar: React.FC = () => {
             >
               <MdMailOutline size={13} />
             </a>
-      
           </div>
         </div>
       )

@@ -53,6 +53,8 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
+
+
 .slick-dots {
   justify-content: flex-start !important;
   padding: 0 1rem !important;
@@ -89,6 +91,11 @@ body {
   height: 200vh;
   background-color: #f2f2f2;
   overflow-x: hidden;
+}
+
+.dark {
+  background-color: #272727 !important;
+  color: #f2f2f2;
 }
 
 button {
