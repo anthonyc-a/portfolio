@@ -66,7 +66,6 @@ const projects = [
     },
   },
 
-
   {
     imageSrc: "/snapi.png",
     altText: "Double",
@@ -200,6 +199,7 @@ const Project = () => {
                     width={7}
                     height={7}
                     loading="eager"
+                    placeholder="blur"
                     className={`${
                       expandedProjectIndex === index
                         ? "rotate-[-45deg]"

@@ -79,6 +79,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
           height={350}
           ref={imgRef}
           loading="eager"
+          placeholder="blur"
           className="w-full absolute rounded-[3px]  top-0 left-0"
         />
       </div>
