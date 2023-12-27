@@ -148,6 +148,7 @@ const Project = () => {
                   alt={project.altText}
                   width={230}
                   height={230}
+                  loading="eager"
                   className="mx-auto mt-2 md:mx-0 float"
                 />
               ) : (
@@ -163,7 +164,7 @@ const Project = () => {
                 <h4 className="leading-[1] md:leading-[1.5]   text-[100%]">
                   {project.title}
                 </h4>
-                <h4 className=" tracking-wide font-[300] opacity-[0.87] md:font-[400] text-[87%] ">
+                <h4 className=" tracking-wide font-[400] opacity-[0.87] md:font-[400] text-[87%] ">
                   {project.description}
                 </h4>
                 <div className="tags flex  md:flex-wrap items-center gap-1 gap-y-1.5 mt-2.5">
@@ -198,8 +199,6 @@ const Project = () => {
                     alt=""
                     width={7}
                     height={7}
-                    loading="eager"
-                    placeholder="blur"
                     className={`${
                       expandedProjectIndex === index
                         ? "rotate-[-45deg]"
