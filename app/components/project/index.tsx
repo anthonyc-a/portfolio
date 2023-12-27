@@ -199,6 +199,7 @@ const Project = () => {
                     alt=""
                     width={7}
                     height={7}
+                    loading="eager"
                     className={`${
                       expandedProjectIndex === index
                         ? "rotate-[-45deg]"
