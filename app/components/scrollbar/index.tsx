@@ -40,7 +40,7 @@ const Scrollbar: React.FC = () => {
     return (
       scrollY > window.innerHeight * 0.5 && (
         <div
-          className={`fixed flex md:flex min-w-[280px] items-center  gap-5  z-[50] transition-all bg-white rounded-full bottom-4 right-2 md:bottom-6 md:right-6 p-3 px-4 ${
+          className={`fixed flex md:flex min-w-[240px] md:min-w-[280px] items-center  gap-5  z-[50] transition-all bg-white rounded-full bottom-4 right-2 md:bottom-6 md:right-6 p-3 px-4 ${
             isVisible
               ? "opacity-100 border border-gray-200"
               : "opacity-0 translate-y-2"
@@ -54,8 +54,7 @@ const Scrollbar: React.FC = () => {
               }}
             ></div>
           </div>
-          <div className="flex items-center justify-end gap-2 ml-auto w-16">
-            <ThemeToggle />
+          <div className="flex items-center justify-end gap-3 ml-auto w-16">
             <a
               href="/"
               className=" expand flex items-center gap-2 transition-all txt int  hover:opacity-100 "

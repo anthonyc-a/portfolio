@@ -127,9 +127,9 @@ const Archive = () => {
               <Image
                 width={600}
                 height={600}
-                src={item.img}
+                src={item.img && item.img}
                 alt={item.name}
-                className="w-full md:hidden mt-4 md:mt-0"
+                className="w-full md:hidden mt-4 md:mt-0 rounded-[3px]"
               />
             )}
             <div

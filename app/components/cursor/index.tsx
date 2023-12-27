@@ -73,7 +73,7 @@ const Cursor: React.FC<any> = ({}: any): JSX.Element => {
         } `}
       >
         <Image
-          src={imageAddress}
+          src={imageAddress ? imageAddress : ''}
           alt=""
           width={350}
           height={350}

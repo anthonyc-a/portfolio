@@ -94,8 +94,14 @@ body {
 }
 
 .dark {
-  background-color: #272727 !important;
+  background-color: #222 !important;
   color: #f2f2f2;
+}
+
+.dark {
+  .head {
+    color: #f2f2f2 !important;
+  }
 }
 
 button {
@@ -117,6 +123,14 @@ footer {
     height: 24px;
     border-radius: 10px;
     z-index: 10;
+  }
+}
+
+.dark {
+  footer {
+    &::before {
+      background-color: #222;
+    }
   }
 }
 
