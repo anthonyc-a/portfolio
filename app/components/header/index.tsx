@@ -14,7 +14,7 @@ const Header = () => {
       <div className="txt pr-12 hidden lg:block">
         <span className="rise load-delay">Designer / Developer</span>
         <br />
-        <span className="rise load-delay">Portfolio / 2024 — 2025</span>
+        <span className="rise load-delay">Portfolio / 2023 — 2024</span>
       </div>
       <div></div>
       <div className="">
@@ -23,14 +23,14 @@ const Header = () => {
             Designer / Developer
           </span>
           <span className="rise block font-[400]  text-[90%] load-delay">
-            Portfolio / 2024 — 2025
+            Old Portfolio / 2023 — 2024
           </span>
         </div>
         <div className="txt md:hidden mb-4">
           <span className="rise block font-[400]  text-[90%]">Available for freelance</span>
           <span className="rise block font-[400]  text-[90%]">
             {" "}
-            projects in January 2024
+            projects in September 2023
           </span>
         </div>
         <Contact />
