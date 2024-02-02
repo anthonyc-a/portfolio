@@ -30,7 +30,7 @@ const Header = () => {
           <span className="rise block font-[400]  text-[90%]">Available for freelance</span>
           <span className="rise block font-[400]  text-[90%]">
             {" "}
-            projects in September 2023
+            projects in <s>September 2023</s> 
           </span>
         </div>
         <Contact />
