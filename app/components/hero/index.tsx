@@ -37,7 +37,7 @@ const Hero = () => {
       <Location />
       <div className="txt hidden absolute top-9 h-[42px] md:flex flex-col justify-center">
         <span className="rise">Available for freelance</span>
-        <span className="rise">projects in September 2023</span>
+        <span className="rise">projects in <s>September 2023</s> </span>
       </div>
 
       <div className="bottom absolute bottom-0 right-0 md:right-[unset] md:left-0 md:w-full p-6 flex justify-between items-center">
